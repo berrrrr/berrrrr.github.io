@@ -1,7 +1,7 @@
 ---
 layout: tag-blog
-title: Algorithm
-slug: algorithm
+title: Java
+slug: java
 category: programming
 menu: false
 order: 1

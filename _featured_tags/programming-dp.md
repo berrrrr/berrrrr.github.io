@@ -1,7 +1,7 @@
 ---
 layout: tag-blog
-title: Algorithm
-slug: algorithm
+title: Design Pattern
+slug: designpattern
 category: programming
 menu: false
 order: 5

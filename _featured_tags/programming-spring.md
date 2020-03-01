@@ -1,7 +1,7 @@
 ---
 layout: tag-blog
-title: Algorithm
-slug: algorithm
+title: Spring
+slug: spring
 category: programming
 menu: false
 order: 3

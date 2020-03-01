@@ -1,7 +1,7 @@
 ---
 layout: tag-blog
-title: Algorithm
-slug: algorithm
+title: Python
+slug: python
 category: programming
 menu: false
 order: 2

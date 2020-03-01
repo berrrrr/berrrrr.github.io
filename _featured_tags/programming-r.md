@@ -1,8 +1,8 @@
 ---
 layout: tag-blog
-title: Infra
-slug: infra
+title: R Programming
+slug: rprogramming
 category: programming
 menu: false
-order: 4
+order: 7
 ---
