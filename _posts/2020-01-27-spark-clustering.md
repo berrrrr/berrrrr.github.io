@@ -7,7 +7,6 @@ tags: spark
 comments: true
 ---
 
-# spark 클러스터링 모드로 분산처리하기
 여러 서버에 spark 설치하고 데이터를 분석하려면 spark를 클러스터로 묶어줘야한다.  
 아래와 같이 각 서버의 spark 환경설정파일을 수정하면 여러대의 spark를 cluster로 묶을 수 있다.  
 (반드시 묶고자하는 모든 서버의 spark 환경설정파일 모두 수정 )

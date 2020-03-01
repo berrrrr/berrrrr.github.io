@@ -7,7 +7,7 @@ tags: paper
 comments: true
 ---
 
-# Very Deep Convolutional Networks for Text Classification
+> Very Deep Convolutional Networks for Text Classification
 
 ## Abstract
 많은 NLP과제에서 RNN, 특히 LSTM과 CNN이 사용되어왔다. 그러나 NLP에서 사용되는 모델들은 이는 컴퓨터 비전과 비교하면 다소 얕다. 따라서 이 논문에서는 텍스트 처리를 위해 29개 layer를 가지고 있는 VDCNN을 제시하면서 layer가 깊어질수록 성능이 증가함을 보여줄 것이다. 이는 텍스트처리에 깊은 CNN을 사용한 첫번째 사례이다. 

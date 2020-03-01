@@ -7,7 +7,6 @@ tags: spring
 comments: true
 ---
 
-# Lombok @Data 와 @Builder 기능
 Lombok의 @Data가 @Builder가 어떤 코드를 알아서 선언해주는지 알아보자
 
 ## @Data
