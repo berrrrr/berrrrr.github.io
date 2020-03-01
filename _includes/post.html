@@ -22,15 +22,9 @@
   {% endunless %}
   {% endfor %}
 
-  <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  <!-- <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
   {% unless include.excerpt %}
   <div class="markdown-body">
-
-    <!-- {% if post.header-img %}<div class="head-image"><img
-        src="{{ site.url }}/{% if post.header-img %}assets/{{ post.header-img }}{% endif %}" /></div>
-    <br />{% elsif tag.header-img %}
-    <div class="head-image"><img src="{{ site.url }}/assets/{{ tag.header-img }}" /></div>
-    <br />{% endif %} -->
     <style>
       .myAd1190 {
         width: 48%;
@@ -71,16 +65,16 @@
     </div>
     <script>
       (adsbygoogle = window.adsbygoogle || []).push({});
-    </script>
+    </script> -->
 
     <br />
     {{ post.content }}
     <br />
     <br />
   </div>
-  <script>
+  <!-- <script>
     (adsbygoogle = window.adsbygoogle || []).push({});
-  </script>
+  </script> -->
   {% else %}
   {{ post.excerpt }}
   <p class="read-more"><a class="heading" href="{{ post.url | relative_url }}" data-flip="title">Continue reading </a>
