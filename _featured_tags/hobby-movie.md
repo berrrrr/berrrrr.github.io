@@ -1,8 +1,8 @@
 ---
 layout: tag-blog
-title: Infra
-slug: infra
-category: devlog
+title: Movie
+slug: movie
+category: hobby
 menu: false
 order: 2
 ---

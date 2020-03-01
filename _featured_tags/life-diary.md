@@ -1,8 +1,8 @@
 ---
 layout: tag-blog
-title: React
-slug: react
-category: devlog
+title: Diary
+slug: diary
+category: life
 menu: false
 order: 1
 ---

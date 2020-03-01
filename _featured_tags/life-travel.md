@@ -1,8 +1,8 @@
 ---
 layout: tag-blog
-title: MongoDB
-slug: mongodb
-category: devlog
+title: Travel
+slug: travel
+category: life
 menu: false
 order: 3
 ---

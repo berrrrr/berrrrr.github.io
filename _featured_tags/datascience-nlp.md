@@ -1,8 +1,8 @@
 ---
 layout: tag-blog
-title: Jekyll
-slug: jekyll
-category: devlog
+title: NLP
+slug: nlp
+category: datascience
 menu: false
 order: 3
 ---

@@ -1,8 +1,8 @@
 ---
 layout: tag-blog
-title: ML
-slug: ml
-category: devlog
+title: NAS
+slug: nas
+category: etc
 menu: false
 order: 1
 ---
