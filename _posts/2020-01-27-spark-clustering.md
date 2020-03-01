@@ -1,15 +1,10 @@
 ---
+layout: post
 title: spark 클러스터링 모드로 분산처리하기
-date: 2020-01-27 01:53:56
-categories: 
- - Data Analysis
-tags: 
- - spark
-sidebar:
- nav: "categories"
-toc: true
-toc_label: "List"
-toc_icon: "list"
+subtitle: spark 클러스터링 모드로 분산처리하기
+categories: datascience
+tags: spark
+comments: true
 ---
 
 # spark 클러스터링 모드로 분산처리하기
