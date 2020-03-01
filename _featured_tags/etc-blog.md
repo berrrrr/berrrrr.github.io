@@ -2,7 +2,7 @@
 layout: tag-blog
 title: Blog
 slug: blog
-category: tip
+category: etc
 menu: false
 order: 1
 ---
