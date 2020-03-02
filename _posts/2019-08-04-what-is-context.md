@@ -1,17 +1,11 @@
 ---
+layout: post
 title: context란 무엇인가
-date: 2019-08-03 20:38:03
-categories: 
- - Spring
-tags: 
- - Spring
-sidebar:
- nav: "categories"
-toc: true
-toc_label: "List"
-toc_icon: "list"
+subtitle: context란 무엇인가
+categories: programming
+tags: spring
+comments: true
 ---
-
 context란 무엇인가
 
 

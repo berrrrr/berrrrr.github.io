@@ -1,16 +1,12 @@
 ---
+layout: post
 title: Spring Framework란
-date: 2019-08-03 20:40:43
-categories: 
- - Spring
-tags: 
- - Spring
-sidebar:
- nav: "categories"
-toc: true
-toc_label: "List"
-toc_icon: "list"
+subtitle: Spring Framework란
+categories: programming
+tags: spring
+comments: true
 ---
+
 ## Spring framwwork
 자바 엔터프라이즈 개발을 편하게 해주는 경량급 오픈소스 애플리케이션 프레임워크. 동적인 웹 사이트를 개발하기 위한 여러 가지 서비스를 제공하고 있다. 대한민국 공공기관의 웹 서비스 개발 시 사용을 권장하고 있는 전자정부 표준프레임워크의 기반 기술로서 쓰이고 있다.
 

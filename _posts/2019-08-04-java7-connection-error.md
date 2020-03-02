@@ -1,16 +1,10 @@
 ---
+layout: post
 title: Java 7 에서 특정 Api만 Connection reset Error 
-date: 2019-08-03 20:37:12
-categories: 
- - Spring
-tags: 
- - Spring
- - Java7
-sidebar:
- nav: "categories"
-toc: true
-toc_label: "List"
-toc_icon: "list"
+subtitle: Java 7 에서 특정 Api만 Connection reset Error 
+categories: programming
+tags: java
+comments: true
 ---
 
 java 7 Connection reset Error

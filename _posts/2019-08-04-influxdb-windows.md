@@ -1,16 +1,12 @@
 ---
+layout: post
 title: influxDB windows에 설치하기
-date: 2019-08-04 20:45:19
-categories: 
- - Data Analysis
-tags: 
- - Influx DB
-sidebar:
- nav: "categories"
-toc: true
-toc_label: "List"
-toc_icon: "list"
+subtitle: influxDB windows에 설치하기
+categories: programming
+tags: infra
+comments: true
 ---
+
 # influxDB 설치하기
 influxDB를 window에 다운받고 설치해본다.
 

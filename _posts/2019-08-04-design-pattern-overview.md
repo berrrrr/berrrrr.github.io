@@ -1,16 +1,10 @@
 ---
+layout: post
 title: 디자인패턴 개요
-date: 2019-08-03 20:45:47
-categories: 
- - Design Pattern
-tags: 
- - OOP
- - Design Pattern
-sidebar:
- nav: "categories"
-toc: true
-toc_label: "List"
-toc_icon: "list"
+subtitle: 디자인패턴 개요
+categories: programming
+tags: designpattern
+comments: true
 ---
 
 # 디자인 패턴 개요

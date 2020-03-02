@@ -1,16 +1,10 @@
 ---
+layout: post
 title: Anaconda 설치 후 prompt 실행시 오류
-date: 2019-08-03 20:24:44
-categories: 
- - Tips
-tags: 
- - anaconda
- - python
-sidebar:
- nav: "categories"
-toc: true
-toc_label: "List"
-toc_icon: "list"
+subtitle: Anaconda 설치 후 prompt 실행시 오류
+categories: programming
+tags: python
+comments: true
 ---
 
 ## Anaconda 설치 후 prompt 실행시 오류

@@ -1,16 +1,10 @@
 ---
+layout: post
 title: vscode user snippet 스니펫 사용하기
-date: 2019-06-08 14:17:51
-categories: 
- - Tips
-tags: 
- - Vscode
- - snippet
-sidebar:
- nav: "categories"
-toc: true
-toc_label: "List"
-toc_icon: "list"
+subtitle: vscode user snippet 스니펫 사용하기
+categories: programming
+tags: tips
+comments: true
 ---
 
 # vscode user snippet 사용하기

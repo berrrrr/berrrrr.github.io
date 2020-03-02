@@ -1,16 +1,12 @@
 ---
+layout: post
 title: Grafana 설치하기
-date: 2019-08-04 20:44:45
-categories: 
- - Data Analysis
-tags: 
- - Grafana
-sidebar:
- nav: "categories"
-toc: true
-toc_label: "List"
-toc_icon: "list"
+subtitle: Grafana 설치하기
+categories: programming
+tags: infra
+comments: true
 ---
+
 # Grafana 설치하기
 Grafana를 Window/CentOS에 다운받고 설치해본다
 

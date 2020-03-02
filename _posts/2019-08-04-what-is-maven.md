@@ -1,16 +1,10 @@
 ---
+layout: post
 title: Maven이란?
-date: 2019-08-03 20:41:41
-categories: 
- - Spring
-tags: 
- - Spring
- - Maven
-sidebar:
- nav: "categories"
-toc: true
-toc_label: "List"
-toc_icon: "list"
+subtitle: Maven이란?
+categories: programming
+tags: spring
+comments: true
 ---
 
 # MAVEN

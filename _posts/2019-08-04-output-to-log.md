@@ -1,16 +1,10 @@
 ---
+layout: post
 title: Java output, log를 파일로 저장하기
-date: 2019-08-03 20:38:26
-categories: 
- - Tips
-tags: 
- - Java
- - Log
-sidebar:
- nav: "categories"
-toc: true
-toc_label: "List"
-toc_icon: "list"
+subtitle: Java output, log를 파일로 저장하기
+categories: programming
+tags: java
+comments: true
 ---
 
 # java output, log를 파일로 저장하기
