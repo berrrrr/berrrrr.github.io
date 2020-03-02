@@ -1,15 +1,10 @@
 ---
+layout: post
 title: window서버에서 D드라이브가 갑자기 사라진 경우
-date: 2019-08-03 20:43:45
-categories: 
- - Tips
-tags: 
- - Window Server
-sidebar:
- nav: "categories"
-toc: true
-toc_label: "List"
-toc_icon: "list"
+subtitle: window서버에서 D드라이브가 갑자기 사라진 경우
+categories: programming
+tags: tips
+comments: true
 ---
 
 ## window서버에서 D드라이브가 갑자기 사라진 경우

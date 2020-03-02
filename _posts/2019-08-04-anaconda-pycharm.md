@@ -1,19 +1,13 @@
 ---
+layout: post
 title: Anaconda + Pycham으로 python 개발환경 구성하기
-date: 2019-08-03 20:18:51
-categories: 
- - Python
-tags: 
- - python
- - pycharm
- - anaconda
-sidebar:
- nav: "categories"
-toc: true
-toc_label: "List"
-toc_icon: "list"
+subtitle: Anaconda + Pycham으로 python 개발환경 구성하기
+categories: programming
+tags: python
+comments: true
 ---
-title : Anaconda + Pycharm 으로 python 개발환경 구성하기
+
+Anaconda + Pycham으로 python 개발환경 구성하기
 
 ## anaconda 설치
 

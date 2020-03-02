@@ -1,16 +1,12 @@
 ---
+layout: post
 title: Mining Twitter Data for Improved Understanding of Disaster Resilience
-date: 2019-08-03 20:48:12
-categories: 
- - Paper
-tags: 
- - twitter data mining
-sidebar:
- nav: "categories"
-toc: true
-toc_label: "List"
-toc_icon: "list"
+subtitle: Mining Twitter Data for Improved Understanding of Disaster Resilience
+categories: datascience
+tags: paper
+comments: true
 ---
+
 # Mining Twitter Data for Improved Understanding of Disaster Resilience
 
 Disaster resilience broadly describes the ability of a community to bounce back from disaster impacts by generating resilience building activities through the four phases of emergency management: preparedness, response, recovery, and mitigation (Federal Emergency Management Agency [FEMA] 2006). Disaster resilience is a major societal challenge and has been a subject of intense research by many researchers from multiple disciplines, all aiming at building capacity to enhance resilience (National Research Council 2012). Given the same type of hazard and threat level, the impact of a hazard on a community varies across regions with different socioeconomic and environmental characteristics (Cutter, Boruff, and Shirley 2003, 2008; Adger et al. 2005; Reams, Lam, and Baker 2012; Lam et al. 2015; K. Li et al. 2015; Cai et al. 2016; Lam et al. 2016). These social and geographical disparities of disaster resilience are major obstacles to building long-term resilience for communities. Hence, a better understanding of the patterns and consequences of social and geographical disparities in disaster resilience is necessary for reducing the disparities, which in turn should help reduce damage and increase resilience. In the past few decades, disaster studies have been relying on traditional sociodemographic data collected at regular time intervals such as data from census and health agencies to quantify disaster resilience. A major shortcoming of the traditional approach is that data describing communities’ preparedness, response, and recovery behaviors are generally not available through traditional databases. Social media, as an emerging data source, could provide an innovative approach to observing human behaviors under emergencies in real time. During an emergency, users’ posting habits and feelings of the event are expected to be related to the level of threat from the hazard, damage sustained, users’ individual characteristics, and local social and environmental conditions (Earle 2010; Kent and Capello 2013; Guan and Chen 2014; Kryvasheyeu et al. 2016). Spatial? temporal surveillance through social media platforms has the potential to reveal the disparities of each community’s preparedness, response, and recovery behaviors during hazardous events. Information extracted from social media data could be used to estimate potential damage, reduce disparities, and enhance resilience.

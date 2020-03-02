@@ -1,17 +1,12 @@
 ---
+layout: post
 title: influxDB CentOS에 설치하기
-date: 2019-08-04 20:46:48
-categories: 
- - Data Analysis
-tags: 
- - Influx DB
- - Cent OS
-sidebar:
- nav: "categories"
-toc: true
-toc_label: "List"
-toc_icon: "list"
+subtitle: influxDB CentOS에 설치하기
+categories: programming
+tags: infra
+comments: true
 ---
+
 # influxDB 설치하기
 influxDB를 CentOS에 다운받고 설치해본다.
 

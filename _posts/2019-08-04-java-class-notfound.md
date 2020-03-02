@@ -1,16 +1,10 @@
 ---
+layout: post
 title: java 기본클래스 을(를) 찾거나 로드할 수 없습니다
-date: 2019-08-03 20:42:15
-categories: 
- - Tips
-tags: 
- - Java
- - Tips
-sidebar:
- nav: "categories"
-toc: true
-toc_label: "List"
-toc_icon: "list"
+subtitle: java 기본클래스 을(를) 찾거나 로드할 수 없습니다
+categories: programming
+tags: java
+comments: true
 ---
 
 기본클래스 을(를) 찾거나 로드할 수 없습니다  

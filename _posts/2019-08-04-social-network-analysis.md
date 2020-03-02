@@ -1,16 +1,12 @@
 ---
+layout: post
 title: Social network analysis - Characteristics of online social networks after a disaster
-date: 2019-08-03 20:46:25
-categories: 
- - Paper
-tags: 
- - sns
-sidebar:
- nav: "categories"
-toc: true
-toc_label: "List"
-toc_icon: "list"
+subtitle: Social network analysis - Characteristics of online social networks after a disaster
+categories: datascience
+tags: paper
+comments: true
 ---
+
 # Social network analysis: Characteristics of online social networks after a disaster
 Jooho Kim, Makarand Hastak
 

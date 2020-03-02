@@ -1,15 +1,10 @@
 ---
+layout: post
 title: python 프로그램 exe 로 말기
-date: 2019-06-08 14:10:51
-categories: 
- - Python
-tags: 
- - Python
-sidebar:
- nav: "categories"
-toc: true
-toc_label: "List"
-toc_icon: "list"
+subtitle: python 프로그램 exe 로 말기
+categories: programming
+tags: python
+comments: true
 ---
 
 ## python 프로그램 exe 로 말기

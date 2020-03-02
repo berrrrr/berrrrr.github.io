@@ -1,16 +1,10 @@
 ---
+layout: post
 title: Window 환경에서 kafka 구축하기
-date: 2019-08-03 20:28:25
-categories: 
- - Data Analysis
-tags: 
- - Kafka
- - Zookeeper
-sidebar:
- nav: "categories"
-toc: true
-toc_label: "List"
-toc_icon: "list"
+subtitle: Window 환경에서 kafka 구축하기
+categories: programming
+tags: infra
+comments: true
 ---
 
 

@@ -1,16 +1,12 @@
 ---
+layout: post
 title: ANACONDA 기본 명령어 모음
-date: 2019-08-03 20:50:07
-categories: 
- - Python
-tags: 
- - Anaconda
-sidebar:
- nav: "categories"
-toc: true
-toc_label: "List"
-toc_icon: "list"
+subtitle: ANACONDA 기본 명령어 모음
+categories: programming
+tags: python
+comments: true
 ---
+
 # ANACONDA 기본 명령어 모음
 
 ### Anaconda 버전 확인

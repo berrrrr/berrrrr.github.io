@@ -1,16 +1,10 @@
 ---
+layout: post
 title: Linux Profile 설정하기
-date: 2019-08-03 20:47:36
-categories: 
- - Infra
-tags: 
- - Linux
- - Profile
-sidebar:
- nav: "categories"
-toc: true
-toc_label: "List"
-toc_icon: "list"
+subtitle: Linux Profile 설정하기
+categories: programming
+tags: infra
+comments: true
 ---
 
 # linux profile 설정하기

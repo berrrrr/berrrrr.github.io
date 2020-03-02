@@ -1,15 +1,10 @@
 ---
+layout: post
 title: Twitter API 연동하기위한 app인증받기
-date: 2019-08-03 20:48:55
-categories: 
- - Tips
-tags: 
- - Twitter
-sidebar:
- nav: "categories"
-toc: true
-toc_label: "List"
-toc_icon: "list"
+subtitle: Twitter API 연동하기위한 app인증받기
+categories: programming
+tags: tips
+comments: true
 ---
 
 # Twitter API 연동하기위한 app인증받기

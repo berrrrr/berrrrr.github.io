@@ -1,17 +1,12 @@
 ---
+layout: post
 title: Hadoop & Spark 설치하기
-date: 2019-08-03 20:47:08
-categories: 
- - Data Analysis
-tags: 
- - Hadoop
- - Spark
-sidebar:
- nav: "categories"
-toc: true
-toc_label: "List"
-toc_icon: "list"
+subtitle: Hadoop & Spark 설치하기
+categories: programming
+tags: hadoop
+comments: true
 ---
+
 # Hadoop & Spark 설치
 
 ## java 설치
@@ -68,7 +63,7 @@ java -version
 [hduser@localhost .ssh]$ cat ~/.ssh/id_rsa.pub >> ~/.ssh/authorized_keys
 [hduser@localhost .ssh]$ chmod 0600 ~/.ssh/authorized_keys
 ```
-ssh key를 생성하고 공개키를 authrized_keys 파일에 추가  
+ssh key를 생성하고 공개키를 authorized_keys 파일에 추가  
 (그래야 암호 없이 ssh 접속 가능)
 
 ## HOST 변경

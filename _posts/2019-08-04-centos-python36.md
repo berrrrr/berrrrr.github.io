@@ -1,16 +1,12 @@
 ---
+layout: post
 title: CentOS 7에 python3.6 설치하기
-date: 2019-08-03 20:50:24
-categories: 
- - Python
-tags: 
- - Python
-sidebar:
- nav: "categories"
-toc: true
-toc_label: "List"
-toc_icon: "list"
+subtitle: CentOS 7에 python3.6 설치하기
+categories: programming
+tags: python
+comments: true
 ---
+
 # CentOS 7에 python3.6 설치하기 
 CentOS 7버전에 python 3.6버전 설치하기
 
