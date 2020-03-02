@@ -7,7 +7,6 @@ tags: infra
 comments: true
 ---
 
-# influxDB 설치하기
 influxDB를 window에 다운받고 설치해본다.
 
 ## influxDB 다운로드

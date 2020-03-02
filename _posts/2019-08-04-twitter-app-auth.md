@@ -7,7 +7,6 @@ tags: tips
 comments: true
 ---
 
-# Twitter API 연동하기위한 app인증받기
 
 ## twitter developers
 [https://developer.twitter.com/en](https://developer.twitter.com/en)

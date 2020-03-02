@@ -7,7 +7,7 @@ tags: python
 comments: true
 ---
 
-# ANACONDA 기본 명령어 모음
+ANACONDA 기본 명령어 모음
 
 ### Anaconda 버전 확인
 ```

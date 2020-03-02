@@ -2,12 +2,12 @@
 layout: post
 title: Hadoop & Spark 설치하기
 subtitle: Hadoop & Spark 설치하기
-categories: programming
+categories: datascience
 tags: hadoop
 comments: true
 ---
 
-# Hadoop & Spark 설치
+Hadoop & Spark 설치
 
 ## java 설치
 

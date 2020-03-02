@@ -7,8 +7,6 @@ tags: tips
 comments: true
 ---
 
-# vscode user snippet 사용하기
-
 ## user snippet이란
 스니펫이란 재사용 가능한 소스 코드를 의미한다.
 즉, 자주 쓰는 코드를 저장해두고, 필요할 때마다 별칭을 통해 불러올 수 있다.

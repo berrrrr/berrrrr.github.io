@@ -7,7 +7,6 @@ tags: infra
 comments: true
 ---
 
-# linux profile 설정하기
 linux user가 사용하는 환경변수 및 단축키 등을 profile을 수정하여 적용할 수 있다.
 
 ## profile 수정

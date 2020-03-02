@@ -7,7 +7,6 @@ tags: java
 comments: true
 ---
 
-# java output, log를 파일로 저장하기
 stdout과 log (logger.log)를 저장하는방법이 다르다.  
 몰랐는데 stdout은 그냥 리다이렉트해도되지만
 logger.log는 콘솔 출력내용을 파일로 떨구는 처리를 해줘야한다. 

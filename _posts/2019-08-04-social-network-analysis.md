@@ -7,7 +7,9 @@ tags: paper
 comments: true
 ---
 
-# Social network analysis: Characteristics of online social networks after a disaster
+> Social network analysis: Characteristics of online social networks after a disaster
+
+## Author
 Jooho Kim, Makarand Hastak
 
 ## Abstract

@@ -7,7 +7,6 @@ tags: python
 comments: true
 ---
 
-# CentOS 7에 python3.6 설치하기 
 CentOS 7버전에 python 3.6버전 설치하기
 
 리눅스는 대부분 python 2.x 버전이 설치되어 있는데, Allias 를 python 으로 하면 나중에 yum 을 이용할 때 문제가 발생한다. 그래서 여기서는 Alias 를 'python3' 으로 지정했다
