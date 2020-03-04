@@ -1,18 +1,13 @@
 ---
+layout: post
 title: The Economics of Information Security
-date: 2019-08-06 17:38:39
-categories: 
- - Paper
-tags: 
- - Security
-sidebar:
- nav: "categories"
-toc: true
-toc_label: "List"
-toc_icon: "list"
+subtitle: The Economics of Information Security
+categories: datascience
+tags: paper
+comments: true
 ---
 
-# The Economics of Information Security
+## The Economics of Information Security
 정보보호의 경제
 
 ## Abstract

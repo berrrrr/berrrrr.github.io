@@ -1,17 +1,12 @@
 ---
+layout: post
 title: HDFS의 구성요소
-date: 2019-08-10 17:07:46
-categories: 
- - Data Analysis
-tags: 
- - HDFS
-sidebar:
- nav: "categories"
-toc: true
-toc_label: "List"
-toc_icon: "list"
+subtitle: HDFS의 구성요소
+categories: datascience
+tags: hadoop
+comments: true
 ---
-#  HDFS 구성
+
 HDFS 의 구성요소를 알아보자
 
 (1) 하나의 namenode  

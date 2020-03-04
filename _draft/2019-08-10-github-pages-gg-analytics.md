@@ -1,18 +1,12 @@
 ---
+layout: post
 title: github pages에 google analytics 추가하기
-date: 2019-08-10 17:08:46
-categories: 
- - Blog
-tags: 
- - github io
- - google analytics
-sidebar:
- nav: "categories"
-toc: true
-toc_label: "List"
-toc_icon: "list"
+subtitle: github pages에 google analytics 추가하기
+categories: etc
+tags: blog
+comments: true
 ---
-# github pages에 google analytics 추가하기
+
 github pages (github io)에 google analytics 추가하기
 
 ## config 수정

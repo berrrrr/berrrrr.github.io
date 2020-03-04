@@ -7,8 +7,6 @@ tags: spring
 comments: true
 ---
 
-# MAVEN
-
 ## MAVEN 이란? 
 - Apache에서 개발한 자바 프로젝트의 빌드 자동화 도구
 

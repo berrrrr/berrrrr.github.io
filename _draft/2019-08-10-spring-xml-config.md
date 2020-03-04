@@ -1,16 +1,12 @@
 ---
+layout: post
 title: Spring xml 설정
-date: 2019-08-10 17:06:53
-categories: 
- - Spring
-tags: 
- - Spring
-sidebar:
- nav: "categories"
-toc: true
-toc_label: "List"
-toc_icon: "list"
+subtitle: Spring xml 설정
+categories: programming
+tags: spring
+comments: true
 ---
+
 # Spring xml 설정
 Spring xml 설정에 대해 알아보자
 

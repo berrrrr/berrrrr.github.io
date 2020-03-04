@@ -1,18 +1,12 @@
 ---
+layout: post
 title: CentOS7 고정아이피로 바꾸기
-date: 2019-08-10 17:05:22
-categories: 
- - Tips
-tags: 
- - CentOS7
- - IP
-sidebar:
- nav: "categories"
-toc: true
-toc_label: "List"
-toc_icon: "list"
+subtitle: CentOS7 고정아이피로 바꾸기
+categories: programming
+tags: infra
+comments: true
 ---
-# CentOS7 고정아이피로 바꾸기
+CentOS7 고정아이피로 바꾸기
 
 기본적으로 CentOS7 의 network설정은 자동으로 받아오게되어있다.  
 그런데 자꾸 ip가 바뀌어 원격설정에 지장이생겨 고정ip로 변경하게되었다.

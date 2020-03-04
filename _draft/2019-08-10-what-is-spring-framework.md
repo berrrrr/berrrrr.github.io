@@ -1,15 +1,10 @@
 ---
+layout: post
 title: Spring Framework란 무엇인가?
-date: 2019-08-10 17:05:44
-categories: 
- - Spring
-tags: 
- - Spring
-sidebar:
- nav: "categories"
-toc: true
-toc_label: "List"
-toc_icon: "list"
+subtitle: Spring Framework란 무엇인가?
+categories: programming
+tags: spring
+comments: true
 ---
 
 ## Spring Framework

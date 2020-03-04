@@ -1,17 +1,14 @@
 ---
+layout: post
 title: Framework란 무엇인가?
-date: 2019-08-10 17:04:55
-categories: 
- - Spring
-tags: 
- - Framework
-sidebar:
- nav: "categories"
-toc: true
-toc_label: "List"
-toc_icon: "list"
+subtitle: Framework란 무엇인가?
+categories: programming
+tags: spring
+comments: true
 ---
-# Framework 개요
+
+
+> Framework 개요
 Framework가 무엇이고 Framework 사용시의 장점이 무엇인지 알아보자.
 
 ## Framework 개념

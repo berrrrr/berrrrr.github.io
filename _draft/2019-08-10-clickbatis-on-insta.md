@@ -1,15 +1,10 @@
 ---
+layout: post
 title: Characterizing Clickbaits on Instagram
-date: 2019-08-10 17:08:15
-categories: 
- - Paper
-tags: 
- - instagram
-sidebar:
- nav: "categories"
-toc: true
-toc_label: "List"
-toc_icon: "list"
+subtitle: Characterizing Clickbaits on Instagram
+categories: datascience
+tags: paper
+comments: true
 ---
 ## Characterizing Clickbaits on Instagram
 

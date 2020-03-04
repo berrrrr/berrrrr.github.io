@@ -1,18 +1,12 @@
 ---
+layout: post
 title: windows에서 telegraf 사용하기
-date: 2019-08-10 17:04:11
-categories: 
- - Data Analysis
-tags: 
- - telegraf
-sidebar:
- nav: "categories"
-toc: true
-toc_label: "List"
-toc_icon: "list"
+subtitle: windows에서 telegraf 사용하기
+categories: programming
+tags: infra
+comments: true
 ---
 
-# windows에서 telegraf 사용하기
 windows환경에서 telegraf 설치하고 사용해보자
 
 ## telegraph 다운받기

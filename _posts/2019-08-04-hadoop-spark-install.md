@@ -12,7 +12,7 @@ Hadoop & Spark 설치
 ## java 설치
 
 (1) java 설치파일 다운로드
-https://www.oracle.com/technetwork/java/javase/downloads/index.html  
+[https://www.oracle.com/technetwork/java/javase/downloads/index.html](https://www.oracle.com/technetwork/java/javase/downloads/index.html)
 여기서 8버전이상의 java 파일 다운로드
 
 (2) scp로 리눅스에 업로드

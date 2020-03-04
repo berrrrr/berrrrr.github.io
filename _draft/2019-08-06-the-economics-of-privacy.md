@@ -1,17 +1,13 @@
 ---
+layout: post
 title: The Economics of Privacy
-date: 2019-08-06 17:35:14
-categories: 
- - Paper
-tags: 
- - Privacy
-sidebar:
- nav: "categories"
-toc: true
-toc_label: "List"
-toc_icon: "list"
+subtitle: The Economics of Privacy
+categories: datascience
+tags: paper
+comments: true
 ---
-# The Economics of Privacy
+
+## The Economics of Privacy
 프라이버시의 경제
 
 ## Abstract

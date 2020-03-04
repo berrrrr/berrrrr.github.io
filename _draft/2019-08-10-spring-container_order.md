@@ -1,17 +1,13 @@
 ---
+layout: post
 title: Log로 살펴보는 Spring Container Loading 순서
-date: 2019-08-10 17:06:22
-categories: 
- - Spring
-tags: 
- - Spring
-sidebar:
- nav: "categories"
-toc: true
-toc_label: "List"
-toc_icon: "list"
+subtitle: Log로 살펴보는 Spring Container Loading 순서
+categories: datascience
+tags: spring
+comments: true
 ---
-# Spring Container Loading 
+
+Spring Container Loading 순서를 알아보자
 
 tomcat 서버 올라오는 로그를 살펴보면 spring container가 아래와 같은 순서로 올라오는 듯 하다. 
 
