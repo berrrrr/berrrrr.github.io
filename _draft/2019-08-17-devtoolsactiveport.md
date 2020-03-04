@@ -1,15 +1,10 @@
 ---
+layout: post
 title: DevToolsActivePort file doesn't exist 에러 해결하기
-date: 2019-08-17 18:27:57
-categories: 
- - Tips
-tags: 
- - selenium
-sidebar:
- nav: "categories"
-toc: true
-toc_label: "List"
-toc_icon: "list"
+subtitle: DevToolsActivePort file doesn't exist 에러 해결하기
+categories: programming
+tags: tips
+comments: true
 ---
 
 # DevToolsActivePort file doesn't exist 에러 해결하기

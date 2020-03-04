@@ -1,17 +1,12 @@
 ---
+layout: post
 title: cannot find Chrome binary
-date: 2019-08-17 18:27:05
-categories: 
- - Tips
-tags: 
- - chrome
-sidebar:
- nav: "categories"
-toc: true
-toc_label: "List"
-toc_icon: "list"
+subtitle: cannot find Chrome binary
+categories: programming
+tags: tips
+comments: true
 ---
-# cannot find Chrome binary
+
 selenium.common.exceptions.WebDriverException: Message: unknown error: cannot find Chrome binary 에러가 나는 경우
 
 ## 발생원인

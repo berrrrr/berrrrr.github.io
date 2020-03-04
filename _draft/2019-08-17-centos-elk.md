@@ -1,17 +1,12 @@
 ---
+layout: post
 title: CentOS7에 ELK stack 설치하기
-date: 2019-08-17 18:27:18
-categories: 
- - Data Analysis
-tags: 
- - ELK
-sidebar:
- nav: "categories"
-toc: true
-toc_label: "List"
-toc_icon: "list"
+subtitle: CentOS7에 ELK stack 설치하기
+categories: programming
+tags: infra
+comments: true
 ---
-# CentOS7 에 ELK Stack 설치하기
+
 CentOS7에 ELK(logstash + elastaic search + kibana)를 설치해보자
 
 ## Elastic search 설치 
@@ -109,6 +104,6 @@ sudo firewall-cmd --reload
 (defualt path) /etc/kibana/kibana.yml 수정
 
 
-참고
-https://www.elastic.co/guide/en/elasticsearch/reference/7.3/rpm.html#rpm-repo
-https://www.elastic.co/guide/en/kibana/7.3/rpm.html#rpm-repo
+>참고  
+https://www.elastic.co/guide/en/elasticsearch/reference/7.3/rpm.html#rpm-repo  
+https://www.elastic.co/guide/en/kibana/7.3/rpm.html#rpm-repo  

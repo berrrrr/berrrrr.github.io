@@ -1,18 +1,12 @@
 ---
+layout: post
 title: HDFS Block read/write
-date: 2019-08-17 18:30:41
-categories: 
- - Data Analysis
-tags: 
- - HDFS
-sidebar:
- nav: "categories"
-toc: true
-toc_label: "List"
-toc_icon: "list"
+subtitle: HDFS Block read/write
+categories: datascience
+tags: hadoop
+comments: true
 ---
 
-# HDFS Block read/write
 HDFS에서 Block이 어떻게 일곡 쓰여지고 이동하는지, Block의 상태변경에 대해 알아보자.
 
 ## Block replication

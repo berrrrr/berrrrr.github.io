@@ -8,7 +8,7 @@ comments: true
 ---
 
 
-> Framework 개요
+> Framework 개요  
 Framework가 무엇이고 Framework 사용시의 장점이 무엇인지 알아보자.
 
 ## Framework 개념
@@ -19,7 +19,7 @@ Framework의 사전적 의미는 뼈대, 틀이다.
 ## Framework 장점
 잘 만들어진 Framework를 사용하면 applicaftion에 대한 분석, 설계, 구현 모두에서 재사용성이 증가.  
 따라서 다음과 같은 장점을 얻게됨.  
-(1) 빠른 구현 시간
-(2) 쉬운 관리
-(3) 개발자들의 역량 획일화
-(4) 아키텍처의 재사용과 일관성 유지
+- 빠른 구현 시간
+- 쉬운 관리
+- 개발자들의 역량 획일화
+- 아키텍처의 재사용과 일관성 유지

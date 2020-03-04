@@ -1,16 +1,10 @@
 ---
+layout: post
 title: kibana로 elasticsearch 데이터 시각화하기
-date: 2019-08-17 18:30:01
-categories: 
- - Data Analysis 
-tags: 
- - kibana
- - elasticsearch
-sidebar:
- nav: "categories"
-toc: true
-toc_label: "List"
-toc_icon: "list"
+subtitle: kibana로 elasticsearch 데이터 시각화하기
+categories: programming
+tags: infra
+comments: true
 ---
 
 

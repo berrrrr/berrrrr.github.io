@@ -1,18 +1,13 @@
 ---
+layout: post
 title: Predicting Evacuation Decisions using Representations of Individuals’ Pre-DisasterWeb Search Behavior
-date: 2019-08-17 18:28:20
-categories: 
- - Paper
-tags: 
- - predict disaster
-sidebar:
- nav: "categories"
-toc: true
-toc_label: "List"
-toc_icon: "list"
+subtitle: Predicting Evacuation Decisions using Representations of Individuals’ Pre-DisasterWeb Search Behavior
+categories: datascience
+tags: paper
+comments: true
 ---
 
-# Predicting Evacuation Decisions using Representations of Individuals’ Pre-DisasterWeb Search Behavior
+## Predicting Evacuation Decisions using Representations of Individuals’ Pre-DisasterWeb Search Behavior
 개인의 Pre-DisasterWeb 검색 행동패턴을 통해 대피 결정 예측하기
 
 저자 - Takahiro Yabe

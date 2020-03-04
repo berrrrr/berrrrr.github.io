@@ -1,20 +1,12 @@
 ---
+layout: post
 title: grafana로 influxDB 데이터 시각화하기
-date: 2019-08-17 18:29:37
-categories: 
- - Data Analysis
-tags: 
- - grafana
- - influxDB
- - csv
-sidebar:
- nav: "categories"
-toc: true
-toc_label: "List"
-toc_icon: "list"
+subtitle: grafana로 influxDB 데이터 시각화하기
+categories: programming
+tags: infra
+comments: true
 ---
 
-# grafana로 influxDB 데이터 시각화하기
 grafana로 influxDB에 넣은 데이터들을 시각화할 수 있다. 
 
 # create datasource

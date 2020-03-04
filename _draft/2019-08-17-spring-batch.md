@@ -1,15 +1,10 @@
 ---
+layout: post
 title: Spring batch 배치서비스 개발
-date: 2019-08-17 18:31:05
-categories: 
- - Spring
-tags: 
- - Spring Batch
-sidebar:
- nav: "categories"
-toc: true
-toc_label: "List"
-toc_icon: "list"
+subtitle: Spring batch 배치서비스 개발
+categories: programming
+tags: spring
+comments: true
 ---
 
 # Spring batch 배치서비스 개발
