@@ -1,18 +1,12 @@
 ---
+layout: post
 title: Springboot에서 기본적인 테스트코드 작성하기 (Junit)
-date: 2019-10-24 10:57:19
-categories: 
- - Spring
-tags: 
- - JUnit
-sidebar:
- nav: "categories"
-toc: true
-toc_label: "List"
-toc_icon: "list"
+subtitle: Springboot에서 기본적인 테스트코드 작성하기 (Junit)
+categories: programming
+tags: spring
+comments: true
 ---
 
-# Springboot에서 기본적인 테스트코드 작성하기 (Junit)
 Junit을 사용해 Springboot에서 기본적인 테스트코드를 작성해보자. 
 
 ## Mock 객체란

@@ -1,15 +1,10 @@
 ---
+layout: post
 title: Generic 타입이란?
-date: 2019-10-21 16:14:13
-categories: 
- - Java
-tags: 
- - Generic
-sidebar:
- nav: "categories"
-toc: true
-toc_label: "List"
-toc_icon: "list"
+subtitle: Generic 타입이란?
+categories: programming
+tags: java
+comments: true
 ---
 
 # Generic 타입이란? 

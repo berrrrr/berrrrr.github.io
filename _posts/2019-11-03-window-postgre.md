@@ -1,16 +1,10 @@
 ---
+layout: post
 title: window에 PostgreSQL 과 PostGIS 설치해보기
-date: 2019-10-21 16:13:42
-categories: 
- - GIS
-tags: 
- - GIS
- - PostGIS
-sidebar:
- nav: "categories"
-toc: true
-toc_label: "List"
-toc_icon: "list"
+subtitle: window에 PostgreSQL 과 PostGIS 설치해보기
+categories: programming
+tags: infra
+comments: true
 ---
 
 # window에 PostgreSQL 과 PostGIS 설치해보기

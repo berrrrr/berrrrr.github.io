@@ -1,17 +1,11 @@
 ---
-title: ML - Concept Learning
-date: 2019-10-21 15:51:04
-categories: 
- - Machine Learning
-tags: 
- - Machine Learning
-sidebar:
- nav: "categories"
-toc: true
-toc_label: "List"
-toc_icon: "list"
+layout: post
+title: "[ML] Concept Learning"
+subtitle: "[ML] Concept Learning"
+categories: datascience
+tags: ml
+comments: true
 ---
-# [ML] Concept Learning
 
 ## Concept 이란?
 some subset of objects or events defined over a large set.  

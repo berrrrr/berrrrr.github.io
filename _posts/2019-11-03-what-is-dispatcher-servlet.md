@@ -1,15 +1,10 @@
 ---
+layout: post
 title: DispatcherServlet이란?
-date: 2019-10-21 16:14:33
-categories: 
- - Spring
-tags: 
- - DispatcherServlet
-sidebar:
- nav: "categories"
-toc: true
-toc_label: "List"
-toc_icon: "list"
+subtitle: DispatcherServlet이란?
+categories: programming
+tags: spring
+comments: true
 ---
 
 # DispatcherServlet 란?

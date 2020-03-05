@@ -1,17 +1,11 @@
 ---
-title: ML - Introduction
-date: 2019-10-21 15:17:54
-categories: 
- - Machine Learning
-tags: 
- - Machine Learning
-sidebar:
- nav: "categories"
-toc: true
-toc_label: "List"
-toc_icon: "list"
+layout: post
+title: "[ML] Introduction"
+subtitle: "[ML] Introduction"
+categories: datascience
+tags: ml
+comments: true
 ---
-# [ML] Introduction
 
 ## Information Processing System
 정보처리시스템. 한마디로 컴퓨터.

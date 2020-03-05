@@ -1,17 +1,12 @@
 ---
+layout: post
 title: 연역법과 귀납법
-date: 2019-10-21 16:10:20
-categories: 
- - etc
-tags: tags:Enter tags
-sidebar:
- nav: "categories"
-toc: true
-toc_label: "List"
-toc_icon: "list"
+subtitle: 연역법과 귀납법
+categories: etc
+tags: etc
+comments: true
 ---
 
-# 연역법과 귀납법
 연역법과 귀납법에대해 알아보자
 
 ## 연역법
