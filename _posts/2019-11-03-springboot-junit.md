@@ -14,6 +14,42 @@ Junit을 사용해 Springboot에서 기본적인 테스트코드를 작성해보
 
 ## DTO Testcode
 보통 repository, dto 생성 후 assertThat 코드로 테스트
+```java
+@RunWith(SpringRunner.class)
+@ImportAutoConfiguration(DatabaseConfiguration.class)
+@MybatisTest
+@Transactional
+public class AccountMappingTest {
+
+ @Autowired
+ private AccountMapper accountMapper;
+
+ @Autowired
+ private SqlSession sqlSession;
+
+ @Before
+ public void setup() {
+  AccountDTO account = new AccountDTO(1001, "서울", 20);
+  sqlSession.insert("insertAccount", account);
+ }
+
+ @Test
+ public void sqlSessionTest() {
+  AccountDTO account = sqlSession.selectOne("selectAccountById", 1001);
+     assertThat(account.getAccountId()).isNotNull().isEqualTo(1001);
+     assertThat(account.getResidence()).isNotNull().isEqualTo("서울");
+     assertThat(account.getAge()).isNotNull().isEqualTo(20);
+ }
+
+ @Test
+ public void accountMapperTest() {
+  AccountDTO account = accountMapper.selectAccountById(1001);
+
+     assertThat(account.getAccountId()).isNotNull().isEqualTo(1001);
+     assertThat(account.getResidence()).isNotNull().isEqualTo("서울");
+     assertThat(account.getAge()).isNotNull().isEqualTo(20);
+ }
+ ```
 
 ## Service Testcode
 생성자있는건 @Mock 으로 주입  
@@ -23,6 +59,79 @@ Junit을 사용해 Springboot에서 기본적인 테스트코드를 작성해보
 
 ## Controller Testcode
 @WebMVC 사용하여 테스트
+
+
+```java
+@RunWith(SpringRunner.class)
+@WebMvcTest(AccountController.class)
+@AutoConfigureMybatis
+@Transactional
+public class AccountRestTest {
+	@Autowired
+	private MockMvc mvc;
+
+	@MockBean
+	private AccountService accountService;
+
+	@Test
+	public void acoount_조회_성공() throws Exception {
+		// Given
+		String expectedResult = "{\"accountId\":1,\"residence\":\"경북\",\"age\":59}";
+		AccountDTO account = new AccountDTO(1, "경북", 59);
+
+		// When
+		when(accountService.getAccount(1)).thenReturn(account);
+		ResultActions result = this.mvc.perform(get("/account/1"));
+
+		// Then
+		result.andExpect(status().isOk()).andExpect(content().json(expectedResult));
+	}
+
+	@Test
+	public void acoount_조회_실패() throws Exception {
+		// Given
+
+		// When
+		when(accountService.getAccount(123123123)).thenReturn(null);
+		ResultActions result = this.mvc.perform(get("/account/123123123"));
+
+		// Then
+		result.andExpect(status().isOk());
+
+	}
+
+	@Test
+	public void acoount_등록_성공() throws Exception {
+		// Given
+		String expectedResult = "{\"success\":true,\"errorMessage\":\"null\"}";
+		String inputJson = "{\"accountId\":1,\"residence\":\"경북\",\"age\":59}";
+
+		// When
+		ResultActions result = this.mvc.perform(post("/account")
+                .contentType(MediaType.APPLICATION_JSON).content(inputJson));
+
+		// Then
+		result.andExpect(status().isOk()).andExpect(content().json(expectedResult));
+
+	}
+
+	@Test
+	public void acoount_등록_실패() throws Exception {
+		// Given
+		String expectedResult = "{\"success\":false,\"errorMessage\":\"Internal Server Error.\"}";
+		String inputJson = "{\"accountId\":1,\"age\":\"경북\",\"residence\":59}";
+
+		// When
+		ResultActions result = this.mvc.perform(post("/account")
+                .contentType(MediaType.APPLICATION_JSON).content(inputJson));
+
+		// Then
+		result.andExpect(status().is5xxServerError()).andExpect(content().json(expectedResult));
+
+	}
+}
+
+```
 
 ## @MockBean, @Mock 차이
 ### @Mock (org.mockito.Mock)
