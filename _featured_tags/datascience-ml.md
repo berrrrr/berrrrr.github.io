@@ -1,7 +1,7 @@
 ---
 layout: tag-blog
 title: Machine Learning
-slug: machinelearning
+slug: ml
 category: datascience
 menu: false
 order: 1

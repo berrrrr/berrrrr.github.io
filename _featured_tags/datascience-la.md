@@ -1,7 +1,7 @@
 ---
 layout: tag-blog
 title: Linear Algebra
-slug: linearalgebra
+slug: la
 category: datascience
 menu: false
 order: 7
