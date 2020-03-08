@@ -11,6 +11,7 @@ comments: true
 ## Flying Large Constellations using Automation and Big Data (2016)
 빅데이터와 자동화를 이용한 대규모 인공위성그룹(satellite constellation) 운영   
 
+## Author
 Gilles Kbidy1  
 L-3 Communications Telemetry & RF Products, San Diego, CA, 92123
 

@@ -7,9 +7,10 @@ tags: paper
 comments: true
 ---
 
-# CHARTing the Future – An Offline Data Analysis & Reporting Toolkit to support Automated Decision-making in Flight Operations (2018)
+## CHARTing the Future – An Offline Data Analysis & Reporting Toolkit to support Automated Decision-making in Flight Operations (2018)
 CHARTing the Future - offline data analysis, 위성운영 의사결정 자동화 지원을 위한 reporting toolkit   
 
+## Author
 J. Schulster,1, R. Evill2   
 LSE Space GmbH, Darmstadt, Hessen, 64293, Germany J. Roggisart3, S. Phillips4, R. Dyer5   
 EUMETSAT Darmstadt, Hessen, 64293, Germany and   
