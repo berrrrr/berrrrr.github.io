@@ -1,21 +1,19 @@
 ---
+layout: post
 title: Onboard Observation Task Planning for an Autonomous Earth Observation Satellite Using Long Short-Term Memory
-date: 2019-11-19 19:15:31
-categories: 
- - Paper
-tags: 
- - LSTM
-sidebar:
- nav: "categories"
-toc: true
-toc_label: "List"
-toc_icon: "list"
+subtitle: Onboard Observation Task Planning for an Autonomous Earth Observation Satellite Using Long Short-Term Memory
+categories: datascience
+tags: paper
+comments: true
 ---
-# Onboard Observation Task Planning for an Autonomous Earth Observation Satellite Using Long Short-Term Memory
+
+## Onboard Observation Task Planning for an Autonomous Earth Observation Satellite Using Long Short-Term Memory
 LSTM을 이용한 지구관측위성의 Onboard Observation Task planning.  
 
 ## Authors
 SHUANG PENG, HAO CHEN, CHUN DU, JUN LI, AND NING JING College of Electronic Science, National University of Defense Technology, Changsha, 410073 , China Corresponding author: Hao Chen (e-mail: hchen@nudt.edu.cn). 
+
+중국국방기술대학에서 낸 논문이다.
 
 ## Abstract
 Onboard observation task planning plays an essential role in satellite autonomy, which has attracted considerable attention from researchers in recent years. Most of the existing studies solve the satellite onboard observation task planning problem (SOOTP) by searching algorithms. However, the limited computing resources and the changes of onboard condition present a new challenge for these methods. In this paper, we develop a sequential decision-making model and propose a deep learning based planning method to solve the SOOTP. Instead of generating a short-term or long-term plan in advance, the sequential decision-making model enables the satellite to decide the observation task to execute in real-time. In the deep learning based planning method, a long short-term memory based encoding network is designed to extract the features and a classification network is used to make such a decision. In the experiment, we compared our method with the gated recurrent unit network and other three searching algorithms based on five scenarios. The experimental results show that our method can solve problems with 90.3%−93.7% accuracy, 2.19%− 3.95% profit gap, and 0.004s − 0.006s response time per task, which confirms its feasibility.  

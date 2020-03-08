@@ -1,17 +1,12 @@
 ---
+layout: post
 title: Ubuntu에서 port forwarding하기
-date: 2019-11-19 19:14:09
-categories: 
- - Tips
-tags: 
- - Ubuntu
-sidebar:
- nav: "categories"
-toc: true
-toc_label: "List"
-toc_icon: "list"
+subtitle: Ubuntu에서 port forwarding하기
+categories: programming
+tags: infra
+comments: true
 ---
-# Ubuntu에서 port forwarding하기
+
 Ubuntu linux 에서 port forwarding하기
 
 ## 명령어

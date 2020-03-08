@@ -1,15 +1,10 @@
 ---
+layout: post
 title: Linux SSH port 변경하기
-date: 2019-11-19 19:12:42
-categories: 
- - Tips
-tags: 
- - LInux
-sidebar:
- nav: "categories"
-toc: true
-toc_label: "List"
-toc_icon: "list"
+subtitle: Linux SSH port 변경하기
+categories: programming
+tags: infra
+comments: true
 ---
 
 # Linux SSH port 변경하기

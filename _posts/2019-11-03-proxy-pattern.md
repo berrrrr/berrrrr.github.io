@@ -1,7 +1,7 @@
 ---
 layout: post
-title: 프록시 패턴(Proxy Pattern)
-subtitle: 프록시 패턴(Proxy Pattern)
+title: Proxy Pattern(프록시 패턴)
+subtitle: Proxy Pattern(프록시 패턴)
 categories: programming
 tags: designpattern
 comments: true

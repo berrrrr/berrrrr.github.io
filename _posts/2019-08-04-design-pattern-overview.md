@@ -30,12 +30,12 @@ Gof(Gang of Four : 에리히 감마, 리차드 헬름, 랄프 존슨, 존 블리
 
 2. 구조 패턴
  - Adapter
- - Bridge
+ - [Bridge](https://berrrrr.github.io/programming/2019/11/03/bridge-pattern/)
  - Composite
  - Decorator
  - Facade
  - Flyweight
- - Proxy
+ - [Proxy](https://berrrrr.github.io/programming/2019/11/03/proxy-pattern/)
 
 3. 행위 패턴
  - Chain of Responsibility
@@ -43,9 +43,10 @@ Gof(Gang of Four : 에리히 감마, 리차드 헬름, 랄프 존슨, 존 블리
  - Interpreter
  - Iterator
  - Mediator
- - Memento
+ - [Memento](https://berrrrr.github.io/programming/2019/11/03/memento-pattern/)
  - Observer
  - State
- - Strategy
+ - [Strategy](https://berrrrr.github.io/programming/2019/11/03/strategy-pattern/)
  - Template Method
  - Visitor
+

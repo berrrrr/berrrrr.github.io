@@ -1,15 +1,10 @@
 ---
+layout: post
 title: 빅데이터 분석 플랫폼 요약
-date: 2019-11-19 19:14:43
-categories: 
- - Data Analysis
-tags: 
- - Bigdata
-sidebar:
- nav: "categories"
-toc: true
-toc_label: "List"
-toc_icon: "list"
+subtitle: 빅데이터 분석 플랫폼 요약
+categories: datascience
+tags: bigdata
+comments: true
 ---
 
 # 빅데이터 분석 플랫폼 요약

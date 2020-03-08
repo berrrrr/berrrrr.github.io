@@ -4,5 +4,5 @@ title: Linear Algebra
 slug: la
 category: datascience
 menu: false
-order: 7
+order: 8
 ---

@@ -1,17 +1,13 @@
 ---
+layout: post
 title: Applications of Deep Learning Neural Networks to Satellite Telemetry Monitoring
-date: 2019-11-19 19:13:21
-categories: 
- - Paper
-tags: 
- - DNN
-sidebar:
- nav: "categories"
-toc: true
-toc_label: "List"
-toc_icon: "list"
+subtitle: Applications of Deep Learning Neural Networks to Satellite Telemetry Monitoring
+categories: datascience
+tags: paper
+comments: true
 ---
-# Applications of Deep Learning Neural Networks to Satellite Telemetry Monitoring
+
+## Applications of Deep Learning Neural Networks to Satellite Telemetry Monitoring
 위성 원격측정 모니터링을 위한 심층학습 신경망 적용  
 Corey O’Meara, Leonard Schlag, Martin Wickler   
 Deutsches Zentrum für Luft- und Raumfahrt e. V.,  

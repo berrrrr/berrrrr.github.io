@@ -4,5 +4,5 @@ title: Paper
 slug: paper
 category: datascience
 menu: false
-order: 6
+order: 7
 ---
