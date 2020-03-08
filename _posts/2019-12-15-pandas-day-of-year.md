@@ -1,17 +1,12 @@
 ---
+layout: post
 title: pandas에서 day of year 타입을 date타입으로 convert 하기
-date: 2019-12-15 14:39:07
-categories: 
- - Data Analysis
-tags: 
- - pandas
-sidebar:
- nav: "categories"
-toc: true
-toc_label: "List"
-toc_icon: "list"
+subtitle: pandas에서 day of year 타입을 date타입으로 convert 하기
+categories: programming
+tags: python
+comments: true
 ---
-# pandas에서 day of year 타입을 date타입으로 convert 하기
+
 분석해야하는 데이터에서 date index가 day of year로 되어있어서 난감하던차에.. date로 변경이 쉽게 될까 고민했는데 찾아보니 무척 쉽게 변경가능했다. 
 
 ## 변경방법

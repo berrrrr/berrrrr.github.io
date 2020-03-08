@@ -1,17 +1,12 @@
 ---
+layout: post
 title: 빅데이터분석, 통계학
-date: 2019-12-15 14:39:20
-categories: 
- - Data Analysis
-tags: 
- - Statistics
- - Big data
-sidebar:
- nav: "categories"
-toc: true
-toc_label: "List"
-toc_icon: "list"
+subtitle: 빅데이터분석, 통계학
+categories: datascience
+tags: statistics
+comments: true
 ---
+
 ## 빅데이터분석, 통계학
 빅데이터분석을 하면 통계학이 필수적으로 등장한다.  
 그 이유는 빅데이터 분석의 궁극적인 이유와 연관된다.  

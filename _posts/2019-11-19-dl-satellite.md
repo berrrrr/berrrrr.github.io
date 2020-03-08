@@ -13,6 +13,8 @@ Corey O’Meara, Leonard Schlag, Martin Wickler
 Deutsches Zentrum für Luft- und Raumfahrt e. V.,  
 German Aerospace Center Münchener Straße 20, 82234 Weßling, Germany  
 
+독일 에어로스페이스에서 낸 논문이다. 
+
 ## Abstract 
 이 논문은 GSOC 에서 개발된 자동 위성 헬스 모니터링 시스템(이하 ATHMoS)에 헬스모니터링시스템에 ANN을 적용하여 개발한것에 대한 내용이다.  
 모듈은 3가지로 나뉜다. 

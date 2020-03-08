@@ -1,17 +1,11 @@
 ---
+layout: post
 title: anaconda 환경에 KoNLPy 설치하기
-date: 2019-12-15 14:39:47
-categories: 
- - Python
-tags: 
- - KoNLPy
-sidebar:
- nav: "categories"
-toc: true
-toc_label: "List"
-toc_icon: "list"
+subtitle: anaconda 환경에 KoNLPy 설치하기
+categories: programming
+tags: python
+comments: true
 ---
-# anaconda 환경에 KoNLPy 설치하기
 
 ## JVM 설치
 java 다운로드 후, 환경변수에 JAVA_HOME 추가

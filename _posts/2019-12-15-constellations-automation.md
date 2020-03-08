@@ -1,20 +1,14 @@
 ---
+layout: post
 title: Flying Large Constellations using Automation and Big Data (2016)
-date: 2019-12-15 14:40:22
-categories: 
- - Paper
-tags: 
- - Automation
- - Big data
-sidebar:
- nav: "categories"
-toc: true
-toc_label: "List"
-toc_icon: "list"
+subtitle: Flying Large Constellations using Automation and Big Data (2016)
+categories: datascience
+tags: paper
+comments: true
 ---
 
 
-# Flying Large Constellations using Automation and Big Data (2016)
+## Flying Large Constellations using Automation and Big Data (2016)
 빅데이터와 자동화를 이용한 대규모 인공위성그룹(satellite constellation) 운영   
 
 Gilles Kbidy1  

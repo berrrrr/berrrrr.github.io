@@ -7,7 +7,6 @@ tags: infra
 comments: true
 ---
 
-# Linux SSH port 변경하기
 ubuntu linux에서 ssh port를 변경해보자 
 
 ## root계정으로접속
