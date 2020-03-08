@@ -1,17 +1,12 @@
 ---
+layout: post
 title: sshd 기본 port변경
-date: 2020-01-12 19:16:17
-categories: 
- - Infra
-tags: 
- - sshd
-sidebar:
- nav: "categories"
-toc: true
-toc_label: "List"
-toc_icon: "list"
+subtitle: sshd 기본 port변경
+categories: programming
+tags: infra
+comments: true
 ---
-# sshd 기본 port변경
+
 
 sshd 에 기본포트가 잘못잡혀서..
 ssh 외부ip 이렇게쳤을대 자꾸 22포트가 아닌 다른포트가 잡혀서 고생을했다.\

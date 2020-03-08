@@ -1,17 +1,13 @@
 ---
+layout: post
 title: Helm 이란?
-date: 2020-01-12 19:10:49
-categories: 
- - Infra
-tags: 
- - Helm
-sidebar:
- nav: "categories"
-toc: true
-toc_label: "List"
-toc_icon: "list"
+subtitle: Helm 이란?
+categories: programming
+tags: infra
+comments: true
 ---
-# Helm 이란?
+
+## Helm 이란?
 - Kubernetes 의 Package Managing Tool
 - Python의 pip, Node.js 의 npm 과 비슷한 역할
 - 어플리케이션을 패키징하여 Kubernetes Cluster 에 배포할 수 있도록 도와줌.

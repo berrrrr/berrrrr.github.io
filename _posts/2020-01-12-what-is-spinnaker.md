@@ -1,16 +1,12 @@
 ---
+layout: post
 title: spinnaker 란?
-date: 2020-01-12 19:15:46
-categories: 
- - Infra
-tags: 
- spinnaker
-sidebar:
- nav: "categories"
-toc: true
-toc_label: "List"
-toc_icon: "list"
+subtitle: spinnaker 란?
+categories: programming
+tags: infra
+comments: true
 ---
+
 # spinnaker 란?
 넷플릭스에서 개발하여 오픈 소스화한 멀티 클라우드를 지원하는 CD(Continuous Delivery) Platform.  
 구글 클라우드, 아마존, 마이크로소프트등 대부분의 메이져 클라우드 지원  

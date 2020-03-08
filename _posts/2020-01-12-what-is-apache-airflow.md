@@ -1,17 +1,12 @@
 ---
+layout: post
 title: Apache airflow란?
-date: 2020-01-12 19:15:34
-categories: 
- - Infra
-tags: 
- - Airflow
-sidebar:
- nav: "categories"
-toc: true
-toc_label: "List"
-toc_icon: "list"
+subtitle: Apache airflow란?
+categories: programming
+tags: infra
+comments: true
 ---
-# Apache airflow란?
+
 에어비앤비에서 개발한 워크플로우 스케줄링, 모니터링 플랫폼  
 현재 아파치의 탑레벨 프로젝트
 

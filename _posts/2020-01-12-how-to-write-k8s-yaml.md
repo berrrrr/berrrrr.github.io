@@ -1,18 +1,11 @@
 ---
+layout: post
 title: kubernetes resource template - yaml 파일 작성법
-date: 2020-01-12 19:16:00
-categories: 
- - Infra
-tags: 
- - k8s
- - yaml
-sidebar:
- nav: "categories"
-toc: true
-toc_label: "List"
-toc_icon: "list"
+subtitle: kubernetes resource template - yaml 파일 작성법
+categories: programming
+tags: infra
+comments: true
 ---
-# kubernetes resource template - yaml 파일 작성법
 
 우리가 k8s 환경에 배포할때 작성하는 kubernetes resource 템플릿파일.yaml 을 작성하는 방법에 대해 알아보자.
 
