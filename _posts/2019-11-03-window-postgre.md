@@ -7,7 +7,6 @@ tags: infra
 comments: true
 ---
 
-# window에 PostgreSQL 과 PostGIS 설치해보기
 window에 PostgreSQL 과 PostGIS 설치해보자
 
 ## PostgreSQL 설치

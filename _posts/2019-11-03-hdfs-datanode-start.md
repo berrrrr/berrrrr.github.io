@@ -7,7 +7,6 @@ tags: hadoop
 comments: true
 ---
 
-# HDFS 에서 특정 datanode만 start하는법
 hadoop에서 특정 datanode만 다운되는 경우가있다.  
 그럴때 특정 datanode만 start하려면 sbin폴더로 가서 아래 명령어를 사용한다.  
 

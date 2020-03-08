@@ -7,8 +7,7 @@ tags: infra
 comments: true
 ---
 
-# logstash vs filebeat
-처음에는 2개가 좀 헷갈렸는데 기능이 이렇게 다른듯함.
+처음에는 좀 헷갈렸는데 기능이 이렇게 다른듯함.
 
 ## filebeat
 말그대로 file을 수집. 수집한 file은 원하는곳에 연결해서 넘겨줄수있음.

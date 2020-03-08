@@ -7,8 +7,11 @@ tags: java
 comments: true
 ---
 
+동기(sync), 비동기(unsync), 블락(block), 논블락(non-block)의 개념에 대해 알아보고,
+예시를 통해 구체적으로 이해해보자. 
 
 ## sync / unsync
+
 | 구분 | 설명 |
 |:---:|:---|
 | 동기(sync) | system call이 끝날때까지 기다리고 결과물을 가져온다.  | 
@@ -16,7 +19,6 @@ comments: true
 
 
 ## block / non-block
-
 
 | 구분 | 설명 |
 |:---:|:---|

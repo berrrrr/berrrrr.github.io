@@ -7,7 +7,6 @@ tags: infra
 comments: true
 ---
 
-# Grafana 설치하기
 Grafana를 Window/CentOS에 다운받고 설치해본다
 
 ## Grafana down

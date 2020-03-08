@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Strategy Pattern
-subtitle: Strategy Pattern
+title: 전략패턴 (Strategy Pattern)
+subtitle: 전략패턴 (Strategy Pattern)
 categories: programming
 tags: designpattern
 comments: true

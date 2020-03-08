@@ -7,7 +7,7 @@ tags: paper
 comments: true
 ---
 
-# Plus Size Models and Body Positivity : Focusing on Online Discourses around #Plussizemodel
+## Plus Size Models and Body Positivity : Focusing on Online Discourses around #Plussizemodel
 저자 Sunyang park, So Jung Yun
 
 ## Abstract 

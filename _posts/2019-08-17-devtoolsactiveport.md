@@ -7,8 +7,10 @@ tags: tips
 comments: true
 ---
 
-# DevToolsActivePort file doesn't exist 에러 해결하기
+DevToolsActivePort file doesn't exist 에러를 해결해보자. 
+```
 selenium.common.exceptions.WebDriverException: Message: unknown error: DevToolsActivePort file doesn't exist 
+```
 
 ## 원인
 chrome webdriver를 사용하는 프로그램 구동시 

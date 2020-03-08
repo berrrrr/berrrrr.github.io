@@ -7,7 +7,6 @@ tags: hadoop
 comments: true
 ---
 
-# 자주쓰이는 hdfs 명령어 정리
 
 하둡에서 자주 사용하는 명령어는 다음과 같다.
 

@@ -8,7 +8,6 @@ comments: true
 ---
 
 
-# kibana로 elasticsearch 데이터 시각화하기
 kibana로 elasitcsearch에 import한 데이터 시각화하기
 
 ## create index pattern

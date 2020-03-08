@@ -7,8 +7,7 @@ tags: java
 comments: true
 ---
 
-# Generic 타입이란? 
-데이터 타입을 아직 명시하지 않은 상태. 
+Generic type이란 데이터 타입을 아직 명시하지 않은 상태. 
 class 안에서 사용하는 데이터 타입을 미리 정의하지 않고 class를 instance화 하는 시점에서 데이터타입을 지정해주는 방식.  
 ex. List<T> 에서 T 가 generic type
 

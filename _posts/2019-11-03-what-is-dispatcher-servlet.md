@@ -7,8 +7,7 @@ tags: spring
 comments: true
 ---
 
-# DispatcherServlet 란?
-서버로 들어오는 모든 요청을 제일 앞에서 처리하는 Front Controller 역할. 
+DispatcherServlet이란 서버로 들어오는 모든 요청을 제일 앞에서 처리하는 Front Controller 역할. 
 브라우저로부터 요청이 들어오면 가장 먼저 가로채서 handler mapping, hanlder adapter를 수행하는 Dispatcher Servlet에 대해 알아보자.
 
 ## WEB-INF
