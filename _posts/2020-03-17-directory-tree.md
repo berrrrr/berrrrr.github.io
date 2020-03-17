@@ -20,3 +20,11 @@ cmd창에서 위 명령어 치면 트리구조로 출력됨
 tree /a 
 ```
 위 명령어 치면 트리구조로 출력됨
+
+## osx 환경
+``` 
+brew install tree
+tree
+```
+homebrew로 tree 패키지 받고  
+원하는 디렉토리 가서 tree 치면 디렉토리 구조 나옴.
