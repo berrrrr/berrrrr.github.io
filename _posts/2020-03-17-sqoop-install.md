@@ -11,7 +11,7 @@ sqoop은 RDBMS to HADOOP 혹은 HADOOP to RDBMS를 쉽게 해주는 어플리케
 이러한 sqoop을 어떻게 설치하고 어떻게 실행하는지 알아보자. 
 
 ## hadoop 환경 구성
-우선 hadoop 과 hive가 설치되어있는 환경이 구성되어있어야한다.
+우선 hadoop 과 hive가 설치되어있는 환경이 구성되어있어야한다.  
 [hadoop 설치](https://berrrrr.github.io/datascience/2019/08/04/hadoop-spark-install/)  
 hive 설치 (링크 차후 추가)  
 

@@ -18,7 +18,7 @@ zeppelin은 hadoop에 밀어넣은 데이터를 spark로 분석하고 시각화�
 설치해준다.
 ```
 tar xvzf zeppelin-0.8.2-bin-all.tgz
-ln -s zeppelin-0.8.2-bin-all.tgz zeppelin
+ln -s zeppelin-0.8.2-bin-all zeppelin
 ```
 
 ## 환경설정
@@ -69,3 +69,45 @@ spark = SparkSession \
     .getOrCreate()
 ```
 
+## 추가해야할 삽질 내용
+```
+java.lang.NoSuchMethodError: io.netty.buffer.PooledByteBufAllocator.defaultNumHeapArena()I
+	at org.apache.spark.network.util.NettyUtils.createPooledByteBufAllocator(NettyUtils.java:113)
+	at org.apache.spark.network.client.TransportClientFactory.<init>(TransportClientFactory.java:106)
+	at org.apache.spark.network.TransportContext.createClientFactory(TransportContext.java:99)
+	at org.apache.spark.rpc.netty.NettyRpcEnv.<init>(NettyRpcEnv.scala:71)
+	at org.apache.spark.rpc.netty.NettyRpcEnvFactory.create(NettyRpcEnv.scala:461)
+	at org.apache.spark.rpc.RpcEnv$.create(RpcEnv.scala:57)
+	at org.apache.spark.SparkEnv$.create(SparkEnv.scala:249)
+	at org.apache.spark.SparkEnv$.createDriverEnv(SparkEnv.scala:175)
+	at org.apache.spark.SparkContext.createSparkEnv(SparkContext.scala:257)
+	at org.apache.spark.SparkContext.<init>(SparkContext.scala:424)
+	at org.apache.spark.SparkContext$.getOrCreate(SparkContext.scala:2520)
+	at org.apache.spark.sql.SparkSession$Builder$$anonfun$7.apply(SparkSession.scala:935)
+	at org.apache.spark.sql.SparkSession$Builder$$anonfun$7.apply(SparkSession.scala:926)
+	at scala.Option.getOrElse(Option.scala:121)
+	at org.apache.spark.sql.SparkSession$Builder.getOrCreate(SparkSession.scala:926)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.zeppelin.spark.BaseSparkScalaInterpreter.spark2CreateContext(BaseSparkScalaInterpreter.scala:263)
+	at org.apache.zeppelin.spark.BaseSparkScalaInterpreter.createSparkContext(BaseSparkScalaInterpreter.scala:182)
+	at org.apache.zeppelin.spark.SparkScala211Interpreter.open(SparkScala211Interpreter.scala:90)
+	at org.apache.zeppelin.spark.NewSparkInterpreter.open(NewSparkInterpreter.java:102)
+	at org.apache.zeppelin.spark.SparkInterpreter.open(SparkInterpreter.java:62)
+	at org.apache.zeppelin.interpreter.LazyOpenInterpreter.open(LazyOpenInterpreter.java:69)
+	at org.apache.zeppelin.interpreter.remote.RemoteInterpreterServer$InterpretJob.jobRun(RemoteInterpreterServer.java:616)
+	at org.apache.zeppelin.scheduler.Job.run(Job.java:188)
+	at org.apache.zeppelin.scheduler.FIFOScheduler$1.run(FIFOScheduler.java:140)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+```
+지금 제일 골머리를 앓게하는 문제인데..  
+뭔 명령어를 쳐도 `java.lang.NoSuchMethodError`가 뜨면서 제플린노트 안에서 명령어가 안먹는 문제가 있다.  
+좀더 찾아보고 해결되면 해결방법 추가하는걸로.. 
