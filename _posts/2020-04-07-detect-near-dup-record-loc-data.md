@@ -33,4 +33,4 @@ Baseline:
  1) rule based(두 장소의 edit distance가 thresh hold보다 낮고 geo-distanc가 thresh hold보다 낮으면 중복으로 판단)  
  2) excat match(두 장소의 이름과 주소가 동일하면 중복으로 판단. 그외는 비중복으로 판단)   
  
-![img1](https://berrrrr.github.io/_images/detect-near-dup-record-loc-data_1.png)
+![img1](https://github.com/berrrrr/berrrrr.github.io/blob/master/_images/detect-near-dup-record-loc-data_1.png?raw=true)

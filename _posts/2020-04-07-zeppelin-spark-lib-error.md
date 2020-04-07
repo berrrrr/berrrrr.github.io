@@ -7,9 +7,7 @@ tags: spark
 comments: true
 ---
 
-애증의 zeppelin..  
-이쁘게 시각화해주는데 spark랑 찰떡궁합이어야하는놈이 왜이리 삐걱거리는지 고생을 많이 시켰다.  
-삽질내용 정리해보았다.
+애증의 zeppelin.. 이쁘게 시각화해주는데 spark랑 찰떡궁합이어야하는놈이 왜이리 삐걱거리는지 고생을 많이 시켰다. 삽질내용 정리해보았다.
 
 ## 삽질1
 분명 환경설정할때 MASTER 에 spark master url을 넣어줬는데..  실제로 zeppelin이 spark session을 못문다...  
@@ -66,7 +64,7 @@ java.lang.NoSuchMethodError: io.netty.buffer.PooledByteBufAllocator.defaultNumHe
 	at java.lang.Thread.run(Thread.java:748)
 ```
 한달넘게 골머리를 앓게한문제이다.
-뭔 명령어를 쳐도 `java.lang.NoSuchMethodError`가 뜨면서 제플린노트 안에서 명령어가 안먹는 문제였다.
+뭔 명령어를 쳐도 `java.lang.NoSuchMethodError: io.netty.buffer.PooledByteBufAllocator.defaultNumHeapArena()`가 뜨면서 제플린노트 안에서 명령어가 안먹는 문제였다.
 
 3/27 드뎌 해결방법 찾음..!!  
 spark의 netty 버전과 zeppelin의 netty 버전이 맞지 않아서 생겼던 오류로..  

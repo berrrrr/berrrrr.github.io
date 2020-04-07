@@ -23,11 +23,11 @@ Toponym matching : 실제 위치에 그 위치를 나타내는 문자열을 매�
 
 저자의 의도는 기존 모델(character-based, vector-space based, and hybrid approaches )들이 toponym의 변화 (번역, 문화나 언어의 변화, 문자 대체  등)를 제대로 반영하지 못하고있던 부분을 DNN을 써서 극복하겠다는것이다. 
 
-![img1](https://berrrrr.github.io/_images/toponym_matching_through_dnn_3.png)
+![img1](https://github.com/berrrrr/berrrrr.github.io/blob/master/_images/toponym_matching_through_dnn_3.png?raw=true)
 
 
 ## Result
 
-![img2](https://berrrrr.github.io/_images/toponym_matching_through_dnn_1.png)
+![img2](https://github.com/berrrrr/berrrrr.github.io/blob/master/_images/toponym_matching_through_dnn_1.png?raw=true)
 
-![img3](https://berrrrr.github.io/_images/toponym_matching_through_dnn_2.png)
+![img3](https://github.com/berrrrr/berrrrr.github.io/blob/master/_images/toponym_matching_through_dnn_2.png?raw=true)
