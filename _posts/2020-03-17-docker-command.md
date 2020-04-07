@@ -12,12 +12,14 @@ comments: true
 docker build
 ```
 이미지를 빌드한다
+
 ---
 
 ```
 docker run
 ```
 이미지를 실행한다
+
 ---
 
 
@@ -25,6 +27,7 @@ docker run
 docker images
 ```
 이미지 목록
+
 ---
 
 
@@ -32,6 +35,7 @@ docker images
 docker ps
 ```
 떠있는 컨테이너 목록
+
 ---
 
 
@@ -39,6 +43,7 @@ docker ps
 docker ps -a
 ```
 멈춰있는 컨테이너 목록
+
 ---
 
 
@@ -46,6 +51,7 @@ docker ps -a
 docker start <container id>
 ```
 컨테이너 실행
+
 ---
 
 
@@ -53,6 +59,7 @@ docker start <container id>
 docker attach <container id>
 ```
 컨테이너 접속 (shell 띄움)
+
 ---
 
 
@@ -60,6 +67,7 @@ docker attach <container id>
 docker stop <container id>
 ```
 컨테이너 중지
+
 ---
 
 
@@ -67,6 +75,7 @@ docker stop <container id>
 docker rm <container id>
 ```
 컨테이너 삭제
+
 ---
 
 
@@ -74,6 +83,7 @@ docker rm <container id>
 docker rmi <image id>
 ```
 이미지 삭제
+
 ---
 
 
@@ -82,6 +92,7 @@ docker rmi <image id>
 docker login <repository url>
 ```
 특정 repository에 접속
+
 ---
 
 
@@ -90,6 +101,7 @@ docker login <repository url>
 docker push
 ```
 이미지를 repository에 업로드한다
+
 ---
 
 
