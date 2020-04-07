@@ -25,4 +25,3 @@ Av. Professor Cavaco Silva, 2744-016 Porto Salvo, Portugal
 ## Result
 
 ![img1](https://github.com/berrrrr/berrrrr.github.io/blob/master/_images/using_random_foresest_dup_gzt_chk_1.png?raw=true)
-

@@ -8,12 +8,7 @@ comments: true
 ---
 
 ## 발단
-연구실에서 총 3대 PC에 하둡을 설치해서 클러스터링해서 돌리고있었다.
-PC1 - namenode  
-PC2 - datanode1  
-PC3 - datanode2  
-
-어느날부터 namenode가 제대로 뜨질 않았다.
+어느날부터 설치한 하둡의 namenode가 제대로 뜨질 않았다.
 
 에러메세지는 다음과 같았다
 ```
@@ -23,8 +18,8 @@ namenode: hduser@namenode: Permission denied (publickey).
 namenode가 namenode의 ssh로 못붙고있는것이다. 본인의 public key를 소유하고있는데도.. 
 
 ## 전개
-일반적으로 위와 같은 에러가날때의 답변은 이렇다
-`/etc/ssh/sshd_config` 파일을 수정하고 ssh를 재시작하라.  
+일반적으로 위와 같은 에러가날때의 답변은 이렇다  
+`/etc/ssh/sshd_config` 파일을 수정하고 ssh를 재시작하라.   
 ```
 sudo nano /etc/ssh/sshd_config
 PasswordAuthentication yes

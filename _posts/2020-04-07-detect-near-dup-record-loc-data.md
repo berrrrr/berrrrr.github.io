@@ -29,7 +29,7 @@ Category similarity – (주소와동일) category를 계층적 구조로 나눈
 Classifier로는 Decision Tree를 사용.   
 
 ## Result
-Baseline: 
+Baseline:  
  1) rule based(두 장소의 edit distance가 thresh hold보다 낮고 geo-distanc가 thresh hold보다 낮으면 중복으로 판단)  
  2) excat match(두 장소의 이름과 주소가 동일하면 중복으로 판단. 그외는 비중복으로 판단)   
  
