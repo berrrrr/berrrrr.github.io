@@ -7,7 +7,7 @@ tags: hadoop
 comments: true
 ---
 
-HDFS에서 Block이 어떻게 일곡 쓰여지고 이동하는지, Block의 상태변경에 대해 알아보자.
+HDFS에서 Block이 어떻게 읽고 쓰여지고 이동하는지, Block의 상태변경에 대해 알아보자.
 
 ## Block replication
 HDFS에 저장되는 Block들은 여러 노드에 복제하여 저장. 이렇게 복제된 블록을 이요해 특정 노드의 장애에 무정지 대응이 가능.  
@@ -19,15 +19,15 @@ Namenode에서 이 Fsimage를 통해 block의 복제본을 관리하게 된다.
 
 ## Block Read/Write Process
 ### HDFS Read
-(1) Client가 Namenode에 파일에 대한 read를 요청.
-(2) Namenode는 Client에게 파일 블록의 위치 반환
-(3) Client는 네임노드로부터 제공받은 파일 블록의 위치를 통해 파일이 들어있는 block을 read
+1. Client가 Namenode에 파일에 대한 read를 요청.  
+2.  Namenode는 Client에게 파일 블록의 위치 반환  
+3.  Client는 네임노드로부터 제공받은 파일 블록의 위치를 통해 파일이 들어있는 block을 read  
 
 ### HDFS Write
-(1) Client는 Namenode에 파일에대한 정보 전송, 저장공간 요청
-(2) Namenode는 block을 보관 가능한 Datanode의 목록을 제공
-(3) Client는 제공받은 정보를 통해 파일을 Block단위로 Write
-(4) Block을 전달받은 DataNode는 다른 Datanode에 Block을 복제(replication)하여 저장
+1.  Client는 Namenode에 파일에대한 정보 전송, 저장공간 요청
+2. Namenode는 block을 보관 가능한 Datanode의 목록을 제공
+3. Client는 제공받은 정보를 통해 파일을 Block단위로 Write
+4. Block을 전달받은 DataNode는 다른 Datanode에 Block을 복제(replication)하여 저장
 
 ## Datanode Replica Life Cycle
 ### Replica

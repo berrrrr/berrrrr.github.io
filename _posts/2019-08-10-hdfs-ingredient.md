@@ -14,7 +14,7 @@ HDFS 의 구성요소를 알아보자
 - secondary namenode  
 
 HDFS는 master-slave구조로 하나의 네임노드(namenode)와 여러개의 데이터노드(datanode)로 구성된다.
-거기에 추가로 fsimage와 edit파이릉ㄹ 주기적으로 합쳐 최신블록의 상태로 파일을 생성하는 역할을 하는  Secondary namenode도 구성요소에 포함된다.
+거기에 추가로 fsimage와 edit파일을 주기적으로 합쳐 최신블록의 상태로 파일을 생성하는 역할을 하는  Secondary namenode도 구성요소에 포함된다.
 
 
 ## 네임노드(Namenode)

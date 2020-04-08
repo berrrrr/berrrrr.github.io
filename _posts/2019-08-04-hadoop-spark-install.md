@@ -368,10 +368,16 @@ Type :help for more information
 
 
 ## hadoop 이나 spark 접속이안될때
-방화벽 문제일수있음
+방화벽 문제일수있음  
+centos는 
 ```
 sudo firewall-cmd --zone=public --add-port=9000/tcp --permanent
 sudo firewall-cmd --reload
+```
+ubuntu는  
+```
+sudo ufw allow 9000
+sudo ufw reload
 ```
 내 경우 datanode 접근 포트인 9000이 안뚫려있어서 가동이 안됐었음.  
 9000 포트 뚫어주니 datanode 정상적으로 올라감.  
