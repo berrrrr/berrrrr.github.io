@@ -7,8 +7,6 @@ tags: java
 comments: true
 ---
 
-# [Effective java] item10. equals는 일반 규약을 지켜 재정의하라 
-
 ## 재정의 하지 않는 경우
 - 각 instance가 본질적으로 고유할때. (ex. Thread, Enum..)
 - 논리적 동치성(logical equality)를 검사할 일이 없을때. 

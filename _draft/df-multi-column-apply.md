@@ -1,10 +1,12 @@
 ---
 layout: post
-title: pandas Dataframe multi column apply 와 list value의 column화
-subtitle: pandas Dataframe multi column apply 와 list value의 column화
+title: pandas Dataframe multi column apply
+subtitle: pandas Dataframe multi column apply
 categories: programming
 tags: python
 comments: true
 ---
 
-pandas dataframe을 사용하여 여러개의 컬럼에 함수를 적용(apply)하는 방법과 list값을 value로 가지고있을때 해당 list값을 
+
+이번에 전처리하면서 유용했던 기능 시리즈1.  
+stack overflow에 치면 바로 나오는 기능이긴 한데 차후에도 종종 써먹을거같아서 정리해놓는다.  
