@@ -55,4 +55,4 @@ zeppelin-daemon.sh start
 zeppelin-daemon.sh stop
 ```
 
-추가적인 zeppelin 삽질 기록은 [여기로](https://berrrrr.github.io/datascience/2020/03/17/zeppelin-install/)
+추가적인 zeppelin 삽질 기록은 [여기로](https://https://berrrrr.github.io/datascience/2020/04/07/zeppelin-spark-lib-error/)
