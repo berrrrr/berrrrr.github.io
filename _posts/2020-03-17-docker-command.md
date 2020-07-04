@@ -108,6 +108,39 @@ docker push
 ```
 docker tag <image id> <image tag>
 ```
-이미지를 repository에 업로드한다
+이미지에 태그를 단다
+
+---
+
+```
+docker run -i -t {image id}
+docker create -i -t --name {이름} {이미지이름}
+docker create -i -t --name mycentos centos:7
+```
+이미지로 컨테이너 생성하고 실행하기 
+
+---
+
+```
+docker start {conatiner id}
+docker attach {conatiner id}
+```
+
+컨테이너를 시작하고 내부로 들어감 
+
+---
+
+```
+docker rename {이전이름} {새이름}
+```
+이미지 이름 변경하기
+
+---
+
+```
+docker exec -i -t {container id} /bin/bash
+```
+
+컨테이너 bash shell 실행 
 
 ---
