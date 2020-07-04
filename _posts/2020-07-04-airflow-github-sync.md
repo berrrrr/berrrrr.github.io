@@ -3,7 +3,7 @@ layout: post
 title: airflow dag를 github저장소와 연결하여 sync맞추기 (k8s)
 subtitle: airflow dag를 github저장소와 연결하여 sync맞추기 (k8s)
 categories: programming
-tags: infraV
+tags: infra
 comments: true
 ---
 
