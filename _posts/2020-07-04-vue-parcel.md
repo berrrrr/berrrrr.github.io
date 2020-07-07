@@ -28,7 +28,7 @@ npm -v
 
 위 명령어로 버전이 뜬다면 제대로 설치된것
 
-### 2-1) package.json 설정
+### 1-2) package.json 설정
 
 ```bash
 npm init -y
@@ -36,7 +36,7 @@ npm init -y
 
 npm 이 잘 깔렸다면 이제 frontent 소스코드를 담을 폴더에 들어가서 위 명령어를 쳐서  package.json 파일을 만든다. 이 가이드에서는 `webapp` 폴더를 frontend소스코드 폴더라고 가정하겠다. 
 
-### 1-2) parcel 설치
+### 1-3) parcel 설치
 
 ```bash
 npm install -g parcel-bundler
@@ -69,7 +69,7 @@ npm으로 설치하다가 `gyp: No Xcode or CLT version detected!`  에러가 �
     xcode-select --install
     ```
 
-### 1-3) vue 설치
+### 1-4) vue 설치
 
 ```bash
 npm install --save vue
@@ -79,7 +79,7 @@ npm install --save vue
 
 ## 2) 환경 설정
 
-## 2-2) 진입페이지 생성
+## 2-1) 진입페이지 생성
 
 Parcel 은 어떤 유형의 파일이라도 진입점으로 취할 수 있지만 HTML 이나 JavaScript 파일이 제일 좋다. `webapp`폴더에 `index.html` 파일과 `index.js` 파일을 생성해준다. 
 
@@ -99,7 +99,7 @@ webapp/src/js/index.js
 console.log('hello world')
 ```
 
-## 2-3) build 설정
+## 2-2) build 설정
 
 `package.json` 에서 빌드 스크립트를 변경할 수 있다. scripts 부분을 아래와 같이 변경하자. 
 
