@@ -8,6 +8,7 @@ comments: true
 ---
 
 equals를 재정의한 클래스 모두에서 hashCode도 재정의해야함. 그렇지않으면 hashCode 일반규약을 어기게되어 HashMap이나 HashSet 의 원소로 사용할때 문제가될수있음. 
+
 ## Object 내 hashcode 관련 규약
 - 애플리케이션이 실행되는 동안 그 객체의 hashCode는 항상 일관되게 같은값을 반환해야함
 - equals가 두 객체를 같다고 판단했다면 두 객체의 hashCode는 같아야함

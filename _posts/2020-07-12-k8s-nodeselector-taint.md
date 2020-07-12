@@ -1,7 +1,7 @@
 ---
 layout: post
-title: pod를 특정 nod에 한정해서 올리기
-subtitle: pod를 특정 nod에 한정해서 올리기
+title: "[k8s] pod를 특정 nod에 한정해서 올리기"
+subtitle: "[k8s] pod를 특정 nod에 한정해서 올리기"
 categories: programming
 tags: infra
 comments: true
