@@ -8,7 +8,7 @@ comments: true
 ---
 
 이번 아이템은 java stream을 잘 사용하는 방법에 대한 내용이다.  
-cf. [JAVA Stream API란?](https://berrrrr.github.io/programming/2020/07/04/df-list-value-to-column/) 참고.   
+cf. [JAVA Stream API란?](https://berrrrr.github.io/programming/2020/07/20/java-stream-api/) 참고.   
 
 스트림 API는 제대로 사용하면 프로그램이 짧고 깔끔해지지만 잘못 사용하면 읽기 어렵고 유지보수도 힘들어짐.   
 스트림과 반복문을 적절히 조합하는게 최선이다. 기존 코드는 스트림을 사용하여 리펙터링하되, 새 코드가 더 나아 보일때만 반영해야함.  
