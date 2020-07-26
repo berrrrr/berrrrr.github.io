@@ -58,7 +58,7 @@ List<String> topTen = freq.keySet().stream()
 이제 어떤 수집기들이 있는지도 알아보자. (책에서는 36개 수집기를 다 다루는데 귀찮으니 몇개만..ㅎ)
 ### 1) toMap
 스트림 원소를 Key-Value 형태로 재생산함. 
-1. `toMap(keyMapper, valueMapper)` : 스트림원소를 키에 매핑하는 함수와 갚에 매핑하는 하는 함수를 인자로 받음. 
+#### 1-1. `toMap(keyMapper, valueMapper)` : 스트림원소를 키에 매핑하는 함수와 갚에 매핑하는 하는 함수를 인자로 받음. 
 ```java
 class Book {
     private String name;
@@ -71,7 +71,7 @@ public Map<String, String> listToMap(List<Book> books) {
 }
 ```
 
-2. `toMap(keyMapper, valueMapper, mergeFunction)` : 같은 키를 공유하는 값들이 있을 경우 입력받은 병합함수(mergeFunction)을 사용하여 기존값과 합침.
+#### 1-2. `toMap(keyMapper, valueMapper, mergeFunction)` : 같은 키를 공유하는 값들이 있을 경우 입력받은 병합함수(mergeFunction)을 사용하여 기존값과 합침.
 ```java
 Map<Artist, Album> topHits = albums.collect(toMap(Album::artist, a->a, maxBy(comparing(Album::sales))));
 ```
