@@ -9,10 +9,10 @@ comments: true
 
 Junit을 사용해 Springboot에서 기본적인 테스트코드를 작성해보자. 
 
-## Mock 객체란
+## 1. Mock 객체란
 테스트 대상 클래스가 다른 클래스에 종속되어있을수있다. 이때 Unit Test를 수월하게 하기 위해 종속된 클래스를 매번 전부 선언하는게 아니라 가짜 객체를 만들어서 테스트할수있도록하는것이 Mock객체(가짜객체)이다.
 
-## DTO Testcode
+## 2. DTO Testcode
 보통 repository, dto 생성 후 assertThat 코드로 테스트
 ```java
 @RunWith(SpringRunner.class)
@@ -51,13 +51,13 @@ public class AccountMappingTest {
  }
  ```
 
-## Service Testcode
+## 3. Service Testcode
 생성자있는건 @Mock 으로 주입  
 생성자없는것은 객체체=mock(객체.class) 로 주입  
 
 위에서 생성된 Mock 객체는 @InjectMock 어노테이션을 가진 객체에 주입된다. 
 
-## Controller Testcode
+## 4. Controller Testcode
 @WebMVC 사용하여 테스트
 
 
@@ -74,7 +74,7 @@ public class AccountRestTest {
 	private AccountService accountService;
 
 	@Test
-	public void acoount_조회_성공() throws Exception {
+	public void acount_조회_성공() throws Exception {
 		// Given
 		String expectedResult = "{\"accountId\":1,\"residence\":\"경북\",\"age\":59}";
 		AccountDTO account = new AccountDTO(1, "경북", 59);
@@ -88,7 +88,7 @@ public class AccountRestTest {
 	}
 
 	@Test
-	public void acoount_조회_실패() throws Exception {
+	public void acount_조회_실패() throws Exception {
 		// Given
 
 		// When
@@ -101,7 +101,7 @@ public class AccountRestTest {
 	}
 
 	@Test
-	public void acoount_등록_성공() throws Exception {
+	public void acount_등록_성공() throws Exception {
 		// Given
 		String expectedResult = "{\"success\":true,\"errorMessage\":\"null\"}";
 		String inputJson = "{\"accountId\":1,\"residence\":\"경북\",\"age\":59}";
@@ -116,7 +116,7 @@ public class AccountRestTest {
 	}
 
 	@Test
-	public void acoount_등록_실패() throws Exception {
+	public void acount_등록_실패() throws Exception {
 		// Given
 		String expectedResult = "{\"success\":false,\"errorMessage\":\"Internal Server Error.\"}";
 		String inputJson = "{\"accountId\":1,\"age\":\"경북\",\"residence\":59}";
@@ -133,7 +133,7 @@ public class AccountRestTest {
 
 ```
 
-## @MockBean, @Mock 차이
+## 5. @MockBean, @Mock 차이
 ### @Mock (org.mockito.Mock)
 다른 Mock Framework  있지만 대부분 mockito를 사용하는 것 같다. Bean이 Container에 꼭 존재해야하는것이 아니라면 @Mock 사용.
 

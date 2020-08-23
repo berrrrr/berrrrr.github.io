@@ -1,3 +1,12 @@
+---
+layout: post
+title: OSX에서 psycopg2 설치시에러나는 경우
+subtitle: OSX에서 psycopg2 설치시에러나는 경우
+categories: programming
+tags: python
+comments: true
+---
+
 
 MAC(OSX)에서 psycopg2 설치시 에러나는 경우
 

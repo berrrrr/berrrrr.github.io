@@ -76,7 +76,7 @@ cp ~/spark/jars/netty-all-4.1.17.Final.jar ~/zeppelin/lib/
 ```
 이것도 중국사이트 구글링하다가 해결함.. 최근 stack overflow에서도 해결 안되는부분을 중국사이트에서 힌트를 얻어서 해결하는 경우가 많은거같다.   
 
-## 삽질2
+## 삽질3
 위 에러를 해결했다 싶었는데 또 복병으로 나타나는 에러가 있다.
 ```
 Caused by: com.fasterxml.jackson.databind.JsonMappingException: Incompatible Jackson version: 2.8.11-1
