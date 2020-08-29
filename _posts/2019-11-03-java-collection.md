@@ -8,7 +8,7 @@ comments: true
 ---
 
 Java에서는 데이터를 저장하는 기본적인 자료구조들을 한 곳에 모아 관리하고 편하게 사용하기 위해 Java Collection Framework를 제공한다. 다음은 JCF의 상속 구조이며 사용 용도에 따라 List, Set, Map 3가지로 요약할 수 있다.  
-![114](https://www.moongchi.dev/wp-content/images/114_1.jpg)
+![114](https://github.com/berrrrr/berrrrr.github.io/blob/master/_images/114_1.jpg)
 
 ## 각 Interface 특징
 

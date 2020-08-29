@@ -45,11 +45,11 @@ EUMETSAT는 spacecraft housekeeping data를 신속하고 안정적으로 분석�
 
 
 데이터 저장 및 검색에대한 전체적인 개념은 다음의 그림과 같다.   
-![161_1](https://www.moongchi.dev/wp-content/images/161_1.png)  
+![161_1](https://github.com/berrrrr/berrrrr.github.io/blob/master/_images/161_1.png?raw=true)  
 다음 단계는 저장된 데이터에 간단하고 직접적인 액세스를 허용하는 사용자 인터페이스를 구현하는 것이었다. 더 쉽게 접근할 수 있게 원격 측정 파라미터를 선택할 수 있는 플로팅 도구를 사용하여 웹 인터페이스를 개발하였다.  
 plot을 빠르게 생성할 수 있고, 통계 계산(각 orbit에 대한 평균, 최소, 최대 및 표준 편차)과 지리 위치 데이터(감지 시간의 경도, 위도)를 포함하여 추가적인 처리를 위해 이미지 또는 CSV 형식 파일로 내보낼 수 있다.   
 GUI로 eclipse information의 시계열데이터를 overlay하는 등 향상된 plot 기능을 가지며, 해상도와 검색 기간을 설정해 데이터를 dynamic sub-sampling할 수 있다. 
-![161_2](https://www.moongchi.dev/wp-content/images/161_2.png)  
+![161_2](https://github.com/berrrrr/berrrrr.github.io/blob/master/_images/161_2.png?raw=true)  
 
 report의 자동생성, data의 시각화를 위해 CHART를 만든거고, 이 기능을 위해  "widget(위젯)" 이라는 기능을 도입했다. 위젯으로 다양한 형식, 테이블로 데이터를 plot할 수 있다. 위젯은 xml로 작성되며 html상에서 사용자가 시각화된 위젯을 볼 수 있다.  
 CHART를 만드는 일련의 작업들은 Scheduler를 통해 돌아가며 Scheduler 역시 XML file로 작성된다.  

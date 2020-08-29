@@ -14,7 +14,7 @@ Kubernetes 나, OpenStack 과 같은 오픈소스 기반의 클라우드 또는 
 
 # Spinnaker 구조
 ## Application Management Concept
-![165_1](https://www.moongchi.dev/wp-content/images/165_1.png)  V
+![165_1](https://github.com/berrrrr/berrrrr.github.io/blob/master/_images/165_1.png?raw=true)  V
 서버 그룹, 클러스터가 정확히 뭘 의미하는지 애매할수있어서 k8s 와 비교해 정리하면 다음과 같다. 
 
 |spinnaker|k8s|desc|
@@ -28,7 +28,7 @@ Kubernetes 나, OpenStack 과 같은 오픈소스 기반의 클라우드 또는 
 
 
 ## Spinnaker Architecture
-![165_4](https://www.moongchi.dev/wp-content/images/165_4.png)  
+![165_4](https://github.com/berrrrr/berrrrr.github.io/blob/master/_images/165_4.png?raw=true)  
 
 |ame|Functionality|Port|
 |:---:|:---|:---|
@@ -69,14 +69,14 @@ spinnaker.io/setup/
 
 # Spinnaker Deployment
 ## Deployment pipeline
-![165_2](https://www.moongchi.dev/wp-content/images/165_2.png)  
+![165_2](https://github.com/berrrrr/berrrrr.github.io/blob/master/_images/165_2.png?raw=true)  
 사실 spinnaker 안에서 pipeline은 마음대로 만들 수 있지만..  
 일반적인 케이스로, jenkins로 CI 한 뒤 spinnaker로 CD 한다고 생각하면 아래와 같은 보통 위와 같은 pipeline이 나올거같다. 
 
 
 
 ## Deployment Policy
-![165_3](https://www.moongchi.dev/wp-content/images/165_3.png)  
+![165_3](https://github.com/berrrrr/berrrrr.github.io/blob/master/_images/165_3.png?raw=true)  
 ### Red/Black (=Blue/Green)
 테스트해보고 트래픽을 한번에 전환함. 롤백이 빠르다는 장점.  
 
@@ -100,17 +100,17 @@ red/black과 기본적으로는 동일. 단 인스턴스별 또는 그룹별로 
 
 # Spinnaker 사용
 ## Clusters
-![165_5](https://www.moongchi.dev/wp-content/images/165_cluster.png)  
+![165_5](https://github.com/berrrrr/berrrrr.github.io/blob/master/_images/165_cluster.png?raw=true)  
 spinnaker를 띄우면 위와 같이 배포된 cluster 환경을 한눈에 볼 수 있음.    
 (초록색 칸 하나가 pod 한개 라고 보면됨)  
 
 ## Pipelines
-![165_6](https://www.moongchi.dev/wp-content/images/165_pipeline.png)  
+![165_6](https://github.com/berrrrr/berrrrr.github.io/blob/master/_images/165_pipeline.png?raw=true)  
 위와 같이 배포 pipeline을 구성하고, ui로 편리하게 볼 수 있음  
 처음 구성해서 잘 모르더라도 pipeline template이 있어서 그걸 이용해서 만들수있다!! 
 
 
-![165_6](https://www.moongchi.dev/wp-content/images/165_pipelinehistory.png)  
+![165_6](https://github.com/berrrrr/berrrrr.github.io/blob/master/_images/165_pipelinehistory.png?raw=true)  
 pipeline을 누르면 위와 같이 여태까지의 배포 history를 볼 수 있음. 
 
 자세한 pipeline manage 방법은 [공식문서](https://www.spinnaker.io/guides/user/pipeline/managing-pipelines/#create-a-pipeline) 참고

@@ -29,7 +29,7 @@ utf8로 인코딩 변경하니까 정상적으로 올라갔다.
 vscode에서 아래와 같이 쉽게 인코딩을 변경할 수 있다.
 
 
-![image](https://www.moongchi.dev/wp-content/images/2019-06-07.png)
+![image](https://github.com/berrrrr/berrrrr.github.io/blob/master/_images/2019-06-07.png?raw=true)
 
 하단에 UTF-8이라고 써있는 부분을 누르면 Selection Action에 
 1. Reopen with Encoding

@@ -48,7 +48,7 @@ CASPER에 사용된 지속적인 수정, 업데이트가 되는 plan을 support�
 (2) design a LSTM based encoding network, and classification network to decide wheter a task shold the executed.
 
 ## Satellite onboard observation task planning problem
-![154_1](https://www.moongchi.dev/wp-content/images/154_1.png)  
+![154_1](https://github.com/berrrrr/berrrrr.github.io/blob/master/_images/154_1.png?raw=true)  
 (1) observation task : collect images  
 (2) transmission task : download the stored images  
 Energy는 observation task, transmission task가 일어날때 소모됨.  
@@ -57,14 +57,14 @@ ground station은 여러 satellites들로부터 이미지를 받을수 있으므
 사용되는 이미지가 매우 커서 onboard observation task는 매우 엄격해야하고 효율적인 decision making이 필요함.  
 
 ## Sequential decision-making model
-![154_2](https://www.moongchi.dev/wp-content/images/154_2.png)  
+![154_2](https://github.com/berrrrr/berrrrr.github.io/blob/master/_images/154_2.png?raw=true)  
 새 observation task나 기대치못한 energy, memory문제, 구름존재 등의 환경변화에 빠르게 대처하려면 sequential decision-making model을 만들어야함.  
 현재 task의 시작 시점에 dicision horizon 내의 best observation task를 찾고, 그 task가 다음 decision time에 수행되는 구조.  planner는 decision result가 `True`가 될때까지 decision horizon에서 observation task를 하나씩 판단해나가는데, 이때 결정된 observation task의 start time이 다음 new decision horizon의 start time이 되는것이다.  
 이때 task들은 decision task에서 결정된다. decision horizon 내에 결정된 task가 없다면 다음 decision time으로 넘어간다.  
 예) 그림에서 task 4가 결정되어 executing되는 순간, task 5,6,7,8이 decision task안에서 deep learning model에 의해 판단당하게된다. task 7이 True로 판명되는 순간, task 7은 다음 실행 task가 되고 task 7의 start time에 새로운 decision time이 시작된다.  
 
 ## Deep learning based planning method
-![154_3](https://www.moongchi.dev/wp-content/images/154_3.png)  
+![154_3](https://github.com/berrrrr/berrrrr.github.io/blob/master/_images/154_3.png?raw=true)  
 LSTM이 sequence data를 학습하는데 매우 뛰어난 모델이므로 LSTM에 기반한 deep learning model을 우리의 문제에 적용해보도록 한다.  
 encoding network + classification network
 

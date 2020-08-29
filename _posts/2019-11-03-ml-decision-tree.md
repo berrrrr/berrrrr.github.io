@@ -16,7 +16,7 @@ comments: true
 - 일반적으로 decision tree는 instance의 attribute value(속성값)에 대한 contraints(제약조건)을 분리하여 나타낸다. 
 
 ex) xor 에 대한 decision tree  
-![143_1](https://www.moongchi.dev/wp-content/images/143_1.png)
+![143_1](https://github.com/berrrrr/berrrrr.github.io/blob/master/_images/143_1.png?raw=true)
 
 ## Target function
 우리가 X input을 넣었을때 Y output을 넣는 방정식을 얻고자 한다면 f:X->Y 가 target function이 된다. 

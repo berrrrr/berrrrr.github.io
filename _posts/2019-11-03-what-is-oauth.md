@@ -25,7 +25,7 @@ filter 기능(토큰이 맞는지 확인) (ex. kakao 토큰을 저장하고있�
 - Client Credential Grant Type
 
 ### Flow (Authorization Code Grant Type)
-![image](https://image.toast.com/aaaadh/alpha/2017/techblog/1%201%281%29.png)
+![image](https://image.toast.com/aaaadh/alpha/2017/techblog/1%201%281%29.png?raw=true)
 1. 기존 계정과 SNS 계정 연동 요청
 2. 요청 SNS 로그인 페이지 출력 (Client ID 값이 포함된 로그인 페이지)
 3. ID/PW 를 통해 SNS 계정에 로그인

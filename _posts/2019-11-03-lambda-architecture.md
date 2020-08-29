@@ -13,7 +13,7 @@ comments: true
 오래된 데이터를 보관하는 배치(batch)테이블과 실시간 데이터를 가진 실시간 테이블을 서로 join하여 결과값을 얻을수 있도록 구성한 아키텍처이다. 
 
 ## 람다 아키텍처 구성
-![137](https://www.moongchi.dev/wp-content/images/137.png)
+![137](https://github.com/berrrrr/berrrrr.github.io/blob/master/_images/137.png?raw=true)
 
 |구분|구성요소|내용|
 |---|---|---|---|

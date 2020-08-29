@@ -14,7 +14,7 @@ Spring batch로 배치서비스를 개발해보자
 Enterprise System에서 개발 가능한 가볍고 종합적인 batch framework
 
 ## Spring Batch 구성
-![spring batch](https://www.moongchi.dev/wp-content/images/71.PNG)
+![spring batch](https://github.com/berrrrr/berrrrr.github.io/blob/master/_images/71.PNG)
 
 ## Job
 ### (1) Job

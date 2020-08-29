@@ -19,7 +19,7 @@ comments: true
 
 # Airflow 구성
 ## 아키텍쳐
-![164_1](https://www.moongchi.dev/wp-content/images/164_4.png)  
+![164_1](https://github.com/berrrrr/berrrrr.github.io/blob/master/_images/164_4.png?raw=true)  
 **Scheduler**  
 - 실행 주기가 되면 작업을 생성
 - 의존하는 작업이 모두 성공하면 Broker에 넘김
@@ -35,7 +35,7 @@ comments: true
 - DAG run, Task Instance 관리
 
 ## UI  
-![164_2](https://www.moongchi.dev/wp-content/images/164_3.png)  
+![164_2](https://github.com/berrrrr/berrrrr.github.io/blob/master/_images/164_3.png?raw=true)  
 
 # Airflow 시작하기
 ## local에 띄우기
@@ -63,7 +63,7 @@ airflow scheduler
 
 # Airflow 사용방법
 ## DAG  
-![164_1](https://www.moongchi.dev/wp-content/images/164_2.png)  
+![164_1](https://github.com/berrrrr/berrrrr.github.io/blob/master/_images/164_2.png?raw=true)  
 airflow에서는 한 작업을 DAG(Directed Acyclic Graph : 방향성 비순환 그래프) 로 표현한다. (비순환인 이유는 루프를 허용하지는 않겠다는것)  
 실제로 airflow에 한 workflow (DAG) 구성하면 저런식으로 시각화해서 보여줌.  
 작업들의 전후/병렬관계를 쉽게 표시할수있음.  
@@ -77,7 +77,7 @@ ex.) 요리 workflow는 나무가지를 모아서(collect_wood) 불을 지피고
 3. 불과 물고기가 준비되면 구이를 만들어 먹을 수 있다. 
 
 이 작업 흐름은 다음과 같은 DAG로 표현될 수 있다.    
-![164_1](https://www.moongchi.dev/wp-content/images/164_1.png)  
+![164_1](https://github.com/berrrrr/berrrrr.github.io/blob/master/_images/164_1.png?raw=true)  
 이 DAG를 오전10시, 오후4시 배치로 돌리고자한다.  
 이 내용은 아래와 같이 python 코드로 구성하면된다.  
 ```python

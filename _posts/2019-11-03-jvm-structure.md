@@ -10,7 +10,7 @@ comments: true
 JVM(Java Virtual Machine)의 메모리 구조를 알아보자.
 
 ## JAVA 프로그램 수행 과정
-![129](https://www.moongchi.dev/wp-content/images/129.png)
+![129](https://github.com/berrrrr/berrrrr.github.io/blob/master/_images/129.png?raw=true)
 - JAVA source File : 사용자가 작성한 Java code (.java)
 - JAVA Compiler : Java Source파일을 JVM이 해석할 수 있는 Java Byte Code로 변경.
 - JAVA Byte Code : Java Compiler에 의해 수행된 결과물 (.class)

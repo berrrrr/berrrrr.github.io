@@ -33,11 +33,11 @@ dumitru@google.com
 ### Idea 
 Main inspiration – Machine Translation – Task is transform sentence S written in source language into its translation T by maximizing p(T|S)
 
-![img1](https://www.moongchi.dev/wp-content/images/show-and-tell-1.png)  
+![img1](https://github.com/berrrrr/berrrrr.github.io/blob/master/_images/show-and-tell-1.png?raw=true)  
 
 기본적으로 구글 사람들은 이 문제에 접근할 때, 번역기를 생각하고 시작했다. Sequence to sequence 모델에서 encoder RNN이 입력 문장을 vector space로 embeding하여 mapping을 하면 그걸 입력으로 하여 2번째 RNN(decoder RNN)이 embedding vector로부터 추가하여 새로운 문장을 생성하는게 번역기인데, 이 논문 저자들은 캡션 문제에 대해 앞단의 인코딩 rnn을 인코딩cnn으로 바꾸면 이미지를 문장으로 바꿀수있지 않겠냐 라는 아이디어로 시작했다. 간단한 아이디어지지만 당근 말이 되는 아이디어이다. 
 
-![img2](https://www.moongchi.dev/wp-content/images/show-and-tell-2.png)  
+![img2](https://github.com/berrrrr/berrrrr.github.io/blob/master/_images/show-and-tell-2.png?raw=true)  
 
 - CNN을 Language RNN과 결합  
 - Deep CNN을 인코더로 사용
@@ -46,11 +46,11 @@ Main inspiration – Machine Translation – Task is transform sentence S writte
 - 주어진 이미지에 대해서 log likelihood를 maximize하는 단어 시컨스를 찾는게 최종목표
 
 ### Model
-![img3](https://www.moongchi.dev/wp-content/images/show-and-tell-3.png)  
+![img3](https://github.com/berrrrr/berrrrr.github.io/blob/master/_images/show-and-tell-3.png?raw=true)  
 모델은 앞에 CNN 이 있고, 이미지에서 특징을 추출하여 이미지 스페이스 벡터를 만든다. 이걸 word space로 embedding하는 레이어가 하나 있다. word space에 embedding 된 벡터를 LSTM에 입력하여 문장을 생성한다. 이 연구에서는 이미지를 처리하는 CNN부분에는 googlenet을 거의 그대로 사용 했고 이후 버전에서는 Inception V3를 사용한다.
 
 ### BeamSearch
-![img4](https://www.moongchi.dev/wp-content/images/show-and-tell-4.png)  
+![img4](https://github.com/berrrrr/berrrrr.github.io/blob/master/_images/show-and-tell-4.png?raw=true)  
 여기 약간 특이한 점은, sentence를 generation 할 때 흔히 sampling을 한다. 어떤 단어가 나오면 word embedding vector space에서 가장 확률이 높은 단어를 찾고 그 단어로부터 sampling을해서 generation하게되는데 그렇게 하지 않고 이 paper에서는 beam search라는 방법을 사용한다. beam search는 단어 하나를 달랑 만드는게 아니고 k개의 후보를 항상 유지하고 있는 방법으로. 이 paper에서는 k를 기본 20개를 사용하고있는데, 현재 지점에서 가장 그럴듯한 sentence 20개를 만들어서 맨 마지막에 그중에서 가장 그럴듯한것을 하나 선택하는 방법이다. 
 그렇게 안하고 그냥 후보를 1개만 유지하면 나중에 bleu수치가 2가 줄어듭니다. K개를 유지하게해서 bleu를 이만큼 늘렸다 라고 논문에서 주장하고있다. 
 

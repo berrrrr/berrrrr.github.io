@@ -13,7 +13,7 @@ comments: true
 
 ## user snippet 만들기
 `File > Preferences > User snippet` 
-![new snippet](https://www.moongchi.dev/wp-content/images/16_1.png)
+![new snippet](https://github.com/berrrrr/berrrrr.github.io/blob/master/_images/16_1.png?raw=true)
 로컬에서만 쓸거면 `New Global Snippets file...`  
 계정에서 사용할거면 `New Snippet file for 계정...` 을 눌러서 새 스니펫을 만들수있다.
 

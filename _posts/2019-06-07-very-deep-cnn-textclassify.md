@@ -25,7 +25,7 @@ sentence classification에 대한 많은 연구들을 보면, 초기에는 bag-o
 ## 3. VDCNN Architecture
 저자들의 network 구조는 아래와 같고, 2가지 규칙을 다른다.
 
-![v1](https://www.moongchi.dev/wp-content/images/v1.png)
+![v1](https://github.com/berrrrr/berrrrr.github.io/blob/master/_images/v1.png?raw=true)
 
 1) 동일한 output의 temporal resolution에 대해, layer들은 동일한 수의 feature maps를 가지고 있다.
 
@@ -35,7 +35,7 @@ sentence classification에 대한 많은 연구들을 보면, 초기에는 bag-o
 
 ### Convolutional Block
 각 convolutional block은 아래와 같이 각 2개의 convolutional layer, temporal BatchNorm, ReLU 로 구성된다. 
-![v2](https://www.moongchi.dev/wp-content/images/v2.png)
+![v2](https://github.com/berrrrr/berrrrr.github.io/blob/master/_images/v2.png?raw=true)
 
 ## 4. Experimental evaluation
 

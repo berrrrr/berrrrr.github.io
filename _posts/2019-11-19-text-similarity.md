@@ -11,5 +11,5 @@ similarity 비교를 위한 여러가지 기법이 있다. 하나씩 알아보�
 
 ## cosine similarity(코사인유사도)
 
-![155_1](https://www.moongchi.dev/wp-content/images/155_1.png)  
-![155_2](https://www.moongchi.dev/wp-content/images/155_2.png)  
+![155_1](https://github.com/berrrrr/berrrrr.github.io/blob/master/_images/155_1.png?raw=true)  
+![155_2](https://github.com/berrrrr/berrrrr.github.io/blob/master/_images/155_2.png?raw=true)  

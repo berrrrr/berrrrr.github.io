@@ -16,7 +16,7 @@ comments: true
 
 ## Helm 구조
 기본적으로 클라이언트(cli) -  서버(Tiller) 구성이다.  
-![163_1](https://www.moongchi.dev/wp-content/images/163_1.png)
+![163_1](https://github.com/berrrrr/berrrrr.github.io/blob/master/_images/163_1.png?raw=true)
 
 - helm client : 사용자를 위한 CLI client
 - tiller : helm server. 보통 kubernetes위에 pod 형태로 위치함

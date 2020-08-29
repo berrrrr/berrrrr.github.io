@@ -37,7 +37,7 @@ most specific한 가설에서 next general 한 가설로 바꿔나가는 방법.
 ## version space
 version space = solution space. training example(학습예제) D와 일치하는 가설 H 를 모은 공간.  
 the general boundary(가장 일반화된 멤버) 와 the specific boundary(가장 구체화된 멤버)를 찾으면 그 둘 사이가 version space가 된다. 
-![version space](https://www.moongchi.dev/wp-content/images/99_1.png)
+![version space](https://github.com/berrrrr/berrrrr.github.io/blob/master/_images/99_1.png?raw=true)
 
 ## CE (Candidate Elimination) algorithm
 ### step
