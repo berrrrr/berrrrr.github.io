@@ -1,6 +1,11 @@
-
-
-java enum의 아주 기본적인 내용만 활용하기
+---
+layout: post
+title: java enum의 아주 기본적인 내용만 활용하기
+subtitle: java enum의 아주 기본적인 내용만 활용하기
+categories: programming
+tags: java
+comments: true
+---
 
 상태값들을 enum을 통해서 관리하려고하는데 enum 사용의 국룰이 뭔지 명확치 않아 찾아보고 거기서 기본적인 내용만 정제해서 활용해보았다.  
 활용할때는 java enum을 검색했을때 나오는 아래 블로그들 내용을 참고했으며 아마 현시점에서 enum관련해서 제일 상위로노출되는 사람들이 제일 많이 참고하는 블로그일듯
