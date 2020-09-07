@@ -2,7 +2,7 @@
 layout: post
 title: Log로 살펴보는 Spring Container Loading 순서
 subtitle: Log로 살펴보는 Spring Container Loading 순서
-categories: datascience
+categories: programming
 tags: spring
 comments: true
 ---
