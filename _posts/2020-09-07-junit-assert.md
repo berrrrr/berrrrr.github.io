@@ -49,7 +49,7 @@ but: was "abc"
 ```
 
 ## 2. 햄크레스트 매처 살펴보기 
-## 2-1. 배열, 컬렉션 비교 - equalTo()
+### 2-1. 배열, 컬렉션 비교 - equalTo()
 자바 배열, 컬렉션 객체를 비교할 때는 `equalTo()` 메서드를 사용한다. 
 ```java
    @Test
@@ -76,7 +76,7 @@ but: was "abc"
 ```
 --> 성공
 
-## 2-2. 가독성 높이기 - is 장식자
+### 2-2. 가독성 높이기 - is 장식자
 경우에 따라 `is` 장식자를 사용하여 가독성을 높힐 수 있음. 
 ```java
    @Test
@@ -85,7 +85,7 @@ but: was "abc"
       assertThat(account.getName(), is(nullValue()));
    }
 ```
-## 2-3 불필요한 테스트코드
+### 2-3 불필요한 테스트코드
 null이 아닌값을 검사하는건 불필요하고 가치가 없으니 되도록 이런 테스트코드는 짜지말것
 ```java
       assertThat(account.getName(), is(not(nullValue())));
