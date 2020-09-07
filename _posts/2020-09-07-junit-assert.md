@@ -37,7 +37,7 @@ junit 단언에 대해 파보자.
 ```java
    @Test
    public void assertFailure() {
-      assertTrue(account.getName(), startsWith("xyz"));
+      assertThat(account.getName(), startsWith("xyz"));
    }
 ```
 matcher를 인자로 넣은 상태에서 테스트가 실패하면 아래와 같은 stacktrace가 나와서 문제 해결에 필요한 정보를 쉽게 알 수 있음. 
