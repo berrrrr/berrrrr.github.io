@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Junit 단언(assert) 파보기
-subtitle: Junit 단언(assert) 파보기
+title: '[JUnit] 단언(assert) 파보기'
+subtitle: '[JUnit] 단언(assert) 파보기'
 categories: programming
 tags: spring
 comments: true
