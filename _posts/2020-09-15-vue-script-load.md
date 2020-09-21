@@ -12,11 +12,11 @@ vue에서 외부 라이브러리 import하기
 
 cdn으로 제공되는 외부라이브러리 import하기
 
-## main.js에서 로드하기 
+## index.html 에서 로드하기 
 
-그냥 main js에서 scrip import한다.
+그냥 index.html 에서 script import한다.
 ```
-
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY"></script>
 ```
 
 ## 외부 라이브러리 load해주는 플러그인 install 
