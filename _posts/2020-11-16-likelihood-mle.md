@@ -15,7 +15,7 @@ comments: true
 
 주어진 확률분포가 있을때 관측값(or 관측구간)이 해당 확률분포 안에서 얼마의 확률로 존재하는지를 나타내는 값. 
 
-확률 = P(관측값X | 확률분포D)
+`확률 = P(관측값X | 확률분포D)`
 
 ![mle_1](https://github.com/berrrrr/berrrrr.github.io/blob/master/_images/mle_1.png?raw=true)
 
@@ -43,7 +43,9 @@ ex. 동전 10번을 던져서 앞면이 2번 나올 확률 = 0.044
 
 ex. 정확히 5를 뽑을 확률은 알수없지만, 대충 1과 6사이 숫자에서 4와 5사이 숫자를 뽑을 확률은 20%임을 알수있다. (5칸중에 1칸이니깐) 
 
-확률밀도함수(Probability Density Function, PDF) : 특정 구간에 속할 확률을 계산하기 위해 확률을 밀도로 나타낸 함수. <그래프에서 특정 구간에 속한 넓이=특정 구간에 속할 확률>
+확률밀도함수(Probability Density Function, PDF) : 특정 구간에 속할 확률을 계산하기 위해 확률을 밀도로 나타낸 함수. 
+
+그래프에서 특정 구간에 속한 넓이=특정 구간에 속할 확률
 
 ![mle_2](https://github.com/berrrrr/berrrrr.github.io/blob/master/_images/mle_2.png?raw=true)
 
