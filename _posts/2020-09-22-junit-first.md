@@ -3,7 +3,7 @@ layout: post
 title: '[Junit] 좋은 테스트의 FIRST 속성'
 subtitle: '[Junit] 좋은 테스트의 FIRST 속성'
 categories: programming
-tags: spring
+tags: test
 comments: true
 ---
 

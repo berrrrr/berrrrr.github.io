@@ -3,7 +3,7 @@ layout: post
 title: '[JUnit] 테스트 조직'
 subtitle: '[JUnit] 테스트 조직'
 categories: programming
-tags: spring
+tags: test
 comments: true
 ---
 

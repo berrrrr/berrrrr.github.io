@@ -3,7 +3,7 @@ layout: post
 title: '[Junit] 경계조건: CORRECT'
 subtitle: '[Junit] 경계조건: CORRECT'
 categories: programming
-tags: spring
+tags: test
 comments: true
 ---
 

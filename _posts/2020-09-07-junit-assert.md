@@ -3,7 +3,7 @@ layout: post
 title: '[JUnit] 단언(assert) 파보기'
 subtitle: '[JUnit] 단언(assert) 파보기'
 categories: programming
-tags: spring
+tags: test
 comments: true
 ---
 

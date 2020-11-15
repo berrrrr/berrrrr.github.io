@@ -3,7 +3,7 @@ layout: post
 title: '[JUnit] 깔끔한 코드로 리팩토링하기'
 subtitle: '[JUnit] 깔끔한 코드로 리팩토링하기'
 categories: programming
-tags: spring
+tags: test
 comments: true
 ---
 
