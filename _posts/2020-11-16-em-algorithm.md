@@ -1,4 +1,11 @@
-# EM Algorithm
+---
+layout: post
+title: 'EM Algorithm 쉽게 이해하기'
+subtitle: 'EM Algorithm 쉽게 이해하기'
+categories: datascience
+tags: statistics
+comments: true
+---
 
 EM 알고리즘은 통계 모델의 수식을 정확히 풀 수 없을때 최대 가능도를 구하는데 사용된다. 
 
@@ -38,6 +45,5 @@ $$\gamma(z_k) \equiv p(z_k=1|{\bf x}) = \frac{p(z_k=1)p({\bf x}|z_k=1)}{\sum_j^K
 
 → 약간 K-means와 비슷한 부분이 있다..
 
-![EM%20Algorithm%2082cb46705cd143ce940fa0004c41cfb3/Untitled.png](EM%20Algorithm%2082cb46705cd143ce940fa0004c41cfb3/Untitled.png)
 
 > [https://m.blog.naver.com/lhm0812/220709231513](https://m.blog.naver.com/lhm0812/220709231513)
