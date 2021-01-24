@@ -289,7 +289,7 @@ include::{snippets}/get-test/http-response.adoc[]
                 preprocessRequest(              // (2) 
                         modifyUris()
                                 .scheme("http")
-                                .host("mystore.admintool.daum.net")
+                                .host("berrrr.demopage.com")
                                 .removePort(),
                         prettyPrint()),
                 preprocessResponse(prettyPrint()) // (3)
@@ -337,7 +337,7 @@ MvcResult result = mockMvc.perform(
 
 이런식으로 pathparam과 response field를 각각 명세해주면 아래와 같이 snippet이 생성된다. 
 
-![_2021-01-11__8.06.39.png](https://github.com/berrrrr/berrrrr.github.io/blob/master/_images/_2021-01-11__8.06.39.png.png?raw=true)
+![_2021-01-11__8.06.39.png](https://github.com/berrrrr/berrrrr.github.io/blob/master/_images/_2021-01-11__8.06.39.png?raw=true)
 
 
 ![_2021-01-11__8.07.16.png](https://github.com/berrrrr/berrrrr.github.io/blob/master/_images/_2021-01-11__8.07.16.png?raw=true)

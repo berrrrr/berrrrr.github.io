@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "Maven + MockMvc 환경에서 Spring Rest Docs 써보기"
-subtitle: "Maven + MockMvc 환경에서 Spring Rest Docs 써보기"
+title: "MockWebServer를 이용해 외부API 호출 메서드 테스트하기"
+subtitle: "MockWebServer를 이용해 외부API 호출 메서드 테스트하기"
 categories: programming
 tags: test
 comments: true
