@@ -7,49 +7,173 @@ tags: java
 comments: true
 ---
 
-java 8부터 자바에 큰 변화들이 있어왔다. 무슨 변화들이 왜, 어떻게 일어났고 우리는 이걸 어떻게 활용해야하는지 알아보자! 
+java8부터 지원하는 메서드를 코드에 파라미터로 전달하는 방법에 대해 알아보자 
 
-## 1.1 역사의 흐름
+프로그래밍에서 젤 중요한것중 하나! 유지보수가 쉬워야됨..!! 왜냐면 요구사항이 계속 바뀌기때문.
 
-프로그래밍 언어는 시장의 니즈를 충족하지 못하면 도태됨. 자바8에서도 이러한 시장의 흐름때문에 많은 변화가 있었음. **간결한코드**, **멀티코어 프로세서의 쉬운활용**에 대한 니즈로 요약하자면 아래 3개의 변화가 있었음.
+이번 장에서 소개할 동작 파라미터화를 이용하면 자주 바뀌는 요구사항에 효과적으로 대응이 가능하다. 어떤 동작(메서드)를 파라미터화 할 수 있기때문이다. 
 
-- 스트림 API
-- 메서드에 코드를 전달할수 있게됨
-- 인터페이스의 디폴트 메서드
+## 2.1 변화하는 요구사항에 대응하기
 
-## 1.2 왜 자바는 계속 변할까?
+녹색사과 필터링하기~
 
-특정분야에 장점을 가진 언어는 다른 경쟁언어를 도태시킴. 자바는 여기에 나름 잘 대응하면서 여태 살아남고있다.
+```java
+public static List<Apple> filterGreenApples(List<Apple inventory) {
+  List<Apple> result = new ArrayList<>();
+  for(Apple apple : inventory) {
+    if(GREEN.equals(apple.getColor)) {
+      result.add(apple);
+    }
+  }
+}
+```
 
-자바는 첨부터 많은 라이브러리를 포함한 잘 설계된 **객체지향**언어로 좋은 출발을 했었음. (+ 스레드, 락을 지원해서 소소하게 동시성도 지원함) 또 당시 모든 인터넷 브라우저에서 가상머신 코드를 지원했는데, JVM (자바가상머신) 바이트코드로 컴파일하는 자바는 이러한 환경에 찰떡이었기 때문에 인터넷 어플리케이션의 짱의 자리를 지킬수있었음. 
+근데 갑자기 농부가 빨간사과 필터링해줘~! 라고 요청한다면? 
 
-근데 이 장점만으로는 험난한 프로그래밍언어 생태계에서 살아남기 어려움. 최근 시장에서는 빅데이터의 대두로인해 병렬프로세싱의 중요성이 커졌는데, 자바8에서는 이에 대응하기 위해 3가지 카드를 내놨음.
+```java
+public static List<Apple> filterGreenApples(List<Apple inventory) {
+  List<Apple> result = new ArrayList<>();
+  for(Apple apple : inventory) {
+    if(RED.equals(apple.getColor)) {
+      result.add(apple);
+    }
+  }
+}
+```
 
-- 스트림
-- 메서드에 코드전달
-- 병렬성
+근데 딱봐도 코드가 너무 반복.. 색을 파라미터화 해보자! 
 
-모던 자바 인 액션에서는 이러한 자바의 새로운 변화에 대해 집중해서 다룰 예정.
+```java
+public static List<Apple> filterApplesByColor(List<Apple> inventory, Color color) {
+  List<Apple> result = new ArrayList<>();
+  for(Apple apple : inventory) {
+    if(apple.getColor().equals(color)) {
+      result.add(apple);
+    }
+  }
+}
+```
 
-## 1.3 자바함수
+이랬더니 농부가 갑자기 150그램 이상인 사과를 필터링해줘~ 라고 요청하면? 열씨미 색 필터를 만든게 소용없음. 아래와 같이 새로운 필터를 만든다..... 
 
-자바의 또다른 변화중의 하나는, 고전적인 객체지향에서 벗어나 함수형 프로그래밍으로 탈피하고있는것. 사실 둘은 굉장히 상극인 속성을 가지고있는데ㅡ 자바8에서는 함수형 프로그래밍을 도입해서 두 패러다임의 장점을 모두 활용할수 있게됨. (스트림, 람다함수...) 
+```java
+public static List<Apple> filterApplesByWeight(List<Apple> inventory, int weight) {
+  List<Apple> result = new ArrayList<>();
+  for(Apple apple : inventory) {
+    if(apple.getWeight() > weight) {
+      result.add(apple);
+    }
+  }
+  return result;
+}
 
-기존의 자바 세상에서 메서드는 파라미터로 활영할 수 있는 변수(=일급값, 일급시민)이 아니었으나, 자바8에서는 일급시민으로 거듭남. 
+List<Apple> heavyApples = filterApplesByWeight(inventory, 150);
+```
 
-## 1.4 스트림
+근데 이번엔 또 색이랑 무게에 대한 조건을 다 걸어서 필터링하고싶어~ 라고 요청하면? 
 
-컬렉션 데이터를 라이브러리 내부반복으로 처리하는 API. 멀티코어도 쉽게 활용 가능. 데이터 필터링, 추출, 그루핑을 쉽게할 수 있고, 이 동작들을 쉽게 병렬화 할 수 있음. 
+```java
+public static List<Apple> filterApples(List<Apple> inventory, Color color, int weight, boolean flag) {
+  List<Apple> result = new ArrayList<>();
+  for(Apple apple : inventory) {
+    if((flag && apple.getColor().equals(color)) || (!flag && apple.getWeight() > weight)) {
+      result.add(apple);
+    }
+  }
+  return result;
+}
 
-## 1.5 디폴트 메서드와 자바모듈
+List<Apple> greenApples = filterApples(inventory, GREEN, 0, true);
+List<Apple> heavyApples = filterApples(inventory, null, 150, false);
+```
 
-요즘 또 프로그래밍 시장에서 핫한 트렌드 중 하나가 외부 컴포넌트를 이용해 쉽게 시스템을 구축하는거임.  자바는 이걸 외부 라이브러리 jar파일을 포함하는식으로 쓰고있었는데, 이 방식은 해당 라이브러리의 인터페이스를 바꾸고싶으면 해당 인터페이스를 구현하는 모든 클래스의 구현을 바꿔야했음.. 
+와..정말 별로다! true/false는 또 뭘 의미하는건데? 노답이다. 
 
-자바8, 자바9에서는 패키지모음을 포함하는 모듈을 정의할 수 있고 인터페이스를 쉽게 바꿀 수 있는 디폴트 메서드를 지원함. 클래스에서 구현하지 않아도 되는 메서드를 인터페이스에 추가할 수 있는것. 
+얘를 도대체 어떻게 해야 예쁘고 간결하게 만들수있을까? 
 
-이 디폴트 메서드를 이용하면 기존의 코드를 건드리지 않고도 원래의 인터페이스 설계를 자유롭게 확장할 수 있다. 
+## 2.2 동작 파라미터화
 
-## 1.6 함수형 프로그래밍에서 가져온 다른 아이디어
+[전략 디자인 패턴](https://berrrrr.github.io/programming/2019/11/03/strategy-pattern/)을 사용해서 필요에 따른 필터를 넘겨줘서 사과를 필터링할수있게 해보자. 이때, Predicate(특정 조건에 대해 참/거짓을 반환하는 함수) 인터페이스를 사용할 수 있다. 
 
-- nullpointer 예외를 피할수 있게 해주는 Optional 클래스 제공
-- 구조적 패턴매칭 기법
+```java
+public interface ApplePredicate {
+  boolean test (Apple apple);
+}
+
+public class AppleHeavyWeightPredicate implements ApplePredicate {
+  public boolean test(Apple apple) {
+    return apple.getWeight() > 150;
+  }
+}
+
+public class AppleGreenColorPredicate implements ApplePredicate {
+  public boolean test(Apple apple) {
+    return GREEN.equals(apple.getColor());
+  }
+}
+```
+
+오 .. 이 Predicate들을 매개변수로 넘겨받는 filter메서드를 정의하면 여러개의 중복filter를 정의하지 않고 1개만으로도 다양한 필터링을 할 수 있겠어! 
+
+```java
+public static List<Apple> filterApples(List<Apple> inventory, ApplePredicate p) {
+  List<Apple> result = new ArrayList<>();
+  for(Apple apple : inventory) {
+    if(p.test(apple)) {
+      result.add(apple);
+    }
+  }
+  return result;
+}
+```
+
+이렇게 한 메서드가 여러가지 동작(필터)를 할 수 있도록 해주는것이 **동작 파라미터화**의 강점이다. 
+
+## 2.3 복잡한 과정 간소화
+
+### 1) 익명클래스 사용
+
+Predicate를 선언하는것도 귀찮다...!! 그럼 우리는 자바의 익명클래스를 사용할 수 있다 
+
+```java
+List<Apple> redApples = filterApples(inventory, new ApplePredicate() {
+  public boolean test(Apple apple) {
+    return RED.equals(apple.getColor());
+  }
+}
+```
+
+근데 이것도...... 장황하고 길다.
+
+### 2) 람다표현식 사용
+
+람다표현식을 사용하면 더 간결하게 할 수 있다! 
+
+```java
+List<Apple> result = filterApples(inventory, (Apple apple) -> RED.equals(apple.getColor()));
+```
+
+가독성도 훨씬 나아졌다.
+
+### 3) 리스트 형식으로 추상화
+
+```java
+public interface Predicate<T> {
+  boolean test(T t);
+}
+
+public static <T> List<T> filter(List<T> list, Predicate<T> p) {
+  List<T> result = new ArrayList<>();
+  for(T e : list) {
+    if(p.test(e)) {
+      result.add(e);
+    }
+  }
+  return result;
+}
+
+List<Apple> redApples = filter(inventory, (Apple apple) -> RED.equals(apple.getColor()));
+List<Integer> evenNumbers = filter(numbers, (Integer i) -> i % 2 == 0);
+```
+
+제너릭을 사용해서 추상화했더니 Apple뿐 아니라 Integer, String .. 무궁무진하게 필터링할수잇게됐다.
