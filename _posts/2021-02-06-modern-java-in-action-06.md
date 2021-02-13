@@ -393,9 +393,9 @@ List<Dish> dishes = menuStream.collect(toList());
 
 ```java
 List<Dish> dishes = menuStream.collect(
-												 ArrayList::new,   // 발행
-												 List::add,        // 누적
-												 List::addAll);    // 합침
+	 ArrayList::new,   // 발행
+	 List::add,        // 누적
+	 List::addAll);    // 합침
 ```
 
 하지만 가독성이 구리니 비추한다. 
