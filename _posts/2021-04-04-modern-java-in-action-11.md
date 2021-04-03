@@ -316,11 +316,11 @@ public String getCarInsuranceName(Optional<Person> person) {
 ```java
 public Set<String> getCarInsuranceNames(List<Person> persons) {
     return persons.stream()
-                  .map(Person::getCar) // 사람 목록을 각 사람이 보유한 자동차의 Optional<Car> 스트림으로 변환
-                  .map(optCar -> optCar.flatMap(Car::getInsurance)) // flatMap 연산을 이용해 Optional<Car>을 해당 Optional<Insurance>로 변환
-                  .map(optIns -> optIns.map(Insurance::getName)) // Optional<Insurance>를 해당 이름의 Optional<String>으로 매핑
-                  .flatMap(Optional::stream) // Stream<Optional<String>>을 현재 이름을 포함하는 Stream<String>으로 변환
-                  .collect(toSet()); // 결과 문자열을 중복되지 않은 값을 갖도록 집합으로 수집
+        .map(Person::getCar) // 사람 목록을 각 사람이 보유한 자동차의 Optional<Car> 스트림으로 변환
+        .map(optCar -> optCar.flatMap(Car::getInsurance)) // flatMap 연산을 이용해 Optional<Car>을 해당 Optional<Insurance>로 변환
+        .map(optIns -> optIns.map(Insurance::getName)) // Optional<Insurance>를 해당 이름의 Optional<String>으로 매핑
+        .flatMap(Optional::stream) // Stream<Optional<String>>을 현재 이름을 포함하는 Stream<String>으로 변환
+        .collect(toSet()); // 결과 문자열을 중복되지 않은 값을 갖도록 집합으로 수집
 }
 ```
 
@@ -467,23 +467,24 @@ public String getCarInsuranceName(Optional<Person> person, int minAge) {
 ```
 
 ### Optional 클래스의 메서드
-| Method          | Desc                                                                                                                    |
-|-----------------|-------------------------------------------------------------------------------------------------------------------------|
-| empty           | 빈 Optional 인스턴스 반환|
-| filter          | 값이 존재하며 Predicate와 일치하면 값을 포함하는 Optional 반환. 값이 없거나 Predicate와 일치하지 않으면 빈 Optional반환 |
-| flatMap         | 값이 존재하면 인수로 제공된 함수를 적용한 결과 Optional을 반환. 값이 없으면 빈 Optional반환|
-| get             | 값이 존재하면 Optional이 감싸고 있는 값을 반환. 값이 없으면 NoSuchElementException 발생|
-| ifPresent       | 값이 존재하면 지정된 Consumer을 실행. 값이 없으면 아무일도 일어나지않음|
+
+| Method|Desc|
+|:---|:---|
+| empty| 빈 Optional 인스턴스 반환|
+| filter| 값이 존재하며 Predicate와 일치하면 값을 포함하는 Optional 반환. 값이 없거나 Predicate와 일치하지 않으면 빈 Optional반환 |
+| flatMap| 값이 존재하면 인수로 제공된 함수를 적용한 결과 Optional을 반환. 값이 없으면 빈 Optional반환|
+| get| 값이 존재하면 Optional이 감싸고 있는 값을 반환. 값이 없으면 NoSuchElementException 발생|
+| ifPresent| 값이 존재하면 지정된 Consumer을 실행. 값이 없으면 아무일도 일어나지않음|
 | ifPresentOrElse | 값이 존재하면 지정된 Consumer실행. 값이 없으면 아무일도 일어나지않음|
-| isPresent       | 값이 존재하면 true반환. 값이 없으면 false반환|
-| map             | 값이 존재하면 제공된 매핑함수 적용|
-| of              | 값이 존재하면 값을 감싸는 Optional을 반환. 값이 null이면 NullPointerException 발생|
-| ofNullable      | 값이 존재하면 값을 감싸는 Optional을 반환. 값이 null이면 빈 Optional 반환|
-| or              | 값이 존재하면 같은 Optional 반환. 값이 없으면 Supplier에서 만든 Optional 반환|
-| orElse          | 값이 존재하면 값을 반환. 값이 없으면 기본값 반환|
-| orElseGet       | 값이 존재하면 값을 반환. 값이 없으면 Supplier에서 제공하는 값을 반환|
-| orElseThrow     | 값이 존재하면 값을 반환. 값이 없으면 Supplier에서 생성한 예외를 발생|
-| stream          | 값이 존재하면 존재하는 값만 포함하는 스트림 반환. 값이없으면 빈 스트림 반환|
+| isPresent| 값이 존재하면 true반환. 값이 없으면 false반환|
+| map| 값이 존재하면 제공된 매핑함수 적용|
+| of| 값이 존재하면 값을 감싸는 Optional을 반환. 값이 null이면 NullPointerException 발생|
+| ofNullable| 값이 존재하면 값을 감싸는 Optional을 반환. 값이 null이면 빈 Optional 반환|
+| or| 값이 존재하면 같은 Optional 반환. 값이 없으면 Supplier에서 만든 Optional 반환|
+| orElse| 값이 존재하면 값을 반환. 값이 없으면 기본값 반환|
+| orElseGet| 값이 존재하면 값을 반환. 값이 없으면 Supplier에서 제공하는 값을 반환|
+| orElseThrow| 값이 존재하면 값을 반환. 값이 없으면 Supplier에서 생성한 예외를 발생|
+| stream| 값이 존재하면 존재하는 값만 포함하는 스트림 반환. 값이없으면 빈 스트림 반환|
 
 ## 11.4 Optional을 사용한 실용예제
 
