@@ -1,7 +1,7 @@
 ---
 layout: post
-title: kubernetes resource template - yaml 파일 작성법
-subtitle: kubernetes resource template - yaml 파일 작성법
+title: "[k8s] kubernetes resource template - yaml 파일 작성법"
+subtitle: "[k8s] kubernetes resource template - yaml 파일 작성법"
 categories: programming
 tags: infra
 comments: true
@@ -52,7 +52,7 @@ spec:
     spec:
       containers:
       - name: python-sample
-        image: idock.daumkakao.io/sample/pywsgi-flask:latest
+        image: dockerimage주소:태그
         imagePullPolicy: IfNotPresent
         resources:
           requests:
@@ -108,7 +108,7 @@ spec:
     spec:
       containers:
         - name: category-demo
-          image: idock.daumkakao.io/navy_park/cate_sample:latest
+          image: dockerimage주소:태그
           imagePullPolicy: Always
           resources:
             requests:
@@ -155,7 +155,7 @@ metadata:
     ingress.kubernetes.io/rewrite-target: /
 spec:
   rules:
-    - host: demo-navy.devel.kakao.com
+    - host: 도메인주소
       http:
         paths:
           - path: /

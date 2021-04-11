@@ -93,8 +93,6 @@ numbers.forEach(System.out::println);
 
 같은 자바 바이트코드를 사용하여 JVM 기반 프로그래밍 언어를 이용함으로 DSL 합칠 수 있다.
 
-<스칼라 언어로 함수 f를 주어진 횟수만큼 반복 실행하는 유틸리티 함수 구현>
-
 ```java
 def times(i: Int, f: => Unit): Unit = {
     f
