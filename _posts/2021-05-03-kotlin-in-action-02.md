@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "[Kotlin in action] 1. 코틀린이란?"
-subtitle: "[Kotlin in action] 1. 코틀린이란?"
+title: "[Kotlin in action] 2. 코틀린 기초"
+subtitle: "[Kotlin in action] 2. 코틀린 기초"
 categories: programming
 tags: kotlin
 comments: true
@@ -39,16 +39,16 @@ fun main(args: Array<String>) {
 
 ![2021-05-03-kotlin02.png](https://github.com/berrrrr/berrrrr.github.io/blob/master/_images/2021-05-03-kotlin02.png?raw=true)
 
-    코틀린의 if는 expression(식) 이지 statement(문) 가 아님. 
+코틀린의 if는 expression(식) 이지 statement(문) 가 아님. 
 
-    **문(statement)과 식(expression)의 구분**
+**문(statement)과 식(expression)의 구분**
 
-    - **식(expression)**은 **값을 만들어 내며** 다른 식의 **하위요소**로 계산에 참여 할 수 있다.
-    - 반면 **문(statement)**은 **아무런값을 만들어 내지 않으며** 자신을 둘러 싸고 있는 안쪽의 블록이 최상위 요소로 존재 한다.
+- **식(expression)**은 **값을 만들어 내며** 다른 식의 **하위요소**로 계산에 참여 할 수 있다.
+- 반면 **문(statement)**은 **아무런값을 만들어 내지 않으며** 자신을 둘러 싸고 있는 안쪽의 블록이 최상위 요소로 존재 한다.
 
-    자바의 모든 제어구조가 statement인 반면 코틀린은 루프를 제외한 대부분이 expression 형태임.
+자바의 모든 제어구조가 statement인 반면 코틀린은 루프를 제외한 대부분이 expression 형태임.
 
-    단, 대입문은 자바에서는 expression 이었지만 코틀린에서는 statement가 됨.
+단, 대입문은 자바에서는 expression 이었지만 코틀린에서는 statement가 됨.
 
 - 블록이 본문인 함수(block body) : 본문이 중괄호로 둘러싸인 함수
 
