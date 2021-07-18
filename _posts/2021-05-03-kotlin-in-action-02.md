@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "[Kotlin in action] 2. 코틀린 기초"
-subtitle: "[Kotlin in action] 2. 코틀린 기초"
+title: "[Kotlin In Action] 2. 코틀린 기초"
+subtitle: "[Kotlin In Action] 2. 코틀린 기초"
 categories: programming
 tags: kotlin
 comments: true

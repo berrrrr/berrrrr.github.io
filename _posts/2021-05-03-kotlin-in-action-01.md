@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "[Kotlin in action] 1. 코틀린이란?"
-subtitle: "[Kotlin in action] 1. 코틀린이란?"
+title: "[Kotlin In Action] 1. 코틀린이란?"
+subtitle: "[Kotlin In Action] 1. 코틀린이란?"
 categories: programming
 tags: kotlin
 comments: true
