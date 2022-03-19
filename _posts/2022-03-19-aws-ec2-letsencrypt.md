@@ -20,7 +20,7 @@ sudo systemctl stop nginx
 
 httpd 살려줌
 
-```json
+```bash
 sudo systemctl start httpd
 ```
 
