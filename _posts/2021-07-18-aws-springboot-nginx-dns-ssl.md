@@ -17,7 +17,7 @@ EC2에서 nginx 설정하는방법은 굉장히 많은 블로그에서 설명하
 
 ## 1. /etc/nginx/nginx.conf
 
-우선 amazon linux 2 의 nginx는 `/etc/nginx/nginx.conf` 파일을 설정파일로 잡고있다. 그러나 대체로 이 파일을 직접 건드리기보다는 `sites-available` , `sites-이라는enabled` 폴더에 커스텀 설정파일을 작성해 넣고, nginx.conf에서는 해당 설정파일을  include 해서 사용하는듯하다. 
+우선 amazon linux 2 의 nginx는 `/etc/nginx/nginx.conf` 파일을 설정파일로 잡고있다. 그러나 대체로 이 파일을 직접 건드리기보다는 `sites-available` , `sites-enabled` 폴더에 커스텀 설정파일을 작성해 넣고, nginx.conf에서는 해당 설정파일을  include 해서 사용하는듯하다. 
 
 ```bash
 sudo vim /etc/nginx/nginx.conf
@@ -107,7 +107,7 @@ server_name example.com www.example.com;
 
 `ssl_certificate`, `ssl_certificate_key` 는 이전에 설명한 letsencript로 ssl 인증서받기부분을 완료했다면 저 위치에 인증서, 키가 생성되었을것..  경로중 [example.com](http://example.com) 으로 되어있는 각자 자기 도메인으로 넣어주면됨 
 
-내 springboot app은 8080포트를 사용하고있는 중이라, `proxy_pass` 부분에 `[http://localhost:8080](http://localhost:8080)` 이 들어갔다. 해당부분은 자신의 스프링부트 앱에 맞게 설정해주면된다. 
+내 springboot app은 8080포트를 사용하고있는 중이라, `proxy_pass` 부분에 `http://localhost:8080` 이 들어갔다. 해당부분은 자신의 스프링부트 앱에 맞게 설정해주면된다. 
 
 ## 3. /etc/nginx/sites-enabled
 

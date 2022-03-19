@@ -48,3 +48,7 @@ placeholder 를 지정해서 작성해야하는 부분에 자동으로 커서를
 
 또한 내가 지정해놓은 `$CURRENT_YEAR-$CURRENT_MONTH-$CURRENT_DATE $CURRENT_HOUR:$CURRENT_MINUTE:$CURRENT_SECOND"` 부분처럼
 자동으로 컴퓨터의 시간을 불러올 수도 있다. 
+
+## 사용방법
+작성한 스니펫을 저장하면, vscode에서 `ctrl+space`를 누르고 prefix를 입력하면 스니펫이 자동완성으로 뜬다.  
+해당 스니펫을 선택하면 내가 body에 작성했던 내용이 적용되서 나타나게된다! 
