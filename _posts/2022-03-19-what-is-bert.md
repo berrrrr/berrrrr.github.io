@@ -2,8 +2,8 @@
 layout: post
 title: "BERT 톺아보기"
 subtitle: "BERT 톺아보기"
-categories: datasicence
-tags: dl
+categories: datascience
+tags: deeplearning
 comments: true
 ---
 

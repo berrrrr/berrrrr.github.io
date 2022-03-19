@@ -33,7 +33,7 @@ sudo cp redis.conf /etc/redis/
 ## 2. redis.conf 설정
 
 ```bash
-	sudo vi /etc/redis/redis.conf
+sudo vi /etc/redis/redis.conf
 ```
 
 아래내용들로 수정
