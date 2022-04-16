@@ -7,10 +7,10 @@ tags: infra
 comments: true
 ---
 
-```yaml
-# This workflow will build a Java project with Maven, and cache/restore any dependencies to improve the workflow execution time
-# For more information see: https://help.github.com/actions/language-and-framework-guides/building-and-testing-java-with-maven
 
+지난 시리즈에 이어.. deploy까지 성공했다 
+
+```yaml
 name: Java CI with Maven
 
 on:
@@ -77,9 +77,6 @@ jobs:
           docker run -d -p 8081:8081 --name example_be --restart always example/example_be:latest
 ```
 
- 
-
-지난 시리즈에 이어.. deploy까지 성공했다 
 
 우선 내가 배포할 서버에 **github action runner** 를 띄워줘야한다
 
@@ -87,7 +84,7 @@ jobs:
 
 new self hosted runner 버튼을 눌러 runner를 추가할 준비를한다
 
-![스크린샷 2022-03-26 오후 6.44.50.png](github%20act%20e9ba8/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA_2022-03-26_%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE_6.44.50.png)
+![github-action-cd-01.png](https://github.com/berrrrr/berrrrr.github.io/blob/master/_images/github-action-cd-01.png?raw=true)
 
 내가 배포할 서버는 aws linux2 이므로, runner image > linux선택
 
@@ -97,7 +94,7 @@ new self hosted runner 버튼을 눌러 runner를 추가할 준비를한다
 
 `./config.sh` 를 실행하는 부분에서는 몇번 수동으로 입력해줘야하는부분이 나오는데 대부분은 다 엔터눌러서 default  설정해줘도되고  혹은 내가 원하는 값으로 지정해줘도된다 
 
-![스크린샷 2022-03-26 오후 6.38.14.png](github%20act%20e9ba8/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA_2022-03-26_%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE_6.38.14.png)
+![github-action-cd-02.png](https://github.com/berrrrr/berrrrr.github.io/blob/master/_images/github-action-cd-02.png?raw=true)
 
 내경우 runner group은 default로,
 
@@ -113,7 +110,7 @@ nohup ./run.sh &
 
 위명령어로 백그라운드에 러너를 띄웠더니 githubaction에서 대기타던 deploy 가 성공! 
 
-![스크린샷 2022-03-26 오후 6.52.33.png](github%20act%20e9ba8/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA_2022-03-26_%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE_6.52.33.png)
+![github-action-cd-03.png](https://github.com/berrrrr/berrrrr.github.io/blob/master/_images/github-action-cd-03.png?raw=true)
 
 이로서 깃헙액션으로 모든 CI/CD를 완성했다 
 

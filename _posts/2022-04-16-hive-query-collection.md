@@ -80,33 +80,44 @@ ALTER TABLE invites ADD COLUMNS (new_col2 INT COMMENT 'a comment')
 ```
 
 ## table의 컬럼명 리스트 가져오기
+```
 describe database.tablename;
+```
 (컬럼명만 가져옴) 
 
 ## table 의 상세정보 가져오기
+```
 describe formatted test.eaxmple_table;
+```
 ( 테이블의 컬럼, external 테이블 여부, 만든시간, 포맷정보, 저장위치, 등등 다나옴) 
 
 
 ## 테이블 있는지 없는지 체크하기
-
+```
 USE {db명};
 SHOW TABLES LIKE '{테이블명}';
 예)
 USE test;
 SHOW TABLES LIKE 'example_table';
+```
 
 ## partition table에 특정 partition 이 있는지 확인하기
+```
 show partitions {table} partition(`{partition column}`="{partition column value}")
+```
 
 ## 특정 partition 삭제
+```
 ALTER TABLE test.eaxmple_table DROP PARTITION (dt='2020--0-1-');
+```
 
 ## 파티션별 count 보기
+```
 select dt, count(*) 
 from test.eaxmple_table
 where dt >= '2020-02-01'
 group by dt;
+```
 
 ## multi depth로 구성된 json구조에서 객체얻기 
 ``` json
