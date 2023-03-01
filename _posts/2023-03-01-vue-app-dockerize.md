@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "[Vue] DOM에 이름달기"
-subtitle: "[Vue] DOM에 이름달기"
+title: "[Vue] Vue app dockerize (nginx사용)"
+subtitle: "[Vue] Vue app dockerize (nginx사용)"
 categories: programming
 tags: frontend
 comments: true
