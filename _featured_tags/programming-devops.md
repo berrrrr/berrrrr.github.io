@@ -1,8 +1,8 @@
 ---
 layout: tag-blog
-title: Design Pattern
-slug: designpattern
+title: DevOps
+slug: devops
 category: programming
 menu: false
-order: 6
+order: 4
 ---

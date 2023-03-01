@@ -1,8 +1,8 @@
 ---
 layout: tag-blog
-title: Design Pattern
-slug: designpattern
+title: MLOps
+slug: mlops
 category: programming
 menu: false
-order: 6
+order: 5
 ---

@@ -4,5 +4,5 @@ title: Tips
 slug: tips
 category: programming
 menu: false
-order: 8
+order: 9
 ---
