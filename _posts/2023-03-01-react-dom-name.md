@@ -6,6 +6,7 @@ categories: programming
 tags: frontend
 comments: true
 ---
+
 💡 ref 를 통해 DOM에 이름을 다는 방법을 알아보자!
 
 
