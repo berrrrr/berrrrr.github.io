@@ -3,7 +3,7 @@ layout: post
 title: window에 PostgreSQL 과 PostGIS 설치해보기
 subtitle: window에 PostgreSQL 과 PostGIS 설치해보기
 categories: programming
-tags: infra
+tags: devops
 comments: true
 ---
 

@@ -3,7 +3,7 @@ layout: post
 title: Kafka 란?
 subtitle: Kafka 란?
 categories: programming
-tags: infra
+tags: devops
 comments: true
 ---
 ## kafka란? 

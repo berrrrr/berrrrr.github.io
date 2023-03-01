@@ -3,7 +3,7 @@ layout: post
 title: "[AWS EC2] AWS Let's Encrypt 인증서 갱신"
 subtitle: "[AWS EC2] AWS Let's Encrypt 인증서 갱신"
 categories: programming
-tags: infra
+tags: devops
 comments: true
 ---
 

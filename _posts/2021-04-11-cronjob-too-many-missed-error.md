@@ -3,7 +3,7 @@ layout: post
 title: "[k8s]  Cannot determine if job needs to be started 뜨면서 크론잡이 실행되지 않을때"
 subtitle: "[k8s]  Cannot determine if job needs to be started 뜨면서 크론잡이 실행되지 않을때"
 categories: programming
-tags: infra
+tags: devops
 comments: true
 ---
 

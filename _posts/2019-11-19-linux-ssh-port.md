@@ -3,7 +3,7 @@ layout: post
 title: Linux SSH port 변경하기
 subtitle: Linux SSH port 변경하기
 categories: programming
-tags: infra
+tags: devops
 comments: true
 ---
 

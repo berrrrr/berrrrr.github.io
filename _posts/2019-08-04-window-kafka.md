@@ -3,7 +3,7 @@ layout: post
 title: Window 환경에서 kafka 구축하기
 subtitle: Window 환경에서 kafka 구축하기
 categories: programming
-tags: infra
+tags: devops
 comments: true
 ---
 

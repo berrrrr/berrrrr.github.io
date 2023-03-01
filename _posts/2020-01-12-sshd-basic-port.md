@@ -3,7 +3,7 @@ layout: post
 title: sshd 기본 port변경
 subtitle: sshd 기본 port변경
 categories: programming
-tags: infra
+tags: devops
 comments: true
 ---
 

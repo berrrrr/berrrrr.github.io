@@ -3,7 +3,7 @@ layout: post
 title: spinnaker 란?
 subtitle: spinnaker 란?
 categories: programming
-tags: infra
+tags: devops
 comments: true
 ---
 

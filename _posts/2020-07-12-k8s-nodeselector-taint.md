@@ -3,7 +3,7 @@ layout: post
 title: "[k8s] pod를 특정 nod에 한정해서 올리기"
 subtitle: "[k8s] pod를 특정 nod에 한정해서 올리기"
 categories: programming
-tags: infra
+tags: devops
 comments: true
 ---
 

@@ -3,7 +3,7 @@ layout: post
 title: '[k8s] 특정 키워드를 포함하는 pod들 로그 전부 파일로 떨구기'
 subtitle: '[k8s] 특정 키워드를 포함하는 pod들 로그 전부 파일로 떨구기'
 categories: programming
-tags: infra
+tags: devops
 comments: true
 ---
 

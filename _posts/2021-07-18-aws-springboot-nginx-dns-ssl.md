@@ -3,7 +3,7 @@ layout: post
 title: "[AWS EC2]  springboot + nginx 사용시 ssl, dns 설정"
 subtitle: "[AWS EC2]  springboot + nginx 사용시 ssl, dns 설정"
 categories: programming
-tags: infra
+tags: devops
 comments: true
 ---
 

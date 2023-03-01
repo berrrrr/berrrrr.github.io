@@ -3,7 +3,7 @@ layout: post
 title: Grafana 설치하기
 subtitle: Grafana 설치하기
 categories: programming
-tags: infra
+tags: devops
 comments: true
 ---
 

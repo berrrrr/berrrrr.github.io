@@ -3,7 +3,7 @@ layout: post
 title: 도커(Docker)와 쿠버네티스(Kubernetes)
 subtitle: 도커(Docker)와 쿠버네티스(Kubernetes)
 categories: programming
-tags: infra
+tags: devops
 comments: true
 ---
 

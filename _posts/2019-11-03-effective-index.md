@@ -3,7 +3,7 @@ layout: post
 title: index란? 효율적인 index는 무엇인가?
 subtitle: index란? 효율적인 index는 무엇인가?
 categories: programming
-tags: infra
+tags: devops
 comments: true
 ---
 

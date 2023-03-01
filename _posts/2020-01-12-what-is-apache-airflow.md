@@ -3,7 +3,7 @@ layout: post
 title: Apache airflow란?
 subtitle: Apache airflow란?
 categories: programming
-tags: infra
+tags: devops
 comments: true
 ---
 

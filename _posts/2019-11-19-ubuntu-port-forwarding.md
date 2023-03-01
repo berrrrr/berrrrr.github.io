@@ -3,7 +3,7 @@ layout: post
 title: Ubuntu에서 port forwarding하기
 subtitle: Ubuntu에서 port forwarding하기
 categories: programming
-tags: infra
+tags: devops
 comments: true
 ---
 

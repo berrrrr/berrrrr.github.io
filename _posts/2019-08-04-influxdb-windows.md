@@ -3,7 +3,7 @@ layout: post
 title: influxDB windows에 설치하기
 subtitle: influxDB windows에 설치하기
 categories: programming
-tags: infra
+tags: devops
 comments: true
 ---
 

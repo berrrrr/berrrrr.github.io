@@ -3,7 +3,7 @@ layout: post
 title: logstash vs filebeat
 subtitle: logstash vs filebeat
 categories: programming
-tags: infra
+tags: devops
 comments: true
 ---
 

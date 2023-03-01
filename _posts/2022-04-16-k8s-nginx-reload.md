@@ -3,7 +3,7 @@ layout: post
 title: "[k8s] nginx reload"
 subtitle: "[k8s] nginx reload"
 categories: programming
-tags: infra
+tags: devops
 comments: true
 ---
 

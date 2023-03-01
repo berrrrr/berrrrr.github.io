@@ -3,7 +3,7 @@ layout: post
 title: "[k8s] ingress timeout 설정"
 subtitle: "[k8s] ingress timeout 설정"
 categories: programming
-tags: infra
+tags: devops
 comments: true
 ---
 

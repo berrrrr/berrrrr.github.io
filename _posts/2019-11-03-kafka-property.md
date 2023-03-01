@@ -3,7 +3,7 @@ layout: post
 title: Kafka 기본개념과 Kafka 속성들 정리
 subtitle: Kafka 기본개념과 Kafka 속성들 정리
 categories: programming
-tags: infra
+tags: devops
 comments: true
 ---
 

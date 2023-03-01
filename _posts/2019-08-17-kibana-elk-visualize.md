@@ -3,7 +3,7 @@ layout: post
 title: kibana로 elasticsearch 데이터 시각화하기
 subtitle: kibana로 elasticsearch 데이터 시각화하기
 categories: programming
-tags: infra
+tags: devops
 comments: true
 ---
 

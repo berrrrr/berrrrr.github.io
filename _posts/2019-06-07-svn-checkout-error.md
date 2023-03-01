@@ -3,7 +3,7 @@ layout: post
 title: svn CHECKOUT can only be performed on a version resource 에러
 subtitle: svn CHECKOUT can only be performed on a version resource 에러
 categories: programming
-tags: infra
+tags: devops
 comments: true
 ---
 

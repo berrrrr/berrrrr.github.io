@@ -3,7 +3,7 @@ layout: post
 title: kafka 와 기존 메세징 시스템과의 차이점
 subtitle: kafka 와 기존 메세징 시스템과의 차이점
 categories: programming
-tags: infra
+tags: devops
 comments: true
 ---
 

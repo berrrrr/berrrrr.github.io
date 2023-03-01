@@ -3,7 +3,7 @@ layout: post
 title: Linux Profile 설정하기
 subtitle: Linux Profile 설정하기
 categories: programming
-tags: infra
+tags: devops
 comments: true
 ---
 

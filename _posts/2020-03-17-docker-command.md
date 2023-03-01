@@ -3,7 +3,7 @@ layout: post
 title: 자주쓰는 Docker 명령어 정리
 subtitle: 자주쓰는 Docker 명령어 정리
 categories: programming
-tags: infra
+tags: devops
 comments: true
 ---
 

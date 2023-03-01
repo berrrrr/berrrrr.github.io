@@ -3,7 +3,7 @@ layout: post
 title: 'JEUS 클러스터 설정/배포'
 subtitle: 'JEUS 클러스터 설정/배포방법'
 categories: programming
-tags: infra
+tags: devops
 comments: true
 ---
 > JEUS 클러스터 설정/배포방법

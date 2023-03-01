@@ -3,7 +3,7 @@ layout: post
 title: influxDB CentOS에 설치하기
 subtitle: influxDB CentOS에 설치하기
 categories: programming
-tags: infra
+tags: devops
 comments: true
 ---
 

@@ -3,7 +3,7 @@ layout: post
 title: ssh authorization error
 subtitle: ssh authorization error
 categories: programming
-tags: infra
+tags: devops
 comments: true
 ---
 

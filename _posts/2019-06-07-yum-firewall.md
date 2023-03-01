@@ -3,7 +3,7 @@ layout: post
 title: 방화벽이 막혀있지 않은데 yum이 실행이 안되는 경우
 subtitle: 방화벽이 막혀있지 않은데 yum이 실행이 안되는 경우
 categories: programming
-tags: infra
+tags: devops
 comments: true
 ---
 

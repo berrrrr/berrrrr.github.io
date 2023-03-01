@@ -3,7 +3,7 @@ layout: post
 title: CentOS7에 ELK stack 설치하기
 subtitle: CentOS7에 ELK stack 설치하기
 categories: programming
-tags: infra
+tags: devops
 comments: true
 ---
 

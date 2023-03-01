@@ -3,7 +3,7 @@ layout: post
 title: "[AWS EC2] redis 설치"
 subtitle: "[AWS EC2] redis 설치"
 categories: programming
-tags: infra
+tags: devops
 comments: true
 ---
 

@@ -3,7 +3,7 @@ layout: post
 title: CentOS Grafana 실행/종료하기
 subtitle: CentOS Grafana 실행/종료하기
 categories: programming
-tags: infra
+tags: devops
 comments: true
 ---
 

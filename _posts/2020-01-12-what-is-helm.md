@@ -3,7 +3,7 @@ layout: post
 title: Helm 이란?
 subtitle: Helm 이란?
 categories: programming
-tags: infra
+tags: devops
 comments: true
 ---
 

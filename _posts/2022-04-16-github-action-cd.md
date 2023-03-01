@@ -3,7 +3,7 @@ layout: post
 title: "github action으로 springboot-maven프로젝트 CD 하기"
 subtitle: "github action으로 springboot-maven프로젝트 CD 하기"
 categories: programming
-tags: infra
+tags: devops
 comments: true
 ---
 

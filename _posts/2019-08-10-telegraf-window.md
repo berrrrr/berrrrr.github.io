@@ -3,7 +3,7 @@ layout: post
 title: windows에서 telegraf 사용하기
 subtitle: windows에서 telegraf 사용하기
 categories: programming
-tags: infra
+tags: devops
 comments: true
 ---
 

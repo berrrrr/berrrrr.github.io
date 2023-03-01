@@ -3,7 +3,7 @@ layout: post
 title: brew로 설치한 zookeeper, kafka 에러
 subtitle: brew로 설치한 zookeeper, kafka 에러
 categories: programming
-tags: infra
+tags: devops
 comments: true
 ---
 

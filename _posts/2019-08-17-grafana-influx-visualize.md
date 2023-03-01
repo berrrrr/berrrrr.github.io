@@ -3,7 +3,7 @@ layout: post
 title: grafana로 influxDB 데이터 시각화하기
 subtitle: grafana로 influxDB 데이터 시각화하기
 categories: programming
-tags: infra
+tags: devops
 comments: true
 ---
 

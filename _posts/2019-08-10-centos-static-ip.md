@@ -3,7 +3,7 @@ layout: post
 title: CentOS7 고정아이피로 바꾸기
 subtitle: CentOS7 고정아이피로 바꾸기
 categories: programming
-tags: infra
+tags: devops
 comments: true
 ---
 CentOS7 고정아이피로 바꾸기

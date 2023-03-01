@@ -3,7 +3,7 @@ layout: post
 title: Jeus 배포시 deploy application failed에러
 subtitle: Jeus 배포시 deploy application failed에러
 categories: programming
-tags: infra
+tags: devops
 comments: true
 ---
 

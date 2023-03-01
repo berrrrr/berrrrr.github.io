@@ -3,7 +3,7 @@ layout: post
 title: "[k8s] kubernetes resource template - yaml 파일 작성법"
 subtitle: "[k8s] kubernetes resource template - yaml 파일 작성법"
 categories: programming
-tags: infra
+tags: devops
 comments: true
 ---
 

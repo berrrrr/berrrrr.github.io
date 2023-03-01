@@ -3,7 +3,7 @@ layout: post
 title: Kafka vs RabbitMQ
 subtitle: Kafka vs RabbitMQ
 categories: programming
-tags: infra
+tags: devops
 comments: true
 ---
 
