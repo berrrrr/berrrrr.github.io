@@ -1,71 +1,82 @@
 ---
 layout: post
-title: "[Argo Events] 이벤트소스에서 sqs메세지 가져오기"
-subtitle: "[Argo Events] 이벤트소스에서 sqs메세지 가져오기"
+title: "[Argo Events] webhook으로 각종 workflow실행하기"
+subtitle: "[Argo Events] webhook으로 각종 workflow실행하기"
 categories: programming
 tags: devops
 comments: true
 ---
 
-💡 aws sqs, kafka, aws sns, file, redis, webhook등 특정 이벤트소스로부터 이벤트가 발생했다면 거기서 메세지를 가져오고싶은게 인지상정. 이벤트소스가 aws sqs인 상황을 예시로, 어떤식으로 가져와서 활용하는지 알아보자
+아무래도 이벤트 소스로 가장 많이 사용될 녀석이 webhook 이지 않을까 싶다
 
+웹훅을 걸어놓으면 어디서든 http request한번 날리면 쉽게 workflow를 실행할수있으므로.. 
 
-## 1.  event structure
+## 1. webhook eventsource
 
-먼저, 이벤트소스에서 어떤 형식으로 sensor에 데이터를 넘겨주는지 알아야한다. 이는 argo-events docs에 잘 나와있다. aws sqs 이벤트소스에서 보내주는 형식(=event structure)는 다음과 같다 
+우선 웹훅 이벤트소스를 만들어야한다. 기본적인 뼈대는 아래와 같다. 
 
-```json
-{
-    "context":
-    {
-        "type": "type_of_event_source",
-        "specversion": "cloud_events_version",
-        "source": "name_of_the_event_source",
-        "id": "unique_event_id",
-        "time": "event_time",
-        "datacontenttype": "type_of_data",
-        "subject": "name_of_the_configuration_within_event_source"
-    },
-    "data":
-    {
-        "messageId": "message id",
-        "messageAttributes": "message attributes",
-        "body": "Body is the message data"
-    }
-}
+```yaml
+apiVersion: argoproj.io/v1alpha1
+kind: EventSource
+metadata:
+  name: webhook
+spec:
+  service:
+    ports:
+      - port: 12000
+        targetPort: 12000
+  webhook:
+    # event-source can run multiple HTTP servers. Simply define a unique port to start a new HTTP server
+    example:
+      # port to run HTTP server on
+      port: "12000"
+      # endpoint to listen to
+      endpoint: /example
+      # HTTP request method to allow. In this case, only POST requests are accepted
+      method: POST
 ```
 
-> [https://argoproj.github.io/argo-events/eventsources/setup/aws-sqs/](https://argoproj.github.io/argo-events/eventsources/setup/aws-sqs/)
-> 
+또한, 웹훅 이벤트 소스가 센서로 전달하는 데이터의 모양은 다음과 같다.
 
-각 소스마다 조금씩 data 형태가 다르므로, 자신이 사용하는 이벤트소스의 event structure를 확인하고 trigger를 작성하는게 좋다. 
+data부분을 보면, header와 body로 나눠서 데이터를 보내고 있으니 이를 활용하기 위해서는 반드시 참고할것. 
 
-각 이벤트 소스별 event structure는 argo events docs > User Guide > EventSources > Setup 페이지에 나와있으니 참고하여 작성하자
+```yaml
+{
+        "context": {
+          "type": "type_of_event_source",
+          "specversion": "cloud_events_version",
+          "source": "name_of_the_event_source",
+          "id": "unique_event_id",
+          "time": "event_time",
+          "datacontenttype": "type_of_data",
+          "subject": "name_of_the_configuration_within_event_source"
+        },
+        "data": {
+          "header": {/* the headers from the request received by the event-source from the external entity */},
+          "body": { /* the payload of the request received by the event-source from the external entity */},
+        }
+    }
+```
 
-## 2. parameterization
+## 2. webhook sensor
 
-이제 내 이벤트소스가 보내는 형식을 알았다면 그걸 trigger에서 활용해야한다. 이를 docs에서는 trigger resource parameterization 이라고 칭하고있으므로 해당 페이지를 참고하자 
-
-> [https://argoproj.github.io/argo-events/tutorials/02-parameterization/](https://argoproj.github.io/argo-events/tutorials/02-parameterization/)
-> 
-
-요약하자면, 아래와 같이 trigger > template > parameters 항목에서 event source로 부터 받은 데이터를 trigger가 실행하는 template에 넣어줄수있다. 
+이제 엔드포인트웹훅(=이벤트소스)은 생성되었으니 그 웹훅이 어떤것을 실행할지에 대한 트리거와 센서를 만들어보자
 
 ```yaml
 apiVersion: argoproj.io/v1alpha1
 kind: Sensor
 metadata:
-  name: sqs-sensor
+  name: webhook
 spec:
   template:
-    serviceAccountName: workflow-sensor
+    serviceAccountName: operate-workflow-sa
   dependencies:
-    - name: message-polling
-      eventSourceName: sqs-eventsource
-      eventName: sqs-polling
+    - name: test-dep
+      eventSourceName: webhook
+      eventName: example
   triggers:
     - template:
-        name: sqs-workflow
+        name: webhook-workflow-trigger
         k8s:
           operation: create
           source:
@@ -73,13 +84,13 @@ spec:
               apiVersion: argoproj.io/v1alpha1
               kind: Workflow
               metadata:
-                generateName: aws-sqs-workflow-
+                generateName: webhook-
               spec:
                 entrypoint: whalesay
                 arguments:
                   parameters:
                   - name: message
-                    # 이부분은 아래 parameters에서 보낸 값으로 덮어써진다 
+                    # the value will get overridden by event payload from test-dep
                     value: hello world
                 templates:
                 - name: whalesay
@@ -92,66 +103,76 @@ spec:
                     args: ["{{inputs.parameters.message}}"]
           parameters:
             - src:
-                dependencyName: message-polling
+                dependencyName: test-dep
                 dataKey: body
-							# 템플릿의 spec > arguments > parameters > 0 > value에 이 값을 보내겠다
               dest: spec.arguments.parameters.0.value
 ```
 
-템플릿의 하단을 보면 `triggers > template > parameters` 에서 `messege-polling` 이라는 이름으로 `sqs-eventsource` 이벤트소스에 의존성을 걸어서 이벤트소스로부터 받은 데이터를 가져오고있다
+인제 요로코롬 api를 호출해주면 `whalesay` workflow가 트리거된다.
 
-`dataKey` 라고 정의된부분이, 위 event structure의 data 항목을 받아오겠다는 뜻이다. 만약 context 항목을 받고자하면 `contextKey` 라고 정의해 준 뒤 받아오고자 하는 항목을 다시 정의해주면 된다 
+```json
+curl -d '{"message":"this is my first webhook"}' -H "Content-Type: application/json" -X POST http://localhost:12000/example
+```
 
-걍 전체 다받고싶으면 dataKey나 contextKey 항목을 빼버리면 전체 데이터가 넘어온다. 
+### json body parsing
 
-## 3. Json Format
+그런데 이때, body로 들어오는 값이 json이고 json의 특정 컬럼만 보내고싶다면? 
 
-sqs에서 body를 받아오게 시키면 자꾸 base64 인코딩된 값이 들어있어서 [이슈](https://github.com/argoproj/argo-events/issues/520)를 좀 뒤져보니 기본적으로는 그게 맞다고한다.. (kafka나 다른 이벤트소스들도 마찬가지)
+가령, 아래와같은 json을 웹훅의 body에 넣어서 전달한다고하자. 
 
-반드시 이벤트소스에서 jsonBody 옵션을 true로 켜줘야.. 정상적으로 json형식으로 받으니 이부분 유의하자
+```json
+{"message1":"this is my first webhook", "message2":"test"}
+```
+
+여기서 message1에 들어있는 메세지만 전달하고싶다면?
 
 ```yaml
 apiVersion: argoproj.io/v1alpha1
-kind: EventSource
+kind: Sensor
 metadata:
-  name: sqs-sensor
+  name: webhook
 spec:
   template:
-    serviceAccountName: sqs-sensor-sa
-  sqs:
-    dunamuml-sqs-polling:
-      region: "ap-northeast-2"
-      queue: "queue-name"
-      waitTimeSeconds: 20
-      jsonBody: true # 이거 켜줘야함 
+    serviceAccountName: operate-workflow-sa
+  dependencies:
+    - name: test-dep
+      eventSourceName: webhook
+      eventName: example
+  triggers:
+    - template:
+        name: webhook-workflow-trigger
+        k8s:
+          operation: create
+          source:
+            resource:
+              apiVersion: argoproj.io/v1alpha1
+              kind: Workflow
+              metadata:
+                generateName: webhook-
+              spec:
+                entrypoint: whalesay
+                arguments:
+                  parameters:
+                    - name: message
+                      # the value will get overridden by event payload from test-dep
+                      value: hello world
+                templates:
+                  - name: whalesay
+                    inputs:
+                      parameters:
+                        - name: message
+                    container:
+                      image: docker/whalesay:latest
+                      command: [cowsay]
+                      args: ["{{inputs.parameters.message}}"]
+          parameters:
+            - src:
+                dependencyName: test-dep
+                dataKey: body.message1
+              dest: spec.arguments.parameters.0.value
 ```
 
-그리고 위 옵션 킨 상태에서 json 형식으로 메세지 보내지 않으면 애초에 이벤트소스가 감지하지 않는다. 
+요렇게하면 message1의 값만 전달이 된다. 
 
-## 4. Filter
-
-특정 이벤트만 받고자한다면 이런식으로 필터를 걸 수 있다 
-
-```yaml
-apiVersion: argoproj.io/v1alpha1
-kind: EventSource
-metadata:
-  name: kafka
-spec:
-  kafka:
-    example:
-      url: kafka.argo-events:9092
-      topic: topic-2
-      jsonBody: true
-      partition: "1"
-      filter: # filter field 
-        expression: "(body.id == 4) && (body.name != 'Joe')" #expression to be evaluated
-      connectionBackoff:
-        duration: 10s
-        steps: 5
-        factor: 2
-        jitter: 0.2
-```
-
-> [https://argoproj.github.io/argo-events/eventsources/filtering/#fields](https://argoproj.github.io/argo-events/eventsources/filtering/#fields)
+> [https://argoproj.github.io/argo-events/eventsources/setup/webhook/](https://argoproj.github.io/argo-events/eventsources/setup/webhook/)
 >
