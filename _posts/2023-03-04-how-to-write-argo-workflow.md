@@ -308,20 +308,13 @@ cronWorkflow 전용 옵션은 다음과같이 있다
 
 | option name | default value | desc |
 | --- | --- | --- |
-| schedule | none | Schedule at which the Workflow
- will be run. E.g. 5 4 * * * |
+| schedule | none | Schedule at which the Workflow will be run. E.g. 5 4 * * * |
 | timezone | Machine timezone | Timezone during which the Workflow will be run from the IANA timezone standard, e.g. America/Los_Angeles, Asia/Seoul |
-| suspend | false | if true
- Workflow scheduling will not occur. Can be set from the CLI, GitOps, or directly |
-| concurrencyPolicy | Allow | Policy that determines what to do if multiple Workflows
- are scheduled at the same time. Available options: 
-Allow: allow all,
-Replace: remove all old before scheduling a new, 
-Forbid: do not allow any new while there are old |
-| startingDeadlineSeconds | 0 | Number of seconds after the last successful run during which a missed Workflow
- will be run |
+| suspend | false | if true Workflow scheduling will not occur. Can be set from the CLI, GitOps, or directly |
+| concurrencyPolicy | Allow | Policy that determines what to do if multiple Workflow are scheduled at the same time. Available options: Allow, Replace, Forbid |
+| startingDeadlineSeconds | 0 | Number of seconds after the last successful run during which a missed Workflowwill be run |
 | successfulJobsHistoryLimit | 3 | Number of successful Workflows that will be persisted at a time |
-| failedJobsHistoryLimit | 1 | Number of failed Workflows that will be persisted at a time |
+| failedJobsHistoryLimit | 1 | Number of failed Workflow that will be persisted at a time |
 
 > [https://github.com/bjpublic/core_kubernetes/tree/master/chapters/17](https://github.com/bjpublic/core_kubernetes/tree/master/chapters/17)
 핵심만 콕! 쿠버네티스 
