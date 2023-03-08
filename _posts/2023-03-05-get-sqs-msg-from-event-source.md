@@ -94,7 +94,7 @@ spec:
             - src:
                 dependencyName: message-polling
                 dataKey: body
-							# 템플릿의 spec > arguments > parameters > 0 > value에 이 값을 보내겠다
+              # 템플릿의 spec > arguments > parameters > 0 > value에 이 값을 보내겠다
               dest: spec.arguments.parameters.0.value
 ```
 

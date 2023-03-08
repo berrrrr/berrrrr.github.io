@@ -7,8 +7,7 @@ tags: devops
 comments: true
 ---
 
-아무래도 이벤트 소스로 가장 많이 사용될 녀석이 webhook 이지 않을까 싶다
-
+아무래도 이벤트 소스로 가장 많이 사용될 녀석이 webhook 이지 않을까 싶다  
 웹훅을 걸어놓으면 어디서든 http request한번 날리면 쉽게 workflow를 실행할수있으므로.. 
 
 ## 1. webhook eventsource
