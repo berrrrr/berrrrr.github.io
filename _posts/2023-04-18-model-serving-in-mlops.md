@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Model Serving in MLOps"
+title: "[MLOps] ML모델 서빙하기 (Model Serving in MLOps)"
 subtitle: "Model Serving in MLOps"
 categories: programming
 tags: mlops
