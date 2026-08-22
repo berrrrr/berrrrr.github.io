@@ -34,6 +34,7 @@
 
 @import "syntax";
 @import "spinner";
+@import "liquid-journal";
 
 {% assign font = site.font | default:"'Sans-serif'" %}
 {% assign font_heading = site.font_heading | default:"'Helvetica'" %}

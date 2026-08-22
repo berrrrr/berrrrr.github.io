@@ -2,8 +2,54 @@
 layout: base
 ---
 
-{% for post in paginator.posts %}
-  {% include post.html post=post link_title=true excerpt=true %}
-{% endfor %}
+{% assign featured = paginator.posts | first %}
 
-{% include pagination.html %}
+<div class="journal-home">
+  <section class="journal-hero" aria-labelledby="journal-title">
+    <img class="journal-hero__image" src="{{ '/assets/img/me.jpg' | relative_url }}" alt="포근한 이불 위에서 쉬고 있는 고양이 뭉치">
+    <div class="journal-hero__wash" aria-hidden="true"></div>
+    <div class="journal-hero__content">
+      <p class="journal-eyebrow">MOONGCHI · DEV NOTES &amp; LIFE</p>
+      <h1 id="journal-title">기록하고,<br>생각하고,<br><em>만드는 곳.</em></h1>
+      <p class="journal-hero__copy">개발과 데이터, 그리고 가끔은 일상. 오래 기억하고 싶은 생각을 차곡차곡 모읍니다.</p>
+      {% if featured %}
+        <a class="journal-hero__action" href="{{ featured.url | relative_url }}">
+          <span>최근 글 읽기</span><span aria-hidden="true">↗</span>
+        </a>
+      {% endif %}
+    </div>
+    <div class="journal-hero__note" aria-hidden="true">
+      <span>SCROLL TO EXPLORE</span>
+      <i></i>
+    </div>
+  </section>
+
+  <section class="journal-feed" aria-labelledby="latest-posts">
+    <header class="journal-section-head">
+      <div>
+        <p class="journal-eyebrow">LATEST ARCHIVE</p>
+        <h2 id="latest-posts">최근의 생각들</h2>
+      </div>
+      <a href="{{ '/posts/' | relative_url }}">모든 글 <span aria-hidden="true">↗</span></a>
+    </header>
+
+    <div class="journal-grid">
+      {% for post in paginator.posts %}
+        <article class="journal-tile journal-tile--{{ forloop.index }} reveal-item">
+          <a class="journal-tile__link" href="{{ post.url | relative_url }}" aria-label="{{ post.title | escape }} 읽기"></a>
+          <div class="journal-tile__meta">
+            <span>{{ post.categories | first | default:'note' }}</span>
+            <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date:"%Y.%m.%d" }}</time>
+          </div>
+          <h3>{{ post.title }}</h3>
+          {% if forloop.index == 1 or forloop.index == 4 %}
+            <p>{{ post.excerpt | strip_html | strip_newlines | truncatewords:24 }}</p>
+          {% endif %}
+          <span class="journal-tile__arrow" aria-hidden="true">↗</span>
+        </article>
+      {% endfor %}
+    </div>
+
+    <div class="journal-pagination">{% include pagination.html %}</div>
+  </section>
+</div>
