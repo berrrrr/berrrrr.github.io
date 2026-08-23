@@ -135,6 +135,10 @@ button, input { font: inherit; }
 .archive-card h2 { max-width: 22ch; margin: auto 0 .6rem; font-size: 1.5rem; line-height: 1.2; letter-spacing: -.04em; }
 .archive-card p { margin: 0 0 1rem; color: var(--soft); font-size: .7rem; line-height: 1.55; }
 .archive-card > a > b { font-size: .57rem; letter-spacing: .11em; }
+.archive-card--ad { min-height: 15rem; padding: .5rem; display: flex; align-items: stretch; }
+.archive-card--ad:hover { transform: none; }
+.archive-card--ad .native-ad { min-height: 100%; margin: 0; border-color: rgba(31,57,57,.08); background: rgba(230,238,235,.35); }
+.archive-card--ad .native-ad .adsbygoogle { min-height: 12rem; }
 .tag-group { margin-top: 5rem; }
 .tag-group .section-head h2 { font-size: 2.4rem; }
 

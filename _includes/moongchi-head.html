@@ -17,5 +17,5 @@
 <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
 <link rel="stylesheet" href="{{ '/assets/css/moongchi.css' | relative_url }}">
-{% if page.layout == 'post' or page.layout == 'blog' %}<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3982263527432741" crossorigin="anonymous"></script>{% endif %}
+{% if page.layout == 'post' or page.layout == 'blog' or page.layout == 'list' or page.layout == 'tag-blog' or page.layout == 'in-category-tag' or page.layout == 'category-tag-list' %}<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3982263527432741" crossorigin="anonymous"></script>{% endif %}
 {% if site.google_analytics %}<script async src="https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics }}"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','{{ site.google_analytics }}');</script>{% endif %}

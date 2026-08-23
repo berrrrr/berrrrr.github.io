@@ -1,6 +1,8 @@
 {% assign post_limit = include.limit | default:9999 %}
+{% assign ad_after = 3 %}{% if include.posts.size < 3 %}{% assign ad_after = 1 %}{% endif %}
 <div class="archive-grid">
   {% for post in include.posts limit:post_limit %}
     <article class="archive-card glass reveal"><a href="{{ post.url | relative_url }}"><div class="archive-card__meta"><span>{{ post.categories | first | default:'note' }}</span><time>{{ post.date | date:'%Y.%m.%d' }}</time></div><h2>{{ post.title }}</h2><p>{{ post.excerpt | strip_html | strip_newlines | truncatewords:24 }}</p><b>READ ↗</b></a></article>
+    {% if include.show_ad and forloop.index == ad_after %}<article class="archive-card archive-card--ad glass reveal">{% include moongchi-ad.html position='archive' kind='display' slot='2869731378' %}</article>{% endif %}
   {% endfor %}
 </div>

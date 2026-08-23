@@ -2,4 +2,4 @@
 layout: base
 ---
 {% assign tags = site.featured_tags | where:'category',page.slug %}
-<section class="archive"><header class="archive-head glass reveal"><p class="eyebrow">TOPIC COLLECTION</p><h1>{{ page.title }}</h1><p>{{ page.description }}</p></header>{% for tag in tags %}<section class="tag-group"><div class="section-head"><h2>{{ tag.title }}</h2><a href="{{ tag.url | relative_url }}">모두 보기 ↗</a></div>{% assign posts = site.tags[tag.slug] %}{% include moongchi-post-list.html posts=posts %}</section>{% endfor %}</section>
+<section class="archive"><header class="archive-head glass reveal"><p class="eyebrow">TOPIC COLLECTION</p><h1>{{ page.title }}</h1><p>{{ page.description }}</p></header>{% for tag in tags %}<section class="tag-group"><div class="section-head"><h2>{{ tag.title }}</h2><a href="{{ tag.url | relative_url }}">모두 보기 ↗</a></div>{% assign posts = site.tags[tag.slug] %}{% include moongchi-post-list.html posts=posts show_ad=forloop.first %}</section>{% endfor %}</section>
