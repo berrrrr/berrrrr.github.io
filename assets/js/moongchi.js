@@ -67,7 +67,7 @@
   function setupCodeBlocks() {
     var prose = document.querySelector('[data-prose]');
     if (!prose) return;
-    var blocks = prose.querySelectorAll('.highlighter-rouge, pre');
+    var blocks = prose.querySelectorAll('div.highlighter-rouge, pre');
     Array.prototype.forEach.call(blocks, function (block) {
       if (block.matches('pre') && block.closest('.highlighter-rouge')) return;
       if (block.closest('.code-shell')) return;
