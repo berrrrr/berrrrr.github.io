@@ -2,4 +2,10 @@
 layout: base
 ---
 {% assign posts = site.tags[page.slug] | where:'categories',page.category %}
-<section class="archive"><header class="archive-head glass reveal"><p class="eyebrow">TAGGED NOTES</p><h1>{{ page.title }}</h1><p>{{ page.description }}</p><span>{{ posts | size }} POSTS</span></header>{% include moongchi-post-list.html posts=posts show_ad=true %}</section>
+{% assign parent_category = site.featured_categories | where:'slug',page.category | first %}
+<section class="archive">
+  <nav class="archive-breadcrumb" aria-label="현재 위치"><a href="{{ parent_category.url | relative_url }}">{{ parent_category.title }}</a><span>→</span><strong>{{ page.title }}</strong></nav>
+  <header class="archive-head glass reveal"><p class="eyebrow">TAGGED NOTES</p><h1>{{ page.title }}</h1><p>{{ page.description }}</p><span>{{ posts | size }} POSTS</span></header>
+  {% include moongchi-topic-nav.html category=parent_category active_slug=page.slug %}
+  {% include moongchi-post-list.html posts=posts show_ad=true %}
+</section>

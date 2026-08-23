@@ -1,0 +1,29 @@
+{% assign taxonomy_categories = site.featured_categories | sort:'order' %}
+<section class="topic-browser glass reveal" aria-labelledby="topic-browser-title">
+  <header class="topic-browser__head">
+    <div><p class="eyebrow">BROWSE THE ARCHIVE</p><h2 id="topic-browser-title">{% if include.category %}{{ include.category.title }} Topics{% else %}Categories &amp; Topics{% endif %}</h2></div>
+    {% if include.category %}<a href="{{ '/posts/' | relative_url }}">전체 Topic 보기 ↗</a>{% endif %}
+  </header>
+
+  {% if include.show_categories %}
+    <nav class="category-switcher" aria-label="상위 카테고리">
+      <a href="{{ '/posts/' | relative_url }}" class="is-active"><span>ALL NOTES</span><b>{{ site.posts | size }}</b></a>
+      {% for category in taxonomy_categories %}<a href="{{ category.url | relative_url }}"><span>{{ category.title }}</span><b>{{ site.categories[category.slug] | size }}</b></a>{% endfor %}
+    </nav>
+  {% endif %}
+
+  <div class="topic-groups{% if include.category %} topic-groups--single{% endif %}">
+    {% for category in taxonomy_categories %}
+      {% if include.category and category.slug != include.category.slug %}{% continue %}{% endif %}
+      {% assign category_topics = site.featured_tags | where:'category',category.slug | sort:'order' %}
+      <section class="topic-group">
+        {% unless include.category %}<h3><a href="{{ category.url | relative_url }}">{{ category.title }} <span>↗</span></a></h3>{% endunless %}
+        <div class="topic-chips">
+          {% for topic in category_topics %}
+            <a href="{{ topic.url | relative_url }}"{% if include.active_slug == topic.slug %} class="is-active" aria-current="page"{% endif %}><span>{{ topic.title }}</span><b>{{ site.tags[topic.slug] | size }}</b></a>
+          {% endfor %}
+        </div>
+      </section>
+    {% endfor %}
+  </div>
+</section>

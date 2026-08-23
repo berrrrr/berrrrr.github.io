@@ -129,6 +129,27 @@ button, input { font: inherit; }
 .archive-head h1 { z-index: 1; max-width: 12ch; margin: .5rem 0; font-size: clamp(3.2rem,7vw,7rem); line-height: .9; letter-spacing: -.075em; }
 .archive-head > p:last-of-type { z-index: 1; max-width: 32rem; margin: 0; color: var(--soft); font-size: .75rem; }
 .archive-head > span { position: absolute; right: 2rem; bottom: 2rem; color: var(--soft); font-size: .58rem; letter-spacing: .12em; }
+.archive-breadcrumb { margin: 0 0 .8rem; padding: 0 .35rem; display: flex; align-items: center; gap: .55rem; color: var(--soft); font-size: .62rem; }
+.archive-breadcrumb a:hover { color: var(--ink); }
+.archive-breadcrumb strong { color: var(--ink); }
+.topic-browser { margin-top: 1rem; padding: clamp(1.25rem,3vw,2.2rem); border-radius: var(--radius); }
+.topic-browser__head { display: flex; align-items: end; justify-content: space-between; gap: 1rem; margin-bottom: 1.4rem; }
+.topic-browser__head h2 { margin: .35rem 0 0; font-size: clamp(1.65rem,3vw,2.7rem); letter-spacing: -.05em; }
+.topic-browser__head > a { flex: none; padding-bottom: .18rem; border-bottom: 1px solid var(--ink); font-size: .6rem; font-weight: 700; }
+.category-switcher { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: .55rem; margin-bottom: 2rem; }
+.category-switcher a { min-height: 3.8rem; padding: .8rem; display: flex; align-items: end; justify-content: space-between; border: 1px solid var(--line); border-radius: .85rem; background: rgba(255,255,255,.22); color: var(--soft); font-size: .62rem; transition: transform .2s,background .2s,color .2s; }
+.category-switcher a:hover { transform: translateY(-2px); background: rgba(255,255,255,.52); color: var(--ink); }
+.category-switcher a.is-active { background: rgba(28,51,52,.9); color: #fff; }
+.category-switcher a b { font-size: .58rem; font-weight: 500; }
+.topic-groups { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 1.6rem 2.5rem; }
+.topic-groups--single { grid-template-columns: 1fr; }
+.topic-group h3 { margin: 0 0 .65rem; color: var(--soft); font-size: .62rem; letter-spacing: .08em; text-transform: uppercase; }
+.topic-group h3 span { margin-left: .2rem; }
+.topic-chips { display: flex; flex-wrap: wrap; gap: .45rem; }
+.topic-chips a { min-height: 2.1rem; padding: .45rem .68rem; display: inline-flex; align-items: center; gap: .55rem; border: 1px solid var(--line); border-radius: 99px; background: rgba(255,255,255,.28); color: var(--soft); font-size: .62rem; transition: transform .2s,background .2s,color .2s,border-color .2s; }
+.topic-chips a:hover { transform: translateY(-2px); border-color: rgba(72,112,110,.3); background: rgba(255,255,255,.65); color: var(--ink); }
+.topic-chips a.is-active { border-color: rgba(227,109,67,.38); background: rgba(227,109,67,.12); color: #a94527; }
+.topic-chips a b { min-width: 1.2rem; color: inherit; font-size: .52rem; font-weight: 600; text-align: right; opacity: .72; }
 .archive-grid { margin-top: 1rem; display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 1rem; }
 .archive-card a { min-height: 15rem; padding: 1.4rem; display: flex; flex-direction: column; }
 .archive-card__meta { display: flex; justify-content: space-between; color: var(--soft); font-size: .58rem; letter-spacing: .08em; text-transform: uppercase; }
@@ -251,6 +272,13 @@ button, input { font: inherit; }
   .section-head > a { white-space: nowrap; margin-top: .45rem; }
   .archive-head { min-height: 15rem; padding: 1.4rem; }
   .archive-head > span { right: 1.4rem; bottom: 1.4rem; }
+  .topic-browser { padding: 1rem; }
+  .topic-browser__head { align-items: start; }
+  .topic-browser__head > a { margin-top: .35rem; white-space: nowrap; }
+  .category-switcher { grid-template-columns: repeat(2,minmax(0,1fr)); }
+  .topic-groups { grid-template-columns: 1fr; }
+  .topic-chips { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); }
+  .topic-chips a { justify-content: space-between; border-radius: .75rem; }
   .reader-head { min-height: 22rem; padding: 1.4rem; }
   .reader-paper { padding: 1.25rem; }
   .prose { font-size: .96rem; word-break: normal; }
