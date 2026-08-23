@@ -17,7 +17,7 @@ layout: base
     {% if latest %}<article class="bento-card bento-card--latest glass reveal">
       <a class="cover-link" href="{{ latest.url | relative_url }}" aria-label="{{ latest.title | escape }} 읽기"></a>
       <header><span class="chip">NEW POST</span><time datetime="{{ latest.date | date_to_xmlschema }}">{{ latest.date | date:'%Y.%m.%d' }}</time></header>
-      <div><p>{{ latest.categories | first }}</p><h2>{{ latest.title }}</h2><span class="card-action">지금 읽기 <b>↗</b></span></div>
+      <div><p>{{ latest.categories | first }}</p><h2>{{ latest.title }}</h2><span class="card-action">READ NOW <b>↗</b></span></div>
       <i class="liquid-orb" aria-hidden="true"></i>
     </article>{% endif %}
 
