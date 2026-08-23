@@ -1,6 +1,24 @@
-<aside class="comments" role="complementary">
-  <h2>Comments</h2>
-  <div id="disqus_thread"></div>
-  <script>window.moongchiDisqus={shortname:'{{ site.disqus_shortname }}',title:{{ page.title | jsonify }},identifier:{{ page.id | jsonify }},url:{{ page.url | absolute_url | jsonify }}};</script>
-  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+<aside class="comments" role="complementary" aria-labelledby="comments-title">
+  <header class="comments__head">
+    <div><p class="eyebrow">DISCUSSION</p><h2 id="comments-title">Comments</h2></div>
+    <p>GitHub 계정으로 생각을 나눠주세요.</p>
+  </header>
+  <div class="giscus-shell">
+    <script src="https://giscus.app/client.js"
+      data-repo="{{ site.giscus.repo }}"
+      data-repo-id="{{ site.giscus.repo_id }}"
+      data-category="{{ site.giscus.category }}"
+      data-category-id="{{ site.giscus.category_id }}"
+      data-mapping="{{ site.giscus.mapping | default:'pathname' }}"
+      data-strict="0"
+      data-reactions-enabled="1"
+      data-emit-metadata="0"
+      data-input-position="bottom"
+      data-theme="{{ site.giscus.theme | default:'light' }}"
+      data-lang="ko"
+      data-loading="lazy"
+      crossorigin="anonymous"
+      async></script>
+  </div>
+  <noscript>댓글을 보려면 JavaScript를 활성화해주세요.</noscript>
 </aside>

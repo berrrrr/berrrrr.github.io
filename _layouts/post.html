@@ -20,5 +20,5 @@ layout: base
     {% if page.next %}<a class="glass" href="{{ page.next.url | relative_url }}"><span>NEXT →</span><b>{{ page.next.title }}</b></a>{% endif %}
   </nav>
 
-  {% if site.disqus_shortname and page.comments %}<section class="comment-surface glass">{% include comments.html %}</section>{% endif %}
+  {% if site.giscus.repo and page.comments %}<section class="comment-surface glass reveal">{% include comments.html %}</section>{% endif %}
 </article>

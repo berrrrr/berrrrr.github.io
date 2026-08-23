@@ -118,38 +118,11 @@
     });
   }
 
-  function setupDisqus() {
-    var thread = document.getElementById('disqus_thread');
-    var settings = window.moongchiDisqus;
-    if (!thread || !settings) return;
-    window.disqus_config = function () {
-      this.page.title = settings.title;
-      this.page.identifier = settings.identifier;
-      this.page.url = settings.url;
-    };
-    var loaded = false;
-    function load() {
-      if (loaded) return;
-      loaded = true;
-      var script = document.createElement('script');
-      script.src = 'https://' + settings.shortname + '.disqus.com/embed.js';
-      script.setAttribute('data-timestamp', String(Date.now()));
-      document.head.appendChild(script);
-    }
-    if ('IntersectionObserver' in window) {
-      var observer = new IntersectionObserver(function (entries) {
-        if (entries[0].isIntersecting) { load(); observer.disconnect(); }
-      }, { rootMargin: '400px' });
-      observer.observe(thread);
-    } else load();
-  }
-
   document.addEventListener('DOMContentLoaded', function () {
     setupRail();
     setupReveal();
     setupLiquidLight();
     setupCodeBlocks();
     setupAds();
-    setupDisqus();
   });
 }());
