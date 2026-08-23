@@ -1,0 +1,15 @@
+{% assign grouped_topics = site.featured_tags | where:'category',include.category.slug | sort:'order' %}
+<section class="topic-collections" aria-labelledby="topic-collections-title">
+  <header class="section-head topic-collections__title"><div><p class="eyebrow">CURATED BY TOPIC</p><h2 id="topic-collections-title">Topic별 최신 글</h2></div></header>
+  {% for topic in grouped_topics %}
+    {% assign topic_posts = site.tags[topic.slug] | where:'categories',include.category.slug %}
+    {% if topic_posts.size > 0 %}
+      <section class="topic-shelf glass reveal">
+        <header><div><p>{{ include.category.title }}</p><h3>{{ topic.title }}</h3></div><a href="{{ topic.url | relative_url }}">{{ topic_posts | size }} POSTS ↗</a></header>
+        <div class="topic-shelf__posts">
+          {% for post in topic_posts limit:3 %}<a href="{{ post.url | relative_url }}"><time>{{ post.date | date:'%Y.%m.%d' }}</time><strong>{{ post.title }}</strong><span>READ ↗</span></a>{% endfor %}
+        </div>
+      </section>
+    {% endif %}
+  {% endfor %}
+</section>
