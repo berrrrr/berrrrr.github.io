@@ -97,24 +97,25 @@
     });
   }
 
-  function setupInlineAd() {
+  function setupAds() {
     var prose = document.querySelector('[data-prose]');
-    var ad = document.querySelector('[data-ad-slot]');
-    if (!prose || !ad) return;
-    var paragraphs = prose.querySelectorAll(':scope > p');
-    var headings = prose.querySelectorAll(':scope > h2');
-    var anchor = paragraphs.length >= 4 ? paragraphs[3] : (headings[0] || prose.lastElementChild);
-    if (anchor && anchor.parentNode === prose) anchor.insertAdjacentElement('afterend', ad);
-    var body = ad.querySelector('[data-ad-body]');
-    var ins = document.createElement('ins');
-    ins.className = 'adsbygoogle';
-    ins.style.display = 'block';
-    ins.setAttribute('data-ad-layout', 'in-article');
-    ins.setAttribute('data-ad-format', 'fluid');
-    ins.setAttribute('data-ad-client', 'ca-pub-3982263527432741');
-    ins.setAttribute('data-ad-slot', ad.getAttribute('data-ad-slot'));
-    body.appendChild(ins);
-    try { (window.adsbygoogle = window.adsbygoogle || []).push({}); } catch (error) { ad.classList.add('is-unavailable'); }
+    var ads = document.querySelectorAll('[data-native-ad]');
+    if (!prose || !ads.length) return;
+    var inlineAd = document.querySelector('[data-ad-position="inline"]');
+    if (inlineAd) {
+      var paragraphs = prose.querySelectorAll(':scope > p');
+      var headings = prose.querySelectorAll(':scope > h2');
+      var anchor = paragraphs.length >= 4 ? paragraphs[3] : (headings[0] || prose.lastElementChild);
+      if (anchor && anchor.parentNode === prose) anchor.insertAdjacentElement('afterend', inlineAd);
+    }
+    Array.prototype.forEach.call(ads, function (ad) {
+      try {
+        (window.adsbygoogle = window.adsbygoogle || []).push({});
+        ad.classList.add('is-requested');
+      } catch (error) {
+        ad.classList.add('is-unavailable');
+      }
+    });
   }
 
   function setupDisqus() {
@@ -148,7 +149,7 @@
     setupReveal();
     setupLiquidLight();
     setupCodeBlocks();
-    setupInlineAd();
+    setupAds();
     setupDisqus();
   });
 }());

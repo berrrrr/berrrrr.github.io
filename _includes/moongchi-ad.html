@@ -1,1 +1,10 @@
-<aside class="native-ad" data-ad-slot="{{ include.slot | default:'6978698475' }}" aria-label="광고"><span class="native-ad__label">ADVERTISEMENT</span><div class="native-ad__body" data-ad-body></div></aside>
+<aside class="native-ad" data-native-ad data-ad-position="{{ include.position | default:'inline' }}" aria-label="광고">
+  <span class="native-ad__label">ADVERTISEMENT</span>
+  <ins class="adsbygoogle"
+       style="display:block;text-align:center"
+       data-ad-layout="in-article"
+       data-ad-format="fluid"
+       data-full-width-responsive="true"
+       data-ad-client="ca-pub-3982263527432741"
+       data-ad-slot="{{ include.slot | default:'6978698475' }}"></ins>
+</aside>
