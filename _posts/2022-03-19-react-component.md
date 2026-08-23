@@ -220,6 +220,7 @@ export default Counter;
 
 함수컴포넌트에서도 useState라는 함수를 사용해서 state를 사용할수있다
 
+{% raw %}
 ```jsx
 import React, { useState } from 'react';
 
@@ -250,6 +251,7 @@ const Say = () => {
 
 export default Say;
 ```
+{% endraw %}
 
 useState의 인자로는 상태의 초깃값을 넣어주면됨
 

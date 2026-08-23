@@ -1,9 +1,23 @@
 ---
 layout: base
 ---
+<article class="reader">
+  <header class="reader-head glass reveal">
+    <div class="reader-head__meta"><a href="{{ '/category/' | append:page.categories.first | append:'/' | relative_url }}">{{ page.categories | first | default:'NOTE' }}</a><time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date:'%Y.%m.%d' }}</time><span>{{ content | number_of_words | divided_by:180 | plus:1 }} MIN READ</span></div>
+    <h1>{{ page.title }}</h1>
+    {% if page.subtitle %}<p>{{ page.subtitle }}</p>{% endif %}
+    {% if page.tags.size > 0 %}<div class="reader-head__tags">{% for tag in page.tags %}<a href="{{ '/tag/' | append:tag | append:'/' | relative_url }}">#{{ tag }}</a>{% endfor %}</div>{% endif %}
+  </header>
 
-{% include post.html post=page link_title=false %}
+  <div class="reader-paper glass reveal">
+    <div class="prose" data-prose>{{ content }}</div>
+    {% include moongchi-ad.html %}
+  </div>
 
-{% include about.html %}
+  <nav class="post-neighbors" aria-label="이전 및 다음 글">
+    {% if page.previous %}<a class="glass" href="{{ page.previous.url | relative_url }}"><span>← PREVIOUS</span><b>{{ page.previous.title }}</b></a>{% endif %}
+    {% if page.next %}<a class="glass" href="{{ page.next.url | relative_url }}"><span>NEXT →</span><b>{{ page.next.title }}</b></a>{% endif %}
+  </nav>
 
-{% include related.html post=page %}
+  {% if site.disqus_shortname and page.comments %}<section class="comment-surface glass">{% include comments.html %}</section>{% endif %}
+</article>

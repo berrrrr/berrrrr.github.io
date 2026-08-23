@@ -1,11 +1,5 @@
 ---
 layout: base
 ---
-
-{% assign posts = site.tags[page.slug] | where: "categories", page.category %}
-
-{% for post in posts %}
-  {% include post.html post=post link_title=true excerpt=true %}
-{% endfor %}
-
-{% include pagination.html %}
+{% assign posts = site.tags[page.slug] | where:'categories',page.category %}
+<section class="archive"><header class="archive-head glass reveal"><p class="eyebrow">TAGGED NOTES</p><h1>{{ page.title }}</h1><p>{{ page.description }}</p><span>{{ posts | size }} POSTS</span></header>{% include moongchi-post-list.html posts=posts %}</section>

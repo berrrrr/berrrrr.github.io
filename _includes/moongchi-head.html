@@ -1,0 +1,21 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="format-detection" content="telephone=no">
+<meta name="naver-site-verification" content="22c5b4ef3bfda7fc6100671413989219de7a4ac8">
+{% capture meta_title %}{% if page.url == '/' %}{{ site.title }} · {{ site.tagline }}{% else %}{{ page.title }} · {{ site.title }}{% endif %}{% endcapture %}
+{% assign meta_description = page.description | default:page.excerpt | default:site.description %}
+<title>{{ meta_title | strip }}</title>
+<meta name="description" content="{{ meta_description | strip_html | strip_newlines | truncate:160 | escape }}">
+<meta property="og:title" content="{{ page.title | default:site.title | escape }}">
+<meta property="og:description" content="{{ meta_description | strip_html | strip_newlines | truncate:160 | escape }}">
+<meta property="og:type" content="{% if page.layout == 'post' %}article{% else %}website{% endif %}">
+<meta property="og:url" content="{{ page.url | absolute_url }}">
+<meta property="og:image" content="{{ '/assets/img/me.jpg' | absolute_url }}">
+<link rel="canonical" href="{{ page.url | absolute_url }}">
+<link rel="alternate" type="application/atom+xml" title="{{ site.title }} Feed" href="{{ site.feed.path | default:'feed.xml' | absolute_url }}">
+<link rel="shortcut icon" href="{{ '/favicon.ico' | relative_url }}">
+<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+<link rel="stylesheet" href="{{ '/assets/css/moongchi.css' | relative_url }}">
+{% if page.layout == 'post' %}<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3982263527432741" crossorigin="anonymous"></script>{% endif %}
+{% if site.google_analytics %}<script async src="https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics }}"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','{{ site.google_analytics }}');</script>{% endif %}
