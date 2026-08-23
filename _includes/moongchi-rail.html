@@ -1,0 +1,7 @@
+<aside id="category-rail" class="category-rail glass" data-category-rail aria-label="카테고리">
+  <div class="category-rail__head"><span>EXPLORE</span><button type="button" data-rail-close aria-label="카테고리 닫기">×</button></div>
+  <a class="rail-all{% if page.url == '/' %} is-active{% endif %}" href="{{ '/' | relative_url }}"><span>All notes</span><b>{{ site.posts | size }}</b></a>
+  <nav>{% assign rail_categories = site.featured_categories | sort:'order' %}{% for category in rail_categories %}<a href="{{ category.url | relative_url }}"{% if page.url == category.url %} class="is-active"{% endif %}><i aria-hidden="true"></i><span>{{ category.title }}</span><b>{{ site.categories[category.slug] | size }}</b></a>{% endfor %}</nav>
+  <div class="rail-profile"><img src="{{ '/assets/img/me.jpg' | relative_url }}" alt=""><p><b>moongchi</b><span>꾸준히 기록하는 개발자</span></p></div>
+</aside>
+<button class="rail-backdrop" data-rail-backdrop aria-label="카테고리 닫기" hidden></button>

@@ -1,0 +1,6 @@
+{% assign post_limit = include.limit | default:9999 %}
+<div class="archive-grid">
+  {% for post in include.posts limit:post_limit %}
+    <article class="archive-card glass reveal"><a href="{{ post.url | relative_url }}"><div class="archive-card__meta"><span>{{ post.categories | first | default:'note' }}</span><time>{{ post.date | date:'%Y.%m.%d' }}</time></div><h2>{{ post.title }}</h2><p>{{ post.excerpt | strip_html | strip_newlines | truncatewords:24 }}</p><b>READ ↗</b></a></article>
+  {% endfor %}
+</div>
