@@ -3,6 +3,7 @@
 
   function initJournal() {
     var hero = document.querySelector('.journal-hero');
+    var dashboard = document.querySelector('.journal-dashboard');
     var items = document.querySelectorAll('.reveal-item');
 
     if (hero && !hero.dataset.liquidReady) {
@@ -13,6 +14,17 @@
         var y = ((event.clientY - rect.top) / rect.height) * 100;
         hero.style.setProperty('--glass-x', (x * 0.08 - 14) + 'rem');
         hero.style.setProperty('--glass-y', (y * 0.18 - 2) + '%');
+      });
+    }
+
+    if (dashboard && !dashboard.dataset.liquidReady) {
+      dashboard.dataset.liquidReady = 'true';
+      dashboard.addEventListener('pointermove', function (event) {
+        var panel = event.target.closest('.glass-panel');
+        if (!panel) return;
+        var panelRect = panel.getBoundingClientRect();
+        panel.style.setProperty('--shine-x', (((event.clientX - panelRect.left) / panelRect.width) * 100) + '%');
+        panel.style.setProperty('--shine-y', (((event.clientY - panelRect.top) / panelRect.height) * 100) + '%');
       });
     }
 

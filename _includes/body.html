@@ -14,7 +14,7 @@
 <!-- CONTENT         -->
 <!-- =============== -->
 <div id="_yPushState">
-  <div class="fade-in">
+  <div class="fade-in page-layout-{{ page.layout }}">
     <main id="_main" class="content" role="main" data-color="{{ color | escape }}" data-image="{{ image | escape }}">
       {{ content }}
 
@@ -24,7 +24,7 @@
 
       {% include footer.html %}
     </main>
-    {% include right-side.html %}
+    {% if page.layout == 'post' %}{% include right-side.html %}{% endif %}
   </div>
   {% include sidebar.html %}
 </div>

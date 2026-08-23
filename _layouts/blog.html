@@ -5,30 +5,72 @@ layout: base
 {% assign featured = paginator.posts | first %}
 
 <div class="journal-home">
-  <section class="journal-hero" aria-labelledby="journal-title">
-    <img class="journal-hero__image" src="{{ '/assets/img/me.jpg' | relative_url }}" alt="포근한 이불 위에서 쉬고 있는 고양이 뭉치">
-    <div class="journal-hero__wash" aria-hidden="true"></div>
-    <div class="journal-hero__content">
-      <p class="journal-eyebrow">MOONGCHI · DEV NOTES &amp; LIFE</p>
-      <h1 id="journal-title">기록하고,<br>생각하고,<br><em>만드는 곳.</em></h1>
-      <p class="journal-hero__copy">개발과 데이터, 그리고 가끔은 일상. 오래 기억하고 싶은 생각을 차곡차곡 모읍니다.</p>
-      {% if featured %}
-        <a class="journal-hero__action" href="{{ featured.url | relative_url }}">
-          <span>최근 글 읽기</span><span aria-hidden="true">↗</span>
-        </a>
-      {% endif %}
+  <header class="journal-topbar">
+    <div>
+      <span class="journal-status" aria-hidden="true"></span>
+      <strong>MOONGCHI</strong>
+      <span class="journal-topbar__sub">개발자의 개인 아카이브</span>
     </div>
-    <div class="journal-hero__note" aria-hidden="true">
-      <span>SCROLL TO EXPLORE</span>
-      <i></i>
-    </div>
+    <a href="{{ '/about/' | relative_url }}">ABOUT <span aria-hidden="true">↗</span></a>
+  </header>
+
+  <section class="journal-dashboard" aria-labelledby="journal-title">
+    <article class="glass-panel journal-profile reveal-item">
+      <img src="{{ '/assets/img/me.jpg' | relative_url }}" alt="포근한 이불 위에서 쉬고 있는 고양이 뭉치">
+      <div class="journal-profile__shade" aria-hidden="true"></div>
+      <div class="journal-profile__copy">
+        <p class="journal-eyebrow">HELLO, THIS IS</p>
+        <h1 id="journal-title">사고뭉치의<br><em>기록 보관함.</em></h1>
+        <p>개발, 데이터, 그리고 오래 남기고 싶은 일상을 기록합니다.</p>
+      </div>
+    </article>
+
+    {% if featured %}
+      <article class="glass-panel journal-feature reveal-item">
+        <a class="journal-card-link" href="{{ featured.url | relative_url }}" aria-label="{{ featured.title | escape }} 읽기"></a>
+        <div class="journal-feature__top">
+          <span class="journal-chip">LATEST</span>
+          <time datetime="{{ featured.date | date_to_xmlschema }}">{{ featured.date | date:"%Y.%m.%d" }}</time>
+        </div>
+        <div class="journal-feature__copy">
+          <p>{{ featured.categories | first | default:'note' }}</p>
+          <h2>{{ featured.title }}</h2>
+          <span>글 읽기 <b aria-hidden="true">↗</b></span>
+        </div>
+      </article>
+    {% endif %}
+
+    <article class="glass-panel journal-count reveal-item">
+      <p class="journal-eyebrow">ARCHIVE</p>
+      <strong>{{ site.posts | size }}</strong>
+      <span>개의 생각과 기록</span>
+      <div class="journal-count__orb" aria-hidden="true"></div>
+    </article>
+
+    <article class="glass-panel journal-categories reveal-item">
+      <div class="journal-categories__head">
+        <p class="journal-eyebrow">EXPLORE BY TOPIC</p>
+        <span>5 CATEGORIES</span>
+      </div>
+      <ul>
+        {% assign category_pages = site.featured_categories | sort: 'order' %}
+        {% for category in category_pages %}
+          <li>
+            <a href="{{ category.url | relative_url }}">
+              <span>{{ category.title }}</span>
+              <b>{{ site.categories[category.slug] | size }}</b>
+            </a>
+          </li>
+        {% endfor %}
+      </ul>
+    </article>
   </section>
 
   <section class="journal-feed" aria-labelledby="latest-posts">
     <header class="journal-section-head">
       <div>
         <p class="journal-eyebrow">LATEST ARCHIVE</p>
-        <h2 id="latest-posts">최근의 생각들</h2>
+        <h2 id="latest-posts">최근 기록</h2>
       </div>
       <a href="{{ '/posts/' | relative_url }}">모든 글 <span aria-hidden="true">↗</span></a>
     </header>
@@ -42,7 +84,7 @@ layout: base
             <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date:"%Y.%m.%d" }}</time>
           </div>
           <h3>{{ post.title }}</h3>
-          {% if forloop.index == 1 or forloop.index == 4 %}
+          {% if forloop.index == 1 or forloop.index == 4 or forloop.index == 6 %}
             <p>{{ post.excerpt | strip_html | strip_newlines | truncatewords:24 }}</p>
           {% endif %}
           <span class="journal-tile__arrow" aria-hidden="true">↗</span>
