@@ -2,7 +2,7 @@
 <section class="topic-browser glass reveal" aria-labelledby="topic-browser-title">
   <header class="topic-browser__head">
     <div><p class="eyebrow">BROWSE THE ARCHIVE</p><h2 id="topic-browser-title">{% if include.category %}{{ include.category.title }} Topics{% else %}Categories &amp; Topics{% endif %}</h2></div>
-    {% if include.category %}<a href="{{ '/posts/' | relative_url }}">전체 Topic 보기 ↗</a>{% endif %}
+    {% if include.category %}<a href="{{ '/posts/' | relative_url }}">VIEW ALL TOPICS ↗</a>{% endif %}
   </header>
 
   {% if include.show_categories %}
