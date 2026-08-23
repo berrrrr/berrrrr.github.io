@@ -100,9 +100,9 @@
   function setupAds() {
     var prose = document.querySelector('[data-prose]');
     var ads = document.querySelectorAll('[data-native-ad]');
-    if (!prose || !ads.length) return;
+    if (!ads.length) return;
     var inlineAd = document.querySelector('[data-ad-position="inline"]');
-    if (inlineAd) {
+    if (prose && inlineAd) {
       var paragraphs = prose.querySelectorAll(':scope > p');
       var headings = prose.querySelectorAll(':scope > h2');
       var anchor = paragraphs.length >= 4 ? paragraphs[3] : (headings[0] || prose.lastElementChild);

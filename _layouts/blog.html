@@ -28,6 +28,10 @@ layout: base
       <ul>{% assign home_categories = site.featured_categories | sort:'order' %}{% for category in home_categories %}<li><a href="{{ category.url | relative_url }}"><span>{{ category.title }}</span><b>{{ site.categories[category.slug] | size }}</b></a></li>{% endfor %}</ul>
     </article>
 
+    <article class="bento-card bento-card--ad glass reveal">
+      {% include moongchi-ad.html position='home' kind='display' slot='8732432148' %}
+    </article>
+
     {% for post in posts offset:1 limit:4 %}<article class="bento-card post-preview post-preview--{{ forloop.index }} glass reveal">
       <a class="cover-link" href="{{ post.url | relative_url }}" aria-label="{{ post.title | escape }} 읽기"></a>
       <header><span>{{ post.categories | first | default:'note' }}</span><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date:'%m.%d' }}</time></header>
