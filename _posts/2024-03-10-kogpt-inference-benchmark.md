@@ -9,7 +9,7 @@ comments: true
 
 ## 실험 1. 모델을 8bit로 로딩
 
-<details>
+<details markdown="1">
 
 <summary>code</summary>
 
@@ -122,13 +122,13 @@ it takes 2.3290302753448486 seconds
 
 ## 실험. Batch Size 테스트
 
-<details>
+<details markdown="1">
 
 <summary>code</summary>
 
-  - base
+**base**
 
-    ```python
+```python
 # -*- coding: utf-8 -*-
 import time
 import torch
@@ -158,11 +158,11 @@ if __name__ == "__main__":
       print(f"batch size: {batch_size}")
       batch_inference([prompt]*batch_size)
       batch_size = batch_size * 2
-    ```
+```
 
-  - vllm
+**vLLM**
 
-    ```python
+```python
 import time
 from vllm import LLM, SamplingParams
 
@@ -180,7 +180,7 @@ while 1:
     end = time.time()
     print(f"it takes {end-start} seconds")
     batch_size = batch_size * 2
-    ```
+```
 
 </details>
 

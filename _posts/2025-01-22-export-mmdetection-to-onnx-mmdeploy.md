@@ -333,11 +333,11 @@ gpu의경우 환경이 좀더 달라져야하는데.. (골치아프다)
 gpu 환경은
 - `task_processor = build_task_processor(model_cfg, deploy_cfg, device="cuda")`
 
-<details>
+<details markdown="1">
 
 <summary>requirements</summary>
 
-  ```plain text
+  ```text
 torch==2.0.1
 torchvision==0.15.2
 uvicorn==0.23.2
@@ -353,7 +353,7 @@ python-multipart==0.0.5
 
 </details>
 
-<details>
+<details markdown="1">
 
 <summary>dockerfile</summary>
 
@@ -400,7 +400,7 @@ CMD ["python", "api/src/main.py"]
 
 </details>
 
-<details>
+<details markdown="1">
 
 <summary>성능</summary>
 
@@ -413,7 +413,7 @@ CMD ["python", "api/src/main.py"]
 cpu는
 - `task_processor = build_task_processor(model_cfg, deploy_cfg, device="cpu")`
 
-<details>
+<details markdown="1">
 
 <summary>requirements.txt</summary>
 
@@ -433,7 +433,7 @@ python-multipart==0.0.5
 
 </details>
 
-<details>
+<details markdown="1">
 
 <summary>dockerfile</summary>
 
@@ -480,7 +480,7 @@ CMD ["python", "api/src/main.py"]
 
 </details>
 
-<details>
+<details markdown="1">
 
 <summary>성능</summary>
 

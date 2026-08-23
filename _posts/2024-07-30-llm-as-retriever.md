@@ -43,7 +43,7 @@ Generate rather than Retrieve: Large Language Models are Strong Context Generato
         4. 각 cluster별로 반복하여 k개의 document 생성
     2. Read : question + k개 document를 통해 FiD reader모델 훈련
 
-<details>
+<details markdown="1">
 
 <summary>FiD (Fusion in Decoder) </summary>
 

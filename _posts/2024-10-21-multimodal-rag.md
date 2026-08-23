@@ -87,39 +87,65 @@ Multi-vector Retrieval은 각 모달리티 데이터를 각각의 벡터 공간�
   PDF 분할 작업을 위해 `unstructured`를 사용합니다. `unstructured` 를 위해 다음과 도구의 설치가 필요합니다:
   [poppler 설치 방법](https://pdf2image.readthedocs.io/en/latest/installation.html)과 [tesseract 설치 방법](https://tesseract-ocr.github.io/tessdoc/Installation.html)을 참고하여 설치해주세요.
 
-<details>
+<details markdown="1">
 
 <summary>`tesseract` : 광학 문자 인식(OCR)을 위해 사용</summary>
 
-    Ubuntu
-    You can install Tesseract and its developer tools on Ubuntu by simply running:
-    `sudo apt install tesseract-ocr<br>sudo apt install libtesseract-dev`
-    macos
-    `brew install tesseract`
-    window
-    Installer for Windows for Tesseract 3.05, Tesseract 4 and Tesseract 5 are available from [Tesseract at UB Mannheim](https://github.com/UB-Mannheim/tesseract/wiki). These include the training tools. Both 32-bit and 64-bit installers are available.
-    An installer for the **OLD version 3.02** is available for Windows from our [download](https://tesseract-ocr.github.io/tessdoc/Downloads.html) page. This includes the English training data. If you want to use another language, [download the appropriate training data](https://tesseract-ocr.github.io/tessdoc/Data-Files.html), unpack it using [7-zip](http://www.7-zip.org/), and copy the .traineddata file into the ‘tessdata’ directory, probably `C:\Program Files\Tesseract-OCR\tessdata`.
-    To access tesseract-OCR from any location you may have to add the directory where the tesseract-OCR binaries are located to the Path variables, probably `C:\Program Files\Tesseract-OCR`.
-    Experts can also get binaries build with Visual Studio from the build artifacts of the [Appveyor Continuous Integration](https://ci.appveyor.com/project/zdenop/tesseract/history).
+**Ubuntu**
+
+You can install Tesseract and its developer tools on Ubuntu by simply running:
+
+```bash
+sudo apt install tesseract-ocr
+sudo apt install libtesseract-dev
+```
+
+**macOS**
+
+```bash
+brew install tesseract
+```
+
+**Windows**
+
+Installer for Windows for Tesseract 3.05, Tesseract 4 and Tesseract 5 are available from [Tesseract at UB Mannheim](https://github.com/UB-Mannheim/tesseract/wiki). These include the training tools. Both 32-bit and 64-bit installers are available.
+
+An installer for the **OLD version 3.02** is available for Windows from our [download](https://tesseract-ocr.github.io/tessdoc/Downloads.html) page. This includes the English training data. If you want to use another language, [download the appropriate training data](https://tesseract-ocr.github.io/tessdoc/Data-Files.html), unpack it using [7-zip](http://www.7-zip.org/), and copy the .traineddata file into the ‘tessdata’ directory, probably `C:\Program Files\Tesseract-OCR\tessdata`.
+
+To access tesseract-OCR from any location you may have to add the directory where the tesseract-OCR binaries are located to the Path variables, probably `C:\Program Files\Tesseract-OCR`.
+
+Experts can also get binaries build with Visual Studio from the build artifacts of the [Appveyor Continuous Integration](https://ci.appveyor.com/project/zdenop/tesseract/history).
 
 </details>
 
-<details>
+<details markdown="1">
 
 <summary>`poppler` : PDF 렌더링 및 처리</summary>
 
-    참고)   설치
-    **Ubuntu**
-      `sudo apt-get install poppler-utils`
-    **Archlinux**
-    `sudo pacman -S poppler`
-    **MacOS**
-    `brew install poppler`
-    **Windows**
-    1. Download the latest poppler package from [@oschwartz10612 version](https://github.com/oschwartz10612/poppler-windows/releases/) which is the most up-to-date.
-    2. Move the extracted directory to the desired place on your system
-    3. Add the `bin/` directory to your [PATH](https://www.architectryan.com/2018/03/17/add-to-the-path-on-windows-10/)
-    4. Test that all went well by opening `cmd` and making sure that you can call `pdftoppm -h`
+**Ubuntu**
+
+```bash
+sudo apt-get install poppler-utils
+```
+
+**Arch Linux**
+
+```bash
+sudo pacman -S poppler
+```
+
+**macOS**
+
+```bash
+brew install poppler
+```
+
+**Windows**
+
+1. Download the latest poppler package from [@oschwartz10612 version](https://github.com/oschwartz10612/poppler-windows/releases/) which is the most up-to-date.
+2. Move the extracted directory to the desired place on your system
+3. Add the `bin/` directory to your [PATH](https://www.architectryan.com/2018/03/17/add-to-the-path-on-windows-10/)
+4. Test that all went well by opening `cmd` and making sure that you can call `pdftoppm -h`
 
 </details>
 

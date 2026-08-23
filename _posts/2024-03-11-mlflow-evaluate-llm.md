@@ -97,7 +97,7 @@ with mlflow.start_run() as run:
 
 ### example
 
-<details>
+<details markdown="1">
 
 <summary>gpt35</summary>
 
@@ -167,7 +167,7 @@ with mlflow.start_run(run_name="gpt35turbo") as run:
 
 </details>
 
-<details>
+<details markdown="1">
 
 <summary>gpt4</summary>
 
@@ -232,7 +232,7 @@ with mlflow.start_run(run_name="gpt4") as run:
 
 </details>
 
-<details>
+<details markdown="1">
 
 <summary>claude3</summary>
 
@@ -354,7 +354,7 @@ with mlflow.start_run(run_name="claude-3") as run:
 
 </details>
 
-<details>
+<details markdown="1">
 
 <summary>llama2</summary>
 

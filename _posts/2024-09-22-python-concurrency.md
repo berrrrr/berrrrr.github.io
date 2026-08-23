@@ -74,7 +74,7 @@ Async는 비동기를 뜻하고, 작업이 차례가 왔을 때 마다 실행
 - 기본으로 탑재되어 있는 asyncio 라이브러리를 활용하면 비동기 코딩을 할 수 있음
 - async def로 함수를 선언하고, 비동기 로직에 대해서는 await를 사용
 
-<details>
+<details markdown="1">
 
 <summary>example</summary>
 

@@ -23,7 +23,7 @@ LLM에게 context를 제공하는 방법에 대한 표준 ‘**프로토콜**’
 
 ### Transports
 
-<details>
+<details markdown="1">
 
 <summary>JSON-RPC 2.0 메세지 포맷 사용</summary>
 
@@ -59,7 +59,7 @@ LLM에게 context를 제공하는 방법에 대한 표준 ‘**프로토콜**’
 
 </details>
 
-<details>
+<details markdown="1">
 
 <summary>Stdio : standard input,output stream을 통해 통신. local 어플리케이션, cli tool에 주로 사용됨. </summary>
 
@@ -87,7 +87,7 @@ async with stdio_client(params) as streams:
 
 </details>
 
-<details>
+<details markdown="1">
 
 <summary>SSE (Server Sent event) : 서버→클라는 스트리밍 / 클라→서버는 http POST request 로 통신. </summary>
 
@@ -234,7 +234,7 @@ if __name__ == "__main__":
 
 서버에서 제공할 수 있는 기능들
 
-<details>
+<details markdown="1">
 
 <summary>Resources</summary>
 
@@ -258,7 +258,7 @@ def get_user_profile(user_id: str) -> str:
 
 </details>
 
-<details>
+<details markdown="1">
 
 <summary>Tools</summary>
 
@@ -285,7 +285,7 @@ async def fetch_weather(city: str) -> str:
 
 </details>
 
-<details>
+<details markdown="1">
 
 <summary>Prompts</summary>
 
@@ -312,7 +312,7 @@ def debug_error(error: str) -> list[base.Message]:
 
 </details>
 
-<details>
+<details markdown="1">
 
 <summary>Images</summary>
 

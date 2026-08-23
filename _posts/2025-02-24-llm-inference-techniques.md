@@ -62,12 +62,12 @@ tensor paralleism은 layernorm이나 dropout할수없다는 한계점이 있음.
 
 근데 이 작업들은 읿력 시퀀스에 따라 독립적이므로 위 그림과 같이 시퀀스에 따라 병렬로 처리하면 layernorm이나 dropout 도 적용 가능함.
 
-<details>
+<details markdown="1">
 
 <summary>gpt정리 </summary>
 
   **LLM 서빙 기술: Pipeline Parallelism vs. Tensor Parallelism**
-  LLM(대규모 언어 모델)을 서빙할 때, 하나의 GPU에 모든 파라미터를 담기 어렵기 때문에 여러 개의 GPU를 활용하는 분산 기법이 필요합니다. 대표적인 방법으로 \*\*Pipeline Parallelism(파이프라인 병렬화)\*\*과 \*\*Tensor Parallelism(텐서 병렬화)\*\*이 있습니다.
+  LLM(대규모 언어 모델)을 서빙할 때, 하나의 GPU에 모든 파라미터를 담기 어렵기 때문에 여러 개의 GPU를 활용하는 분산 기법이 필요합니다. 대표적인 방법으로 **Pipeline Parallelism(파이프라인 병렬화)**과 **Tensor Parallelism(텐서 병렬화)**이 있습니다.
   **1. Pipeline Parallelism (파이프라인 병렬화)**
   **📌 개념**
   •  LLM 모델을 여러 개의 층(layer) 단위로 나누고, 각 층을 서로 다른 GPU에서 실행하는 방식입니다.
@@ -104,34 +104,34 @@ tensor paralleism은 layernorm이나 dropout할수없다는 한계점이 있음.
   **3. Pipeline Parallelism vs. Tensor Parallelism 비교**
   <table>
 <tr>
-<td></td>
-<td>**Pipeline Parallelism**</td>
-<td>**Tensor Parallelism**</td>
+<td markdown="span"></td>
+<td markdown="span">**Pipeline Parallelism**</td>
+<td markdown="span">**Tensor Parallelism**</td>
 </tr>
 <tr>
-<td>**기본 원리**</td>
-<td>모델의 층을 여러 GPU에 분산</td>
-<td>하나의 연산을 여러 GPU에 분산</td>
+<td markdown="span">**기본 원리**</td>
+<td markdown="span">모델의 층을 여러 GPU에 분산</td>
+<td markdown="span">하나의 연산을 여러 GPU에 분산</td>
 </tr>
 <tr>
-<td>**장점**</td>
-<td>더 큰 모델을 처리 가능</td>
-<td>빠른 연산 속도</td>
+<td markdown="span">**장점**</td>
+<td markdown="span">더 큰 모델을 처리 가능</td>
+<td markdown="span">빠른 연산 속도</td>
 </tr>
 <tr>
-<td>**단점**</td>
-<td>레이턴시 증가, 병목 가능</td>
-<td>GPU 간 통신 오버헤드</td>
+<td markdown="span">**단점**</td>
+<td markdown="span">레이턴시 증가, 병목 가능</td>
+<td markdown="span">GPU 간 통신 오버헤드</td>
 </tr>
 <tr>
-<td>**적용 사례**</td>
-<td>GPT, BERT 등 대규모 모델</td>
-<td>매우 큰 모델 (Exa-scale AI)</td>
+<td markdown="span">**적용 사례**</td>
+<td markdown="span">GPT, BERT 등 대규모 모델</td>
+<td markdown="span">매우 큰 모델 (Exa-scale AI)</td>
 </tr>
 <tr>
-<td>**사용 프레임워크**</td>
-<td>DeepSpeed, Megatron-LM</td>
-<td>Megatron-LM, DeepSpeed</td>
+<td markdown="span">**사용 프레임워크**</td>
+<td markdown="span">DeepSpeed, Megatron-LM</td>
+<td markdown="span">Megatron-LM, DeepSpeed</td>
 </tr>
   </table>
   **4. Pipeline + Tensor Parallelism 결합**
@@ -148,11 +148,11 @@ tensor paralleism은 layernorm이나 dropout할수없다는 한계점이 있음.
 
 </details>
 
-<details>
+<details markdown="1">
 
 <summary>수직적/수평적 분할</summary>
 
-  네, **Pipeline Parallelism은 “수직적 분할”**, \*\*Tensor Parallelism은 “수평적 분할”\*\*이라고 표현하는 것이 일반적으로 맞는 비유입니다. 하지만 이 표현을 좀 더 직관적으로 설명하면 더 이해하기 쉬울 것 같아요.
+  네, **Pipeline Parallelism은 “수직적 분할”**, **Tensor Parallelism은 “수평적 분할”**이라고 표현하는 것이 일반적으로 맞는 비유입니다. 하지만 이 표현을 좀 더 직관적으로 설명하면 더 이해하기 쉬울 것 같아요.
   **✅ Pipeline Parallelism = “수직적 분할”**
   •  **수직적으로 쪼갠다**는 것은 **모델의 층(layer) 단위로 나눈다**는 의미입니다.
   •  즉, **모델의 깊이(depth)를 따라 분할**하여 각 GPU가 특정 층을 담당합니다.
@@ -176,29 +176,29 @@ tensor paralleism은 layernorm이나 dropout할수없다는 한계점이 있음.
   **🎯 비유 정리**
   <table>
 <tr>
-<td></td>
-<td>**Pipeline Parallelism (수직 분할)**</td>
-<td>**Tensor Parallelism (수평 분할)**</td>
+<td markdown="span"></td>
+<td markdown="span">**Pipeline Parallelism (수직 분할)**</td>
+<td markdown="span">**Tensor Parallelism (수평 분할)**</td>
 </tr>
 <tr>
-<td>**어떻게 쪼개나?**</td>
-<td>층(layer) 단위로 GPU에 배분</td>
-<td>하나의 행렬 연산을 GPU 여러 개에 배분</td>
+<td markdown="span">**어떻게 쪼개나?**</td>
+<td markdown="span">층(layer) 단위로 GPU에 배분</td>
+<td markdown="span">하나의 행렬 연산을 GPU 여러 개에 배분</td>
 </tr>
 <tr>
-<td>**비유**</td>
-<td>레스토랑에서 요리를 단계별로 넘기는 것</td>
-<td>피자를 여러 명이 나누어 만드는 것</td>
+<td markdown="span">**비유**</td>
+<td markdown="span">레스토랑에서 요리를 단계별로 넘기는 것</td>
+<td markdown="span">피자를 여러 명이 나누어 만드는 것</td>
 </tr>
 <tr>
-<td>**장점**</td>
-<td>더 큰 모델을 다룰 수 있음</td>
-<td>계산 속도가 빠름</td>
+<td markdown="span">**장점**</td>
+<td markdown="span">더 큰 모델을 다룰 수 있음</td>
+<td markdown="span">계산 속도가 빠름</td>
 </tr>
 <tr>
-<td>**단점**</td>
-<td>순차 처리로 인해 지연 가능</td>
-<td>GPU 간 통신 비용 증가</td>
+<td markdown="span">**단점**</td>
+<td markdown="span">순차 처리로 인해 지연 가능</td>
+<td markdown="span">GPU 간 통신 비용 증가</td>
 </tr>
   </table>
   이제 더 이해가 잘 되셨나요? 😊

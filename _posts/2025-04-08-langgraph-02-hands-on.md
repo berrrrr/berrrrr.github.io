@@ -47,7 +47,7 @@ class Agent:
 
 ```
 
-<details>
+<details markdown="1">
 
 <summary>prompt</summary>
 
@@ -434,7 +434,7 @@ config를 통해 recursion limit등을 제어 가능.
 
 ### Essay Writer
 
-<details>
+<details markdown="1">
 
 <summary>state</summary>
 
@@ -453,7 +453,7 @@ class AgentState(TypedDict):
 
 </details>
 
-<details>
+<details markdown="1">
 
 <summary>prompt</summary>
 
@@ -489,7 +489,7 @@ Generate a list of search queries that will gather any relevant information. Onl
 
 </details>
 
-<details>
+<details markdown="1">
 
 <summary>node</summary>
 
@@ -559,7 +559,7 @@ def should_continue(state):
 
 </details>
 
-<details>
+<details markdown="1">
 
 <summary>graph</summary>
 
@@ -602,7 +602,7 @@ Image(graph.get_graph().draw_png())
 
 langraph 가 아직 다루지 못하지만 알아두면 좋은 flow
 
-<details>
+<details markdown="1">
 
 <summary>multi-agent</summary>
 
@@ -610,7 +610,7 @@ langraph 가 아직 다루지 못하지만 알아두면 좋은 flow
 
 </details>
 
-<details>
+<details markdown="1">
 
 <summary>supervisor agent</summary>
 
@@ -620,7 +620,7 @@ langraph 가 아직 다루지 못하지만 알아두면 좋은 flow
 
 - flow engineering
 
-<details>
+<details markdown="1">
 
 <summary>plan and execute</summary>
 
@@ -628,7 +628,7 @@ langraph 가 아직 다루지 못하지만 알아두면 좋은 flow
 
 </details>
 
-<details>
+<details markdown="1">
 
 <summary>language agent tree search</summary>
 

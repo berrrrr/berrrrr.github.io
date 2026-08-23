@@ -14,7 +14,7 @@ comments: true
 
 ### 0. 미리 설계해보기
 
-<details>
+<details markdown="1">
 
 <summary>시스템 구성도</summary>
 

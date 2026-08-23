@@ -28,7 +28,7 @@ ec2 \> 로드밸런서  \> **Application Load Balancer 생성 **
   - 연결하려는 ec2의 https (443 port)
   - 인증서는 위에서 생성한녀석 선택
 
-<details>
+<details markdown="1">
 
 <summary>최종 이런 모양</summary>
 
@@ -43,7 +43,7 @@ ec2 \> 로드밸런서  \> **Application Load Balancer 생성 **
 
 왜그런지모르겠는데 443 포트를 따로 열어서 받는경우 request가 정상적으로 안들어옴..
 
-<details>
+<details markdown="1">
 
 <summary>실패한 conf</summary>
 
@@ -112,7 +112,7 @@ http {
 
 </details>
 
-<details>
+<details markdown="1">
 
 <summary>성공한 conf</summary>
 

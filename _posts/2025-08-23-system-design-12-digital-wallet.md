@@ -16,7 +16,7 @@ comments: true
 
 - 일단 DB는 무조건 RDB를 써야할듯. (결제시스템 신뢰기반, 트랜잭션기반 → 실패, 장애시 롤백이 되어야함)
 
-<details>
+<details markdown="1">
 
 <summary>API</summary>
 
@@ -74,16 +74,16 @@ comments: true
   - 서로다른 노드를 업데이트해야하는데 이 작업이 정확히 동시에 처리된다는 보장은 여전히 X
 - 2단계 커밋 (2PC)
 
-<details>
+<details markdown="1">
 
 <summary>방법</summary>
 
-    1. 조정자가 DB에 읽기 및 쓰기 작업 수행
-    2. 대상 DB 모두에 락이 걸림
-    3. 대상 DB 모두에게 트랜잭션 준비 요청
-    4. 조정자는 DB의 응답을 받아 다음 절차 수행
-      1. 모든 DB가 ‘yes’ 응답시 트랜잭션 커밋 요청
-      2. 하나라도 ‘no’ 응답시 모든 DB에 트랜잭션 중단 요청
+1. 조정자가 DB에 읽기 및 쓰기 작업 수행
+2. 대상 DB 모두에 락이 걸림
+3. 대상 DB 모두에게 트랜잭션 준비 요청
+4. 조정자는 DB의 응답을 받아 다음 절차 수행
+   1. 모든 DB가 ‘yes’ 응답시 트랜잭션 커밋 요청
+   2. 하나라도 ‘no’ 응답시 모든 DB에 트랜잭션 중단 요청
 
 </details>
 
@@ -94,14 +94,14 @@ comments: true
   - 두 단계가 하나의 transaction
 - TC/C (Try-Confirm/Cancel)
 
-<details>
+<details markdown="1">
 
 <summary>방법</summary>
 
-    1. 조정자가 모든 DB에 트랜잭션을 위한 자원 예약 요청
-    2. 모든 DB로부터 회신을 받음
-      1. 모두 ‘yes’ 으답시 DB에 작업확인 요청 = Try-Confirm
-      2. 하나라도 ‘no’ 응답시 모든 DB에 취소 요청 = Try-Cancel
+1. 조정자가 모든 DB에 트랜잭션을 위한 자원 예약 요청
+2. 모든 DB로부터 회신을 받음
+   1. 모두 ‘yes’ 으답시 DB에 작업확인 요청 = Try-Confirm
+   2. 하나라도 ‘no’ 응답시 모든 DB에 취소 요청 = Try-Cancel
 
 </details>
 
@@ -123,13 +123,13 @@ comments: true
   - 병렬 수행 가능 ⇒ latency에 민감하다면 추천.
 - SAGA
 
-<details>
+<details markdown="1">
 
 <summary>방법</summary>
 
-    1. 모든 연산은 순서대로 정렬. 각 연산은 독립 트랜잭션으로 실행
-    2. 연산은 첫번째부터 마지막까지 순서대로 실행.
-    3. 연산실패시 전체 프로세스는 실패 연산부터 역순으로 보상트랜잭션을 통해 롤백
+1. 모든 연산은 순서대로 정렬. 각 연산은 독립 트랜잭션으로 실행
+2. 연산은 첫번째부터 마지막까지 순서대로 실행.
+3. 연산실패시 전체 프로세스는 실패 연산부터 역순으로 보상트랜잭션을 통해 롤백
 
 </details>
 
