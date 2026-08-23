@@ -119,7 +119,7 @@ spec:
   template:
     serviceAccountName: sqs-sensor-sa
   sqs:
-    dunamuml-sqs-polling:
+    sqs-polling:
       region: "ap-northeast-2"
       queue: "queue-name"
       waitTimeSeconds: 20

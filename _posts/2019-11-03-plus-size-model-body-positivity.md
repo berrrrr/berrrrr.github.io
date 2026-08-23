@@ -2,8 +2,8 @@
 layout: post
 title: "Plus Size Models and Body Positivity - Focusing on Online Discourses around #Plussizemodel"
 subtitle: "Plus Size Models and Body Positivity - Focusing on Online Discourses around #Plussizemodel"
-categories: datascience
-tags: paper
+categories: data
+tags: datascience
 comments: true
 ---
 

@@ -2,8 +2,8 @@
 layout: post
 title: Attantion is all you need
 subtitle: subtitle:Enter subtitle
-categories: datascience
-tags: paper
+categories: data
+tags: datascience
 comments: true
 ---
 

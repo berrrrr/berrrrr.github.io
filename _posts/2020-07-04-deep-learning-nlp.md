@@ -2,8 +2,8 @@
 layout: post
 title: 딥 러닝을 통한 자연어처리 입문 wikidocs 추천 
 subtitle: 딥 러닝을 통한 자연어처리 입문 wikidocs 추천
-categories: datascience
-tags: nlp
+categories: data
+tags: datascience
 comments: true
 ---
 위키독스에있는 '딥 러닝을 통한 자연어처리 입문' 이책 진짜 대박임..   

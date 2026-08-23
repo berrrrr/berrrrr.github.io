@@ -3,7 +3,7 @@ layout: post
 title: Bridge Pattern (브릿지 패턴)
 subtitle: Bridge Pattern (브릿지 패턴)
 categories: programming
-tags: designpattern
+tags: systemdesign
 comments: true
 ---
 

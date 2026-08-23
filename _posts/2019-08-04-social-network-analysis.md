@@ -2,8 +2,8 @@
 layout: post
 title: Social network analysis - Characteristics of online social networks after a disaster
 subtitle: Social network analysis - Characteristics of online social networks after a disaster
-categories: datascience
-tags: paper
+categories: data
+tags: datascience
 comments: true
 ---
 

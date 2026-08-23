@@ -2,8 +2,8 @@
 layout: post
 title: 빅데이터 분석 플랫폼 요약
 subtitle: 빅데이터 분석 플랫폼 요약
-categories: datascience
-tags: bigdata
+categories: data
+tags: dataengineering
 comments: true
 ---
 

@@ -2,8 +2,8 @@
 layout: post
 title: zeppelin 설치하기
 subtitle: zeppelin 설치하기
-categories: datascience
-tags: hadoop
+categories: data
+tags: dataengineering
 comments: true
 ---
 

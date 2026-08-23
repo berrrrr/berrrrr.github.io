@@ -3,7 +3,7 @@ layout: post
 title: 디자인패턴 개요
 subtitle: 디자인패턴 개요
 categories: programming
-tags: designpattern
+tags: systemdesign
 comments: true
 ---
 

@@ -2,8 +2,8 @@
 layout: post
 title: HDFS의 구성요소
 subtitle: HDFS의 구성요소
-categories: datascience
-tags: hadoop
+categories: data
+tags: dataengineering
 comments: true
 ---
 

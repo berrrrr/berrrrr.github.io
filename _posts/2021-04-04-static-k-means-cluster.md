@@ -2,7 +2,7 @@
 layout: post
 title: reandomseed 고정해서 항상 동일한 군집을 이루게하기
 subtitle: reandomseed 고정해서 항상 동일한 군집을 이루게하기
-categories: datascience
+categories: data
 tags: ml
 comments: true
 ---

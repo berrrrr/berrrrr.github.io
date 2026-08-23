@@ -2,8 +2,8 @@
 layout: post
 title: hive vs hbase비교하기
 subtitle: hive vs hbase 를 비교해보자
-categories: datascience
-tags: hadoop
+categories: data
+tags: dataengineering
 comments: true
 ---
 

@@ -2,8 +2,8 @@
 layout: post
 title: The Economics of Privacy
 subtitle: The Economics of Privacy
-categories: datascience
-tags: paper
+categories: data
+tags: datascience
 comments: true
 ---
 

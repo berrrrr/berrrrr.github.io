@@ -3,7 +3,7 @@ layout: post
 title: Proxy Pattern (프록시 패턴)
 subtitle: Proxy Pattern (프록시 패턴)
 categories: programming
-tags: designpattern
+tags: systemdesign
 comments: true
 ---
 

@@ -3,7 +3,7 @@ layout: post
 title: Memento Pattern (메멘토 패턴)
 subtitle: Memento Pattern (메멘토 패턴)
 categories: programming
-tags: designpattern
+tags: systemdesign
 comments: true
 ---
 

@@ -2,7 +2,7 @@
 layout: post
 title: "[ML] Concept Learning"
 subtitle: "[ML] Concept Learning"
-categories: datascience
+categories: data
 tags: ml
 comments: true
 ---

@@ -2,8 +2,8 @@
 layout: post
 title: Toponym matching through deep neural networks
 subtitle: Toponym matching through deep neural networks
-categories: datascience
-tags: paper
+categories: data
+tags: datascience
 comments: true
 ---
 

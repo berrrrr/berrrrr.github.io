@@ -2,7 +2,7 @@
 layout: post
 title: "[ML] Decision Tree Learning(DTL)"
 subtitle: "[ML] Decision Tree Learning(DTL)"
-categories: datascience
+categories: data
 tags: ml
 comments: true
 ---

@@ -2,8 +2,8 @@
 layout: post
 title: Real-time Event Detection on Social Data Streams (2019.07)
 subtitle: Real-time Event Detection on Social Data Streams (2019.07)
-categories: datascience
-tags: paper
+categories: data
+tags: datascience
 comments: true
 ---
 

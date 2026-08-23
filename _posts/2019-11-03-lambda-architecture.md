@@ -3,7 +3,7 @@ layout: post
 title: 람다 아키텍처(lambda Architecture)란?
 subtitle: 람다 아키텍처(lambda Architecture)란?
 categories: programming
-tags: tips
+tags: systemdesign
 comments: true
 ---
 

@@ -2,8 +2,8 @@
 layout: post
 title: python spark wordcount 해보기
 subtitle: python spark wordcount 해보기
-categories: datascience
-tags: spark
+categories: data
+tags: dataengineering
 comments: true
 ---
 

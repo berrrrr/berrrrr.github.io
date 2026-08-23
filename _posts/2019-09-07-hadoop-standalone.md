@@ -2,8 +2,8 @@
 layout: post
 title: standalone으로 hadoop 설치시 설정값
 subtitle: standalone으로 hadoop 설치시 설정값
-categories: datascience
-tags: hadoop
+categories: data
+tags: dataengineering
 comments: true
 ---
 

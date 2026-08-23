@@ -2,8 +2,8 @@
 layout: post
 title: 자주쓰이는 hdfs 명령어 정리
 subtitle: 자주쓰이는 hdfs 명령어 정리
-categories: datascience
-tags: hadoop
+categories: data
+tags: dataengineering
 comments: true
 ---
 

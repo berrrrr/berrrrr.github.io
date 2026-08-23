@@ -2,8 +2,8 @@
 layout: post
 title: Detection of Review Abuse via Semi-Supervised Binary Multi-Target Tensor Decomposition
 subtitle: Detection of Review Abuse via Semi-Supervised Binary Multi-Target Tensor Decomposition
-categories: datascience
-tags: paper
+categories: data
+tags: datascience
 comments: true
 ---
 

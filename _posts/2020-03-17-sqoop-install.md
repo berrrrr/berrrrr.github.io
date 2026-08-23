@@ -2,8 +2,8 @@
 layout: post
 title: sqoop 설치하기
 subtitle: sqoop 설치하기
-categories: datascience
-tags: hadoop
+categories: data
+tags: dataengineering
 comments: true
 ---
 

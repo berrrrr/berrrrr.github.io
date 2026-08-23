@@ -2,8 +2,8 @@
 layout: post
 title: '가능도(likelihood)와 최대가능도추정(MLE)'
 subtitle: '가능도(likelihood)와 최대가능도추정(MLE)'
-categories: datascience
-tags: statistics
+categories: data
+tags: datascience
 comments: true
 ---
 

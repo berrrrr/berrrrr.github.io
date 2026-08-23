@@ -2,8 +2,8 @@
 layout: post
 title: text similarity 비교를 위한 여러 기법
 subtitle: text similarity 비교를 위한 여러 기법
-categories: datascience
-tags: nlp
+categories: data
+tags: datascience
 comments: true
 ---
 

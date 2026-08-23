@@ -2,8 +2,8 @@
 layout: post
 title: 빅데이터분석, 통계학
 subtitle: 빅데이터분석, 통계학
-categories: datascience
-tags: statistics
+categories: data
+tags: datascience
 comments: true
 ---
 

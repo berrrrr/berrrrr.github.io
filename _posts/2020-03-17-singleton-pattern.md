@@ -3,7 +3,7 @@ layout: post
 title: singleton pattern (싱글톤 패턴)
 subtitle: singleton pattern
 categories: programming
-tags: designpattern
+tags: systemdesign
 comments: true
 ---
 

@@ -2,8 +2,8 @@
 layout: post
 title: Big data based operations for space systems
 subtitle: Big data based operations for space systems
-categories: datascience
-tags: paper
+categories: data
+tags: datascience
 comments: true
 ---
 

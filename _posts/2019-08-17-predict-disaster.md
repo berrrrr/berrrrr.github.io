@@ -2,8 +2,8 @@
 layout: post
 title: Predicting Evacuation Decisions using Representations of Individuals’ Pre-DisasterWeb Search Behavior
 subtitle: Predicting Evacuation Decisions using Representations of Individuals’ Pre-DisasterWeb Search Behavior
-categories: datascience
-tags: paper
+categories: data
+tags: datascience
 comments: true
 ---
 

@@ -3,7 +3,7 @@ layout: post
 title: API 디자인 지침
 subtitle: API 디자인 지침
 categories: programming
-tags: spring
+tags: systemdesign
 comments: true
 ---
 

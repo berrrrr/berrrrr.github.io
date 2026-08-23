@@ -2,8 +2,8 @@
 layout: post
 title: Using Random Forest Classifiers to Detect Duplicate Gazetteer Records (IEEE 2012)
 subtitle: Using Random Forest Classifiers to Detect Duplicate Gazetteer Records (IEEE 2012)
-categories: datascience
-tags: paper
+categories: data
+tags: datascience
 comments: true
 ---
 

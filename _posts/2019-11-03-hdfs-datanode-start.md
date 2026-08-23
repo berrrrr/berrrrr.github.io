@@ -2,8 +2,8 @@
 layout: post
 title: HDFS 에서 특정 datanode만 start하는법
 subtitle: HDFS 에서 특정 datanode만 start하는법
-categories: datascience
-tags: hadoop
+categories: data
+tags: dataengineering
 comments: true
 ---
 

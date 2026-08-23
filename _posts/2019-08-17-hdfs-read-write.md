@@ -2,8 +2,8 @@
 layout: post
 title: HDFS Block read/write
 subtitle: HDFS Block read/write
-categories: datascience
-tags: hadoop
+categories: data
+tags: dataengineering
 comments: true
 ---
 

@@ -2,8 +2,8 @@
 layout: post
 title: Flying Large Constellations using Automation and Big Data (2016)
 subtitle: Flying Large Constellations using Automation and Big Data (2016)
-categories: datascience
-tags: paper
+categories: data
+tags: datascience
 comments: true
 ---
 

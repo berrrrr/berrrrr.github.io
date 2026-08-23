@@ -2,8 +2,8 @@
 layout: post
 title: The Economics of Information Security
 subtitle: The Economics of Information Security
-categories: datascience
-tags: paper
+categories: data
+tags: datascience
 comments: true
 ---
 

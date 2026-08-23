@@ -2,8 +2,8 @@
 layout: post
 title: CHARTing the Future – An Offline Data Analysis & Reporting Toolkit to support Automated Decision-making in Flight Operations (2018)
 subtitle: CHARTing the Future – An Offline Data Analysis & Reporting Toolkit to support Automated Decision-making in Flight Operations (2018)
-categories: datascience
-tags: paper
+categories: data
+tags: datascience
 comments: true
 ---
 

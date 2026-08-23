@@ -2,8 +2,8 @@
 layout: post
 title: Detecting Nearly Duplicated Records in Location Datasets
 subtitle: Detecting Nearly Duplicated Records in Location Datasets
-categories: datascience
-tags: paper
+categories: data
+tags: datascience
 comments: true
 ---
 

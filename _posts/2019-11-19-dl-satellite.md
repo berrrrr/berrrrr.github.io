@@ -2,8 +2,8 @@
 layout: post
 title: Applications of Deep Learning Neural Networks to Satellite Telemetry Monitoring
 subtitle: Applications of Deep Learning Neural Networks to Satellite Telemetry Monitoring
-categories: datascience
-tags: paper
+categories: data
+tags: datascience
 comments: true
 ---
 

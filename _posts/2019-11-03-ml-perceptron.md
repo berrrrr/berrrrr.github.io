@@ -2,7 +2,7 @@
 layout: post
 title: "[ML] Perceptron"
 subtitle: "[ML] Perceptron"
-categories: datascience
+categories: data
 tags: ml
 comments: true
 ---

@@ -2,7 +2,7 @@
 layout: post
 title: "[ML] Linear Regression Model"
 subtitle: "[ML] Linear Regression Model"
-categories: datascience
+categories: data
 tags: ml
 comments: true
 ---

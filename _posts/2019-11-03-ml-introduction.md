@@ -2,7 +2,7 @@
 layout: post
 title: "[ML] Introduction"
 subtitle: "[ML] Introduction"
-categories: datascience
+categories: data
 tags: ml
 comments: true
 ---

@@ -2,8 +2,8 @@
 layout: post
 title: Mining Twitter Data for Improved Understanding of Disaster Resilience
 subtitle: Mining Twitter Data for Improved Understanding of Disaster Resilience
-categories: datascience
-tags: paper
+categories: data
+tags: datascience
 comments: true
 ---
 

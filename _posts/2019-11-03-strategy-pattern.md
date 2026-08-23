@@ -3,7 +3,7 @@ layout: post
 title: Strategy Pattern (전략 패턴)
 subtitle: Strategy Pattern (전략 패턴)
 categories: programming
-tags: designpattern
+tags: systemdesign
 comments: true
 ---
 

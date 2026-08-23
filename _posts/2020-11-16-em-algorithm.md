@@ -2,8 +2,8 @@
 layout: post
 title: 'EM Algorithm 쉽게 이해하기'
 subtitle: 'EM Algorithm 쉽게 이해하기'
-categories: datascience
-tags: statistics
+categories: data
+tags: datascience
 comments: true
 ---
 

@@ -2,8 +2,8 @@
 layout: post
 title: Very Deep Convolutional Networks for Text Classification
 subtitle: Very Deep Convolutional Networks for Text Classification
-categories: datascience
-tags: paper
+categories: data
+tags: datascience
 comments: true
 ---
 

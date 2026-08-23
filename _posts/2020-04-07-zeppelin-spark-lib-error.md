@@ -2,8 +2,8 @@
 layout: post
 title: zeppelin 과 spark 연동시 삽질 에러 모음
 subtitle: subtitle:Enter subtitle
-categories: datascience
-tags: spark
+categories: data
+tags: dataengineering
 comments: true
 ---
 

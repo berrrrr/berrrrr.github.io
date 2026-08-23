@@ -2,8 +2,8 @@
 layout: post
 title: Onboard Observation Task Planning for an Autonomous Earth Observation Satellite Using Long Short-Term Memory
 subtitle: Onboard Observation Task Planning for an Autonomous Earth Observation Satellite Using Long Short-Term Memory
-categories: datascience
-tags: paper
+categories: data
+tags: datascience
 comments: true
 ---
 

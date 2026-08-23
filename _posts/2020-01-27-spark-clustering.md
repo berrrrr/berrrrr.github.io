@@ -2,8 +2,8 @@
 layout: post
 title: spark 클러스터링 모드로 분산처리하기
 subtitle: spark 클러스터링 모드로 분산처리하기
-categories: datascience
-tags: spark
+categories: data
+tags: dataengineering
 comments: true
 ---
 

@@ -2,8 +2,8 @@
 layout: post
 title: Characterizing Clickbaits on Instagram
 subtitle: Characterizing Clickbaits on Instagram
-categories: datascience
-tags: paper
+categories: data
+tags: datascience
 comments: true
 ---
 ## Characterizing Clickbaits on Instagram

@@ -2,8 +2,8 @@
 layout: post
 title: show and tell
 subtitle: show and tell
-categories: datascience
-tags: paper
+categories: data
+tags: datascience
 comments: true
 ---
 
