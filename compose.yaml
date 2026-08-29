@@ -1,0 +1,14 @@
+services:
+  site:
+    build:
+      context: ./docker/preview
+      args:
+        GITHUB_PAGES_VERSION: "232"
+    init: true
+    environment:
+      JEKYLL_NO_BUNDLER_REQUIRE: "true"
+    ports:
+      - "4000:4000"
+      - "35729:35729"
+    volumes:
+      - .:/site
