@@ -34,7 +34,7 @@
         entry.target.classList.add('is-visible');
         observer.unobserve(entry.target);
       });
-    }, { threshold: 0.08 });
+    }, { threshold: 0 });
     Array.prototype.forEach.call(items, function (item, index) {
       item.style.setProperty('--delay', ((index % 5) * 65) + 'ms');
       observer.observe(item);
