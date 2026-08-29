@@ -41,7 +41,7 @@ layout: base
   </section>
 
   <section class="recent" aria-labelledby="recent-title">
-    <header class="section-head"><div><p class="eyebrow">RECENT NOTES</p><h2 id="recent-title">최근 포스트</h2></div><a href="{{ '/posts/' | relative_url }}">전체 아카이브 ↗</a></header>
+    <header class="section-head"><div><p class="eyebrow">RECENT NOTES</p><h2 id="recent-title">최근 포스트</h2></div><a href="{{ '/posts/' | relative_url }}">VIEW ALL POSTS ↗</a></header>
     <div class="recent-grid">{% for post in posts offset:5 %}<article class="recent-card glass reveal"><a href="{{ post.url | relative_url }}"><div><span>{{ post.categories | first | default:'note' }}</span><time>{{ post.date | date:'%Y.%m.%d' }}</time></div><h3>{{ post.title }}</h3><p>{{ post.excerpt | strip_html | strip_newlines | truncatewords:18 }}</p></a></article>{% endfor %}</div>
     {% include pagination.html %}
   </section>
