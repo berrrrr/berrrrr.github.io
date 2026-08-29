@@ -199,7 +199,11 @@ button, input { font: inherit; }
 .prose th, .prose td { padding: .75rem; border-bottom: 1px solid var(--line); text-align: left; }
 .prose th { background: rgba(216,228,224,.58); color: var(--ink); }
 .prose code { display: inline; padding: .14em .38em; border-radius: .35rem; background: rgba(47,73,74,.09); color: #b14f31; font-family: "SFMono-Regular",Consolas,"Liberation Mono",Menlo,monospace; font-size: .86em; box-decoration-break: clone; -webkit-box-decoration-break: clone; }
-.prose pre { margin: 0; overflow-x: auto; background: #152324; color: #dfe9e6; font-size: .82rem; line-height: 1.7; tab-size: 2; }
+.prose pre { margin: 0; overflow-x: auto; background: #152324; color: #dfe9e6; font-size: .82rem; line-height: 1.7; tab-size: 2; scrollbar-width: thin; scrollbar-color: rgba(143,177,174,.48) transparent; }
+.prose pre::-webkit-scrollbar { height: .45rem; }
+.prose pre::-webkit-scrollbar-track { background: transparent; }
+.prose pre::-webkit-scrollbar-thumb { border: .12rem solid #152324; border-radius: 999px; background: rgba(143,177,174,.48); }
+.prose pre::-webkit-scrollbar-thumb:hover { background: rgba(184,206,203,.72); }
 .prose pre code { display: block; min-width: max-content; padding: 1.35rem; background: transparent; color: inherit; font-size: inherit; }
 .prose div.highlighter-rouge { max-width: 100%; margin: 2rem 0; }
 .code-shell { max-width: 100%; margin: 2rem 0; overflow: hidden; border: 1px solid rgba(255,255,255,.1); border-radius: 1rem; background: #152324; box-shadow: 0 16px 40px rgba(14,32,33,.18); }
