@@ -4,7 +4,7 @@
 <html lang="{{ page.lang | default:site.lang | default:'ko' }}">
   <head>{% include moongchi-head.html %}</head>
   <body id="top" class="layout-{{ page.layout }}">
-    <a class="skip-link" href="#main-content">본문으로 바로가기</a>
+    <a class="skip-link" href="#main-content">{% if page.lang == 'en' %}Skip to content{% else %}본문으로 바로가기{% endif %}</a>
     {% include moongchi-header.html %}
     <div class="site-frame">
       {% include moongchi-rail.html %}

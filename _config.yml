@@ -3,6 +3,7 @@
 # -----------------------------------------------------------------------------
 
 title:               MOONGCHI
+lang:                ko
 
 # The unique resource location of your page.
 # Set to `https://<username>.github.io` when hosting on GitHub Pages
@@ -97,6 +98,22 @@ collections:
   projects:
     permalink:       /projects/:path/
     output:          true
+  en_posts:
+    permalink:       /en/:path/
+    output:          true
+
+defaults:
+  - scope:
+      path:          ""
+      type:          posts
+    values:
+      lang:          ko
+  - scope:
+      path:          ""
+      type:          en_posts
+    values:
+      layout:        post
+      lang:          en
 
 # -----------------------------------------------------------------------------
 #  Advanced configuration

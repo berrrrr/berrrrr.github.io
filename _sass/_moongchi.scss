@@ -169,6 +169,7 @@ button, input { font: inherit; }
 .reader-head::after { content: ""; position: absolute; width: 30rem; height: 30rem; right: -11rem; top: -18rem; border: 1px solid rgba(255,255,255,.75); border-radius: 50%; background: radial-gradient(circle at 25% 28%,rgba(255,255,255,.62),rgba(125,177,174,.13) 58%); }
 .reader-head__meta { z-index: 1; display: flex; flex-wrap: wrap; gap: .8rem; color: var(--soft); font-size: .58rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; }
 .reader-head__meta a { color: var(--accent); }
+.reader-head__meta .language-link { margin-left: auto; padding-bottom: .18rem; border-bottom: 1px solid currentColor; }
 .reader-head h1 { z-index: 1; max-width: 18ch; margin: 1rem 0 0; font-size: clamp(2.6rem,4.4vw,4.6rem); line-height: 1; letter-spacing: -.07em; overflow-wrap: anywhere; }
 .reader-head > p { z-index: 1; max-width: 38rem; margin: 1rem 0 0; color: var(--soft); font-size: .85rem; line-height: 1.6; }
 .reader-head__tags { z-index: 1; margin-top: 1.5rem; display: flex; flex-wrap: wrap; gap: .45rem; }
@@ -304,7 +305,7 @@ body.is-navigating .site-content { opacity: .25; transform: translateY(.3rem); t
   .category-rail { position: fixed; z-index: 40; top: 0; right: 0; bottom: 0; width: min(20rem,88vw); min-height: 100vh; border-radius: 1.5rem 0 0 1.5rem; transform: translateX(110%); transition: transform .35s cubic-bezier(.2,.8,.2,1); }
   .category-rail.is-open { transform: none; }
   .category-rail__head button { display: block; }
-  .rail-utility-nav { margin: 0 0 1rem; display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: .45rem; }
+  .rail-utility-nav { margin: 0 0 1rem; display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: .45rem; }
   .category-rail .rail-utility-nav a { min-height: 2.5rem; padding: .35rem; display: flex; align-items: center; justify-content: center; border: 1px solid var(--line); border-radius: .7rem; color: var(--ink); font-size: .6rem; font-weight: 750; letter-spacing: .06em; text-transform: uppercase; }
   .category-rail .rail-utility-nav a:hover { background: rgba(255,255,255,.55); transform: none; }
   .rail-toggle { display: block; }

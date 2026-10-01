@@ -5,6 +5,8 @@ subtitle: "[ONNX] lesson-learned"
 categories: programming
 tags: mlops
 comments: true
+lang: ko
+translation_url: /en/onnx-runtime-troubleshooting-lessons/
 ---
 
 > **ONNX 시리즈**의 글입니다.

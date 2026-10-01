@@ -2,10 +2,27 @@
 layout: null
 ---
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xhtml="http://www.w3.org/1999/xhtml" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>{{ site.url }}/</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="{{ site.url }}/" />
+    <xhtml:link rel="alternate" hreflang="en" href="{{ site.url }}/en/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="{{ site.url }}/" />
+  </url>
+  <url>
+    <loc>{{ site.url }}/en/</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="{{ site.url }}/" />
+    <xhtml:link rel="alternate" hreflang="en" href="{{ site.url }}/en/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="{{ site.url }}/" />
+  </url>
   {% for post in site.posts %}
     <url>
       <loc>{{ site.url }}{{ post.url }}</loc>
+      {% if post.translation_url %}
+      <xhtml:link rel="alternate" hreflang="ko" href="{{ site.url }}{{ post.url }}" />
+      <xhtml:link rel="alternate" hreflang="en" href="{{ site.url }}{{ post.translation_url }}" />
+      <xhtml:link rel="alternate" hreflang="x-default" href="{{ site.url }}{{ post.url }}" />
+      {% endif %}
       {% if post.lastmod == null %}
         <lastmod>{{ post.date | date_to_xmlschema }}</lastmod>
       {% else %}
@@ -24,6 +41,19 @@ layout: null
         <priority>{{ post.sitemap.priority }}</priority>
       {% endif %}
 
+    </url>
+  {% endfor %}
+  {% for post in site.en_posts %}
+    <url>
+      <loc>{{ site.url }}{{ post.url }}</loc>
+      {% if post.translation_url %}
+      <xhtml:link rel="alternate" hreflang="ko" href="{{ site.url }}{{ post.translation_url }}" />
+      <xhtml:link rel="alternate" hreflang="en" href="{{ site.url }}{{ post.url }}" />
+      <xhtml:link rel="alternate" hreflang="x-default" href="{{ site.url }}{{ post.translation_url }}" />
+      {% endif %}
+      <lastmod>{{ post.date | date_to_xmlschema }}</lastmod>
+      <changefreq>weekly</changefreq>
+      <priority>1.0</priority>
     </url>
   {% endfor %}
 </urlset>

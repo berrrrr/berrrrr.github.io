@@ -3,7 +3,7 @@ layout: base
 ---
 <article class="reader">
   <header class="reader-head glass reveal">
-    <div class="reader-head__meta"><a href="{{ '/category/' | append:page.categories.first | append:'/' | relative_url }}">{{ page.categories | first | default:'NOTE' }}</a><time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date:'%Y.%m.%d' }}</time><span>{{ content | number_of_words | divided_by:180 | plus:1 }} MIN READ</span></div>
+    <div class="reader-head__meta"><a href="{% if page.lang == 'en' %}{{ '/en/' | relative_url }}{% else %}{{ '/category/' | append:page.categories.first | append:'/' | relative_url }}{% endif %}">{{ page.categories | first | default:'NOTE' }}</a><time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date:'%Y.%m.%d' }}</time><span>{{ content | number_of_words | divided_by:180 | plus:1 }} MIN READ</span>{% if page.translation_url %}<a class="language-link" lang="{% if page.lang == 'en' %}ko{% else %}en{% endif %}" hreflang="{% if page.lang == 'en' %}ko{% else %}en{% endif %}" href="{{ page.translation_url | relative_url }}">{% if page.lang == 'en' %}한국어로 읽기{% else %}READ IN ENGLISH{% endif %} ↗</a>{% endif %}</div>
     <h1>{{ page.title }}</h1>
     {% if page.subtitle %}<p>{{ page.subtitle }}</p>{% endif %}
     {% if page.tags.size > 0 %}<div class="reader-head__tags">{% for tag in page.tags %}<a href="{{ '/tag/' | append:tag | append:'/' | relative_url }}">#{{ tag }}</a>{% endfor %}</div>{% endif %}
@@ -15,7 +15,7 @@ layout: base
     {% include moongchi-ad.html position='footer' slot='9143495689' %}
   </div>
 
-  <nav class="post-neighbors" aria-label="이전 및 다음 글">
+  <nav class="post-neighbors" aria-label="{% if page.lang == 'en' %}Previous and next articles{% else %}이전 및 다음 글{% endif %}">
     {% if page.previous %}<a class="glass" href="{{ page.previous.url | relative_url }}"><span>← PREVIOUS</span><b>{{ page.previous.title }}</b></a>{% endif %}
     {% if page.next %}<a class="glass" href="{{ page.next.url | relative_url }}"><span>NEXT →</span><b>{{ page.next.title }}</b></a>{% endif %}
   </nav>
